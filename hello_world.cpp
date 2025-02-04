@@ -4,6 +4,8 @@
 
 int main() {
     std::cout << "I hate C++\n";
+    std::cout << "I also hate Git\n";
+
 
     return 0;
 }
