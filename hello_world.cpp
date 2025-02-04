@@ -3,7 +3,7 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Life is so difficult~\n";
+    std::cout << "I hate C++\n";
 
     return 0;
 }
