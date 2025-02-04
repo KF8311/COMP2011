@@ -3,9 +3,7 @@
 #include <iostream>
 
 int main() {
-    std::cout << "Hello World\n";
-    char money[] = "Bye World";
-    std::cout << "Test\n";
-    std::cout << money << "\n";
+    std::cout << "Life is so difficult~\n";
+
     return 0;
 }
