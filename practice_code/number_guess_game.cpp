@@ -5,9 +5,12 @@ int main()
 {
     srand(time(0));
     int number;
-    const int MAX_RANGE = 100;
+    int MAX_RANGE;
     int guessed = 0;
     int turn = 1;
+    cout << "What's the maximum?\n";
+    cin >> MAX_RANGE;
+
     number = rand() % MAX_RANGE + 1;
     //cout << number << endl;
 
