@@ -1,15 +1,16 @@
+//RAT.cpp
 #include <iostream>
 using namespace std;
 
 void multi_rat(int height, int repeat)
 {
-    for (int j = 0; j < height; j++)
+    for (int j = 0; j < height; j++)//loop through column
     {
-        for (int i = 0; i < height * repeat; i++)
+        for (int i = 0; i < height * repeat; i++) //loop through row
         {
-            (i % height <= j) ? cout << '*' : cout << ' ';
+            (i % height <= j) ? cout << '*' : cout << ' '; //is it the desired place?, the like is it the first of of the triangle, 1,2,3...
         }
-        cout << endl;
+        cout << endl; //finish a row, go to next row
     }
 }
 int main()
