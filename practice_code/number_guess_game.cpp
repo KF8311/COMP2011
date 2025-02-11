@@ -32,14 +32,7 @@ int main()
             cout << "Player " << turn << ", you win!!!" << endl;
             break;
         }
-        if (turn == 1)
-        {
-            turn = 2;
-        }
-        else if (turn == 2)
-        {
-            turn = 1;
-        }
+        turn = (turn % 2) + 1;
     }
     return 0;
 }
