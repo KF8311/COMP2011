@@ -6,7 +6,7 @@ int main()
     srand(time(0));
     int number;
     int MAX_RANGE;
-    int guessed = 0;
+    //int guessed = 0;
     int turn = 1;
     cout << "What's the maximum?\n";
     cin >> MAX_RANGE;
@@ -15,7 +15,7 @@ int main()
     //cout << number << endl;
 
     int guessing_number = 0;
-    while (guessed == 0)
+    while (true)
     {
         cout << "Player " << turn << ", please enter your guess:\n";
         cin >> guessing_number;
