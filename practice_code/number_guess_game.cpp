@@ -6,12 +6,15 @@ int main()
     srand(time(0));
     int number;
     int MAX_RANGE;
+    int MIN_RANGE;
     // int guessed = 0;
     int turn = 1;
+    cout << "What's the minimum?\n";
+    cin >> MIN_RANGE;
     cout << "What's the maximum?\n";
     cin >> MAX_RANGE;
 
-    number = rand() % MAX_RANGE + 1;
+    number = rand() % (MAX_RANGE - MIN_RANGE) + MIN_RANGE;
     // cout << number << endl;
 
     int guessing_number = 0;
