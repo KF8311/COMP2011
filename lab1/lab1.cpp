@@ -45,32 +45,26 @@ int main()
     // TODO: You need to calculate the correct scores based on the input values
     // Note: Exam = Quiz, Midterm, and Final
     // === Start: Write your code within this region
-    weightedOverall =   (WEIGHT_LABS * labScore / MAX_LABS + //weighted lab score
-                        WEIGHT_PAS * paScore / MAX_PAS + // weighted PA score
-                        WEIGHT_QUIZ * quizScore / MAX_QUIZ + // weighted quiz score
-                        WEIGHT_MIDTERM * midtermScore / MAX_MIDTERM + //weighted midterm score
-                        WEIGHT_FINAL * finalScore / MAX_FINAL) // weighted final score
-                        ; 
+    weightedOverall = (WEIGHT_LABS * labScore / MAX_LABS +           // weighted lab score
+                       WEIGHT_PAS * paScore / MAX_PAS +              // weighted PA score
+                       WEIGHT_QUIZ * quizScore / MAX_QUIZ +          // weighted quiz score
+                       WEIGHT_MIDTERM * midtermScore / MAX_MIDTERM + // weighted midterm score
+                       WEIGHT_FINAL * finalScore / MAX_FINAL)        // weighted final score
+        ;
 
-    weightedExamOnly =  (WEIGHT_QUIZ * quizScore / MAX_QUIZ + // weighted quiz score
-                        WEIGHT_MIDTERM * midtermScore / MAX_MIDTERM + //weighted midterm score
-                        WEIGHT_FINAL * finalScore / MAX_FINAL)// weighted final score
-                        ; 
+    weightedExamOnly = (WEIGHT_QUIZ * quizScore / MAX_QUIZ +          // weighted quiz score
+                        WEIGHT_MIDTERM * midtermScore / MAX_MIDTERM + // weighted midterm score
+                        WEIGHT_FINAL * finalScore / MAX_FINAL)        // weighted final score
+        ;
 
-    if (weightedExamOnly >= PASSING_EXAM_ONLY){
+    if (weightedExamOnly >= PASSING_EXAM_ONLY)
+    {
         passExamOnly = true;
     }
-    if (weightedOverall >= PASSING_OVERALL){
+    if (weightedOverall >= PASSING_OVERALL)
+    {
         passOverall = true;
     }
-
-
-
-
-
-
-
-
 
     // === End: Write your code within this region
 
