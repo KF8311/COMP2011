@@ -1,6 +1,7 @@
 //RAT.cpp
 #include <iostream>
 using namespace std;
+const int SCREEN_SIZE = 110;
 
 void multi_rat(int height, int repeat)
 {
@@ -16,11 +17,11 @@ void multi_rat(int height, int repeat)
 int main()
 {
     int height;
-    int repeat;
+    //int repeat;
     cout << "Height?\n";
     cin >> height;
-    cout << "Repeat how many times?\n";
-    cin >> repeat;
-    multi_rat(height, repeat);
+    //cout << "Repeat how many times?\n";
+    //cin >> repeat;
+    multi_rat(height, SCREEN_SIZE / height);
     return 0;
 }
