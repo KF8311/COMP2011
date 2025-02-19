@@ -1,0 +1,13 @@
+All currency values are in billion Hong Kong dollars
+Enter the current year: Enter the income: Enter the expenditure: Enter the reserves: Enter the deficit increase percentage (%): End of 2024 reserves = 3150.3
+End of 2025 reserves = 3013.9
+End of 2026 reserves = 2857.1
+End of 2027 reserves = 2676.7
+End of 2028 reserves = 2469.3
+End of 2029 reserves = 2230.7
+End of 2030 reserves = 1956.4
+End of 2031 reserves = 1640.9
+End of 2032 reserves = 1278.1
+End of 2033 reserves = 860.9
+End of 2034 reserves = 381.1
+End of 2035 reserves = zero or negative

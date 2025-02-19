@@ -1,0 +1,11 @@
+All currency values are in billion Hong Kong dollars
+Enter the current year: Enter the income: Enter the expenditure: Enter the reserves: Enter the deficit increase percentage (%): End of 1996 reserves = 900
+End of 1997 reserves = 799
+End of 1998 reserves = 696.99
+End of 1999 reserves = 593.96
+End of 2000 reserves = 489.9
+End of 2001 reserves = 384.8
+End of 2002 reserves = 278.65
+End of 2003 reserves = 171.43
+End of 2004 reserves = 63.147
+End of 2005 reserves = zero or negative
