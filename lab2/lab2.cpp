@@ -44,11 +44,10 @@ int main()
     cin >> deficitPercentChange;
 
     // === Start: Write your code within this region
-    deficit = expenditure - income;
+    deficit = expenditure - income; //get deficit in +ve
     while (true)
     {
-
-        reserves -= deficit;
+        reserves -= deficit; //everytime minus deficit before multiply with %
         deficit = deficit * (1 + deficitPercentChange / 100);
         if (reserves <= 0)
             break;
