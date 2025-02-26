@@ -17,27 +17,30 @@ using namespace std;
 //
 // TODO 1: Implement the function, displayInGrouping(), with appropriate function
 // header and body
-void displayInGrouping(long balance){
-    //balance = 2173849934350; 
-    int digit_count = 0;
-    int balance_string[20];
-    do{
-      balance_string[digit_count] = balance%10; //get the last digit till the first digit
-      //cout<<balance_string[digit_count];
-      digit_count++;
-      balance /= 10;
-    }while (balance > 0);
-    //cout<<digit_count<<endl;
-    cout <<"Current balance in digit grouping: ";
-    for (int i = digit_count-1; i >= 0;--i){ //cout the digit in a reverse way
-      if ((i%3 == 0) && (i != 0))
-      cout << balance_string[i] << ','; //multiple of 3 get a comma, 3 digits so need comma
-      else cout<< balance_string[i];
-    }
-    cout << endl;
-    return;
+void displayInGrouping(long balance)
+{
+  // balance = 2173849934350;
+  int digit_count = 0;
+  int balance_string[20];
+  do
+  {
+    balance_string[digit_count] = balance % 10; // get the last digit till the first digit
+    // cout<<balance_string[digit_count];
+    digit_count++;
+    balance /= 10;
+  } while (balance > 0);
+  // cout<<digit_count<<endl;
+  cout << "Current balance in digit grouping: ";
+  for (int i = digit_count - 1; i >= 0; --i)
+  { // cout the digit in a reverse way
+    if ((i % 3 == 0) && (i != 0))
+      cout << balance_string[i] << ','; // multiple of 3 get a comma, 3 digits so need comma
+    else
+      cout << balance_string[i];
+  }
+  cout << endl;
+  return;
 }
-
 
 // This function deposits money into the account.
 //
@@ -57,17 +60,19 @@ void displayInGrouping(long balance){
 //            <balance> is the value of the balance variable.
 // TODO 2: Implement the function, deposit(), with appropriate function header
 // and body
-void deposit(long &balance,long &amount){
-  if (amount < 0){
-    cout <<"Invalid amount. Deposit amount must be positive.";
+void deposit(long &balance, long &amount)
+{
+  if (amount < 0)
+  {
+    cout << "Invalid amount. Deposit amount must be positive.";
   }
-  else{
+  else
+  {
     balance += amount;
     cout << "Deposit successful. New balance: " << balance;
   }
   cout << endl;
   return;
-
 }
 
 // This function withdraws money from the account.
@@ -91,31 +96,33 @@ void deposit(long &balance,long &amount){
 //      the terminal.
 // TODO 3: Implement the function, withdraw(), with appropriate function header
 // and body
-void withdraw(long &balance, long &amount){
-  if (amount <= 0){
-    cout <<"Invalid amount. Withdrawal amount must be positive.";
+void withdraw(long &balance, long &amount)
+{
+  if (amount <= 0)
+  {
+    cout << "Invalid amount. Withdrawal amount must be positive.";
   }
-  else if (balance >= amount){
+  else if (balance >= amount)
+  {
     balance -= amount;
     cout << "Withdrawal successful. New balance: " << balance;
   }
-  else if (amount > balance){
+  else if (amount > balance)
+  {
     cout << "Insufficient funds.";
-
   }
   cout << endl;
-
   return;
-
 }
 
-
-int main() {
+int main()
+{
   long balance = 0; // initial balance
   long amount;
   int choice;
 
-  while (true) {
+  while (true)
+  {
     // Display menu options
     cout << "1. Deposit" << endl;
     cout << "2. Withdraw" << endl;
@@ -124,7 +131,8 @@ int main() {
     cout << "Enter your choice: ";
     cin >> choice;
 
-    switch (choice) {
+    switch (choice)
+    {
     case 1:
       // Deposit money into an account
       cout << "Enter amount to deposit: ";
