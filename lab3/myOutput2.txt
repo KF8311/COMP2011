@@ -10,7 +10,7 @@ Deposit successful. New balance: 1000000
 3. Balance in digit grouping
 4. Exit
 Enter your choice: Enter amount to withdraw: 
-Deposit successful. New balance: 1000
+Withdrawal successful. New balance: 1000
 
 1. Deposit
 2. Withdraw

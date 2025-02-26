@@ -97,7 +97,7 @@ void withdraw(long &balance, long &amount){
   }
   else if (balance >= amount){
     balance -= amount;
-    cout << "Deposit successful. New balance: " << balance;
+    cout << "Withdrawal successful. New balance: " << balance;
   }
   else if (amount > balance){
     cout << "Insufficient funds.";

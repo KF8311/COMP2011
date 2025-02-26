@@ -16,7 +16,7 @@ Enter your choice: Current balance in digit grouping: 1,123
 3. Balance in digit grouping
 4. Exit
 Enter your choice: Enter amount to withdraw: 
-Deposit successful. New balance: 122
+Withdrawal successful. New balance: 122
 
 1. Deposit
 2. Withdraw
