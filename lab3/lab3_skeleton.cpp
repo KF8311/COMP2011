@@ -19,7 +19,23 @@ using namespace std;
 // header and body
 void displayInGrouping(long balance)
 {
+  cout << "Current balance in digit grouping: ";
   // balance = 2173849934350;
+  int current_power;
+  int current_digit;
+  const int MAX_DIGIT = log10(balance);
+  for (current_power = MAX_DIGIT; current_power >= 0; --current_power)
+  {
+    current_digit = balance / pow(10, current_power); //divide by the largest so only leftmost digit
+    cout << current_digit; //always print out current digit
+    if (current_power % 3 == 0 && current_power != 0) //you dont print ',' in the last digit
+      cout << ','; //add ',' in the end
+    balance -= current_digit * pow(10, current_power); // remove the leftmost digit
+  }
+  cout << endl;
+  return;
+
+  /*
   int digit_count = 0;
   int balance_string[20];
   do
@@ -39,7 +55,7 @@ void displayInGrouping(long balance)
       cout << balance_string[i];
   }
   cout << endl;
-  return;
+  */
 }
 
 // This function deposits money into the account.
@@ -60,7 +76,7 @@ void displayInGrouping(long balance)
 //            <balance> is the value of the balance variable.
 // TODO 2: Implement the function, deposit(), with appropriate function header
 // and body
-void deposit(long &balance, long &amount)
+void deposit(long &balance, long amount)
 {
   if (amount < 0)
   {
@@ -96,7 +112,7 @@ void deposit(long &balance, long &amount)
 //      the terminal.
 // TODO 3: Implement the function, withdraw(), with appropriate function header
 // and body
-void withdraw(long &balance, long &amount)
+void withdraw(long &balance, long amount)
 {
   if (amount <= 0)
   {
