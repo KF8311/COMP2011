@@ -1,0 +1,38 @@
+1. Deposit
+2. Withdraw
+3. Balance in digit grouping
+4. Exit
+Enter your choice: Enter amount to withdraw: 
+Invalid amount. Withdrawal amount must be positive.
+
+1. Deposit
+2. Withdraw
+3. Balance in digit grouping
+4. Exit
+Enter your choice: Enter amount to deposit: 
+Deposit successful. New balance: 4294967295
+
+1. Deposit
+2. Withdraw
+3. Balance in digit grouping
+4. Exit
+Enter your choice: Current balance in digit grouping: 4,294,967,295
+
+1. Deposit
+2. Withdraw
+3. Balance in digit grouping
+4. Exit
+Enter your choice: Enter amount to deposit: 
+Deposit successful. New balance: 4294967296
+
+1. Deposit
+2. Withdraw
+3. Balance in digit grouping
+4. Exit
+Enter your choice: Current balance in digit grouping: 4,294,967,296
+
+1. Deposit
+2. Withdraw
+3. Balance in digit grouping
+4. Exit
+Enter your choice: 

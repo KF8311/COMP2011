@@ -1,0 +1,26 @@
+1. Deposit
+2. Withdraw
+3. Balance in digit grouping
+4. Exit
+Enter your choice: Enter amount to deposit: 
+Invalid amount. Deposit amount must be positive.
+
+1. Deposit
+2. Withdraw
+3. Balance in digit grouping
+4. Exit
+Enter your choice: Enter amount to withdraw: 
+Invalid amount. Withdrawal amount must be positive.
+
+1. Deposit
+2. Withdraw
+3. Balance in digit grouping
+4. Exit
+Enter your choice: Enter amount to withdraw: 
+Insufficient funds.
+
+1. Deposit
+2. Withdraw
+3. Balance in digit grouping
+4. Exit
+Enter your choice: 
