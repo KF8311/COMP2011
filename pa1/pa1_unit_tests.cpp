@@ -1,4 +1,4 @@
-
+//#include "pa1_do_not_submit.cpp"
 // Given case 2: input/output2.txt
 // The purpose of is test duel action only with the same type
 void testcase2()

@@ -1,0 +1,27 @@
+== Result of Duel: Alice 0 Bob 0 ==
+Bob wins 
+Alice point = 0
+Bob point = 3
+== Result of Battle ==
+Bob wins 
+Alice wins 0 time(s)
+Bob wins 1 time(s)
+Draw 0 time(s)
+Alice point = 0
+Bob point = 6
+== Result of Mini-Battle 1 ==
+Mini-Battle team for Alice: F1 
+Mini-Battle team for Bob: F9 
+Bob wins 
+Alice wins 0 time(s)
+Bob wins 1 time(s)
+Draw 0 time(s)
+Alice point = 0
+Bob point = 9
+== Result of Reorder for Alice ==
+Before: F1 
+After: F1 
+== Result of Reorder for Bob ==
+Before: F9 
+After: F9 
+Game finished

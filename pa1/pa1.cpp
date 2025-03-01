@@ -3,8 +3,8 @@
 //  COMP2011 Spring 2025
 //  PA1: Monster Game
 //
-//  Your name:
-//  Your ITSC email:           @connect.ust.hk
+//  Your name: LAM, Pak Ho
+//  Your ITSC email:  phlamah@connect.ust.hk
 //
 //  Note: Generative AI is NOT allowed in completing your lab exercises or programming assignments
 //  Reference: https://course.cse.ust.hk/comp2011/web/code.html
@@ -20,7 +20,6 @@
 //  Usually, you will get the quickest response via a direct email.
 //
 // =====================================
-
 
 /* void handleActionDuel
  * @param aliceMonsterType: an array storing the monster types of Alice
@@ -47,6 +46,40 @@ ActionStatus handleActionDuel(const char aliceMonsterType[MAX_NUM_MONSTERS],
                               int &bobPoint)
 {
     // TODO: Implement handleActionDuel
+    // Task 1 Done!
+    int alice_power = aliceMonsterPower[aliceIndex];
+    int bob_power = bobMonsterPower[bobIndex];
+    if ((aliceMonsterType[aliceIndex] == MONSTER_TYPE_FIRE && bobMonsterType[bobIndex] == MONSTER_TYPE_ICE) ||
+        (aliceMonsterType[aliceIndex] == MONSTER_TYPE_ICE && bobMonsterType[bobIndex] == MONSTER_TYPE_WIND) ||
+        (aliceMonsterType[aliceIndex] == MONSTER_TYPE_WIND && bobMonsterType[bobIndex] == MONSTER_TYPE_FIRE))
+    {
+        alice_power += MONSTER_TYPE_ADVANTAGE;
+    }
+    if ((bobMonsterType[bobIndex] == MONSTER_TYPE_FIRE && aliceMonsterType[aliceIndex] == MONSTER_TYPE_ICE) ||
+        (bobMonsterType[bobIndex] == MONSTER_TYPE_ICE && aliceMonsterType[aliceIndex] == MONSTER_TYPE_WIND) ||
+        (bobMonsterType[bobIndex] == MONSTER_TYPE_WIND && aliceMonsterType[aliceIndex] == MONSTER_TYPE_FIRE))
+    {
+        bob_power += MONSTER_TYPE_ADVANTAGE;
+    }
+    if (alice_power > bob_power)
+    {
+        // Alice win
+        alicePoint += POINT_WIN;
+        return ACTION_STATUS_ALICE_WIN;
+    }
+    else if (alice_power < bob_power)
+    {
+        // Bob win
+        bobPoint += POINT_WIN;
+        return ACTION_STATUS_BOB_WIN;
+    }
+    else
+    {
+        // Draw
+        alicePoint += POINT_DRAW;
+        bobPoint += POINT_DRAW;
+        return ACTION_STATUS_DRAW;
+    }
 }
 
 /* void handleActionBattle
@@ -80,6 +113,32 @@ ActionStatus handleActionBattle(int numMonsters,
                                 int &countDraw)
 {
     // TODO: Implement handleActionBattle
+    // Task 2 Done
+    // i is the index counting from 0,1,2 to the MAX
+    for (int i = 0; i < numMonsters; i++)
+    {
+        switch (handleActionDuel(aliceMonsterType, aliceMonsterPower, bobMonsterType, bobMonsterPower,
+                                 i, i, alicePoint, bobPoint))
+        {
+        case ACTION_STATUS_ALICE_WIN:
+            countAliceWin += 1;
+            break;
+        case ACTION_STATUS_BOB_WIN:
+            countBobWin += 1;
+            break;
+        case ACTION_STATUS_DRAW:
+            countDraw += 1;
+            break;
+        default:
+            break;
+        }
+    }
+    if (countAliceWin > countBobWin)
+        return ACTION_STATUS_ALICE_WIN;
+    else if (countAliceWin < countBobWin)
+        return ACTION_STATUS_BOB_WIN;
+    else
+        return ACTION_STATUS_DRAW;
 }
 
 /* void handleActionMiniBattle
@@ -114,11 +173,38 @@ ActionStatus handleActionMiniBattle(int numMonstersForMiniBattle,
                                     int &countBobWin,
                                     int &countDraw)
 {
-     // TODO: Implement handleActionMiniBattle
+    // TODO: Implement handleActionMiniBattle
+    // Task 3 done
+    // i is the index counting from 0,1,2 to the MAX
+    for (int i = 0; i < numMonstersForMiniBattle; i++)
+    {
+        switch (handleActionDuel(aliceMonsterType, aliceMonsterPower, bobMonsterType, bobMonsterPower,
+                                 aliceMiniBattleIndices[i], bobMiniBattleIndices[i], alicePoint, bobPoint))
+        // Use these array to replace i so that they jump between things like 0,3,5
+        {
+        case ACTION_STATUS_ALICE_WIN:
+            countAliceWin += 1;
+            break;
+        case ACTION_STATUS_BOB_WIN:
+            countBobWin += 1;
+            break;
+        case ACTION_STATUS_DRAW:
+            countDraw += 1;
+            break;
+        default:
+            break;
+        }
+    }
+    if (countAliceWin > countBobWin)
+        return ACTION_STATUS_ALICE_WIN;
+    else if (countAliceWin < countBobWin)
+        return ACTION_STATUS_BOB_WIN;
+    else
+        return ACTION_STATUS_DRAW;
 }
 
 /* void handleActionReorder
- * @param numMonsters: The number of monsters 
+ * @param numMonsters: The number of monsters
  * @param monsterType: an array storing the monster types (array content should be reordered after this function)
  * @param monsterPower: an array storing the monster powers  (array content should be reordered after this function)
  * @param reorderIndices: The reorder indices
@@ -131,4 +217,19 @@ void handleActionRecorder(int numMonsters,
                           const int reorderIndices[MAX_NUM_MONSTERS])
 {
     // TODO: Implement handleActionRecorder
+    char original_monsterType[MAX_NUM_MONSTERS];
+    char original_monsterPower[MAX_NUM_MONSTERS];
+    
+    for (int i = 0; i < numMonsters; i++)
+    {
+        // the loop is the copy the original array order
+        original_monsterType[i] = monsterType[i];
+        original_monsterPower[i] = monsterPower[i];
+    }
+    for (int i = 0; i < numMonsters; i++)
+    {
+        monsterType[i] = original_monsterType[reorderIndices[i]];
+        monsterPower[i] = original_monsterPower[reorderIndices[i]];
+    }
+    return;
 }

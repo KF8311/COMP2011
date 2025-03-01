@@ -1,0 +1,47 @@
+== Result of Duel: Alice 19 Bob 0 ==
+Draw 
+Alice point = 1
+Bob point = 1
+== Result of Duel: Alice 0 Bob 19 ==
+Draw 
+Alice point = 2
+Bob point = 2
+== Result of Battle ==
+Bob wins 
+Alice wins 7 time(s)
+Bob wins 11 time(s)
+Draw 2 time(s)
+Alice point = 25
+Bob point = 37
+== Result of Mini-Battle 5 ==
+Mini-Battle team for Alice: W1 W9 F6 F3 W5 
+Mini-Battle team for Bob: W1 F8 W9 I4 I2 
+Alice wins 
+Alice wins 2 time(s)
+Bob wins 1 time(s)
+Draw 2 time(s)
+Alice point = 33
+Bob point = 42
+== Result of Mini-Battle 3 ==
+Mini-Battle team for Alice: F6 W1 W1 
+Mini-Battle team for Bob: W3 W1 W2 
+Bob wins 
+Alice wins 0 time(s)
+Bob wins 1 time(s)
+Draw 2 time(s)
+Alice point = 35
+Bob point = 47
+== Result of Reorder for Alice ==
+Before: F6 F3 W5 I7 F9 F1 I1 W9 I3 I5 W1 F2 I3 W4 I5 I6 F7 F8 W9 W1 
+After: W1 F6 W9 F3 F8 W5 F7 I7 I6 F9 I5 F1 W4 I1 I3 W9 F2 I3 W1 I5 
+== Result of Reorder for Bob ==
+Before: W1 W9 I2 I4 F8 F5 W9 W6 I4 F1 W2 W3 I5 W6 I9 I8 F4 W5 F6 W3 
+After: W1 W9 I2 I4 F8 F5 W9 W6 I4 F1 W2 W3 I5 W6 I9 I8 F4 W5 F6 W3 
+== Result of Battle ==
+Draw 
+Alice wins 9 time(s)
+Bob wins 9 time(s)
+Draw 2 time(s)
+Alice point = 64
+Bob point = 76
+Game finished
