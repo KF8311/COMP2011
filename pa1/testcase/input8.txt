@@ -1,0 +1,14 @@
+Game-mode normal
+1
+Alice
+F
+1
+Bob
+F
+9
+Duel Alice 0 Bob 0
+Battle
+Mini-battle 1 Alice 0 Bob 0
+Reorder Alice 0
+Reorder Bob 0
+!!

@@ -1,0 +1,17 @@
+Game-mode normal
+8
+Alice
+F I F W I F F W
+1 5 9 2 6 4 4 8
+Bob
+F I I I I F F F
+9 1 8 3 7 5 2 1
+Duel Alice 7 Bob 0
+Duel Alice 0 Bob 7
+Duel Alice 4 Bob 4
+Battle
+Mini-battle 3 Alice 0 2 1 Bob 3 1 5
+Reorder Alice 7 6 5 4 3 2 1 0
+Reorder Bob 7 6 5 4 3 2 1 0
+Battle
+!!
