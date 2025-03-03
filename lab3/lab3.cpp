@@ -26,10 +26,10 @@ void displayInGrouping(long balance)
   const int MAX_DIGIT = log10(balance);
   for (current_power = MAX_DIGIT; current_power >= 0; --current_power)
   {
-    current_digit = balance / pow(10, current_power); //divide by the largest so only leftmost digit
-    cout << current_digit; //always print out current digit
-    if (current_power % 3 == 0 && current_power != 0) //you dont print ',' in the last digit
-      cout << ','; //add ',' in the end
+    current_digit = balance / pow(10, current_power);  // divide by the largest so only leftmost digit
+    cout << current_digit;                             // always print out current digit
+    if (current_power % 3 == 0 && current_power != 0)  // you dont print ',' in the last digit
+      cout << ',';                                     // add ',' in the end
     balance -= current_digit * pow(10, current_power); // remove the leftmost digit
   }
   cout << endl;
@@ -118,14 +118,14 @@ void withdraw(long &balance, long amount)
   {
     cout << "Invalid amount. Withdrawal amount must be positive.";
   }
+  else if (amount > balance)
+  {
+    cout << "Insufficient funds.";
+  }
   else if (balance >= amount)
   {
     balance -= amount;
     cout << "Withdrawal successful. New balance: " << balance;
-  }
-  else if (amount > balance)
-  {
-    cout << "Insufficient funds.";
   }
   cout << endl;
   return;
