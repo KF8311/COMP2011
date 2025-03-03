@@ -78,7 +78,7 @@ void displayInGrouping(long balance)
 // and body
 void deposit(long &balance, long amount)
 {
-  if (amount < 0)
+  if (amount <= 0)
   {
     cout << "Invalid amount. Deposit amount must be positive.";
   }
