@@ -24,9 +24,23 @@ const int INDEX_A = 0, INDEX_B = 1, INDEX_C = 2, INDEX_D = 3, INDEX_F = 4;
 // average grades, respectively.
 //
 // Todo 1
+
 void calculateMaxMinAverage(const int scores[], int count, int &max, int &min,
-                            double &average) {
+                            double &average)
+{
   // ** Your TODO: Implement this function. **
+  max = min = scores[0];
+  average = 0;
+  for (int i = 0; i < count; i++)
+  {
+    average += scores[i];
+    if (scores[i] > max)
+      max = scores[i];
+    if (scores[i] < min)
+      min = scores[i];
+  }
+  average /= count;
+  return;
 }
 
 // Function to sort the scores array in descending order using Bubble Sort.
@@ -44,8 +58,19 @@ void calculateMaxMinAverage(const int scores[], int count, int &max, int &min,
 //    ii. If scores[j] < scores[j + 1], swaps the elements.
 //
 // Todo 2
-void sortScores(int scores[], int count) {
+
+void sortScores(int scores[], int count)
+{
   // ** Your TODO: Implement this function. **
+  for (int a = 0; a < count; a++)
+  {
+    for (int b = 0; b < count - 1; b++)
+    {
+      if (scores[b] < scores[b + 1])
+        swap(scores[b], scores[b + 1]);
+    }
+  }
+  return;
 }
 
 // Function to assign letter grades based on numerical scores.
@@ -70,8 +95,24 @@ void sortScores(int scores[], int count) {
 //
 // Todo 3
 void assignLetterGrades(const int CUTOFFS[], const int scores[],
-                        char letterGrades[], int count) {
+                        char letterGrades[], int count)
+{
   // ** Your TODO: Implement this function. **
+  for (int i = 0; i < count; i++)
+  {
+    int score = scores[i];
+    if (score >= CUTOFFS[0])
+      letterGrades[i] = 'A';
+    else if (score >= CUTOFFS[1])
+      letterGrades[i] = 'B';
+    else if (score >= CUTOFFS[2])
+      letterGrades[i] = 'C';
+    else if (score >= CUTOFFS[3])
+      letterGrades[i] = 'D';
+    else
+      letterGrades[i] = 'F';
+  }
+  return;
 }
 
 // Function to create grade distribution graph.
@@ -87,9 +128,35 @@ void assignLetterGrades(const int CUTOFFS[], const int scores[],
 // - Counts the frequency of each letter grade in the array, letterGrades.
 //
 // Todo 4
+// const int INDEX_A = 0, INDEX_B = 1, INDEX_C = 2, INDEX_D = 3, INDEX_F = 4;
 void createGraph(const char letterGrades[], int count,
-                 int gradeDistribution[]) {
+                 int gradeDistribution[])
+{
   // ** Your TODO: Implement this function. **
+  for (int i = 0; i < count; i++)
+  {
+    switch (letterGrades[i])
+    {
+    case 'A':
+      ++gradeDistribution[INDEX_A];
+      break;
+    case 'B':
+      ++gradeDistribution[INDEX_B];
+      break;
+    case 'C':
+      ++gradeDistribution[INDEX_C];
+      break;
+    case 'D':
+      ++gradeDistribution[INDEX_D];
+      break;
+    case 'F':
+      ++gradeDistribution[INDEX_F];
+      break;
+    default:
+      break;
+    }
+  }
+  return;
 }
 
 // Function to print distribution graph.
@@ -105,7 +172,8 @@ void createGraph(const char letterGrades[], int count,
 //      C: *****
 //      D: **
 //      F:
-void printGraph(const int gradeDistribution[]) {
+void printGraph(const int gradeDistribution[])
+{
   // Display the grade distribution graph
   cout << "Grade Distribution:" << endl;
 
@@ -136,10 +204,12 @@ void printGraph(const int gradeDistribution[]) {
 }
 
 // Function to read grades from a file
-void readGrades(const char filename[], int grades[], int &count) {
+void readGrades(const char filename[], int grades[], int &count)
+{
   ifstream infile(filename);
   count = 0;
-  while (infile >> grades[count]) {
+  while (infile >> grades[count])
+  {
     count++;
   }
   infile.close();
@@ -163,21 +233,25 @@ void readGrades(const char filename[], int grades[], int &count) {
 //
 // Todo 5
 void writeLetterGrades(const char filename[], const char letterGrades[],
-                       int count) {
+                       int count)
+{
   // open file for writing, truncating the file if it already exists
   // ios::out: Open file for output operations.
   // ios::trunc: If the file already exists, its contents will be truncated
   // before opening the file.
   ofstream outfile(filename, ios::out | ios::trunc);
-  for (int i = 0; i < count; i++) {
+  for (int i = 0; i < count; i++)
+  {
     // ** Your TODO: Write each letter grade to the output file. **
+    outfile << letterGrades[i] << endl;
   }
   outfile.close();
 }
 
 // Main function
 // Note: Do not modify the main function.
-int main() {
+int main()
+{
   const int CUTOFFS[4] = {85, 75, 60, 40};
 
   int count;
@@ -198,7 +272,8 @@ int main() {
   readGrades(filename, scores, count);
   // Print sorted grades
   cout << "Grades read from the test file:" << endl;
-  for (int i = 0; i < count; i++) {
+  for (int i = 0; i < count; i++)
+  {
     cout << scores[i] << " ";
   }
   cout << endl
@@ -214,7 +289,8 @@ int main() {
   // Assign letter grades
   assignLetterGrades(CUTOFFS, scores, letterGrades, count);
   cout << "Assigned Letter Grades:" << endl;
-  for (int i = 0; i < count; i++) {
+  for (int i = 0; i < count; i++)
+  {
     cout << letterGrades[i] << " ";
   }
   cout << endl
@@ -232,7 +308,8 @@ int main() {
 
   // Print sorted grades in descending order
   cout << "Grades sorted in descending order:" << endl;
-  for (int i = 0; i < count; i++) {
+  for (int i = 0; i < count; i++)
+  {
     cout << scores[i] << " ";
   }
   cout << endl
@@ -247,7 +324,8 @@ int main() {
   // Dump the output file to the console
   ifstream outfile(outputFilename);
   cout << "\nContent of the output file:" << endl;
-  while (outfile >> buffer) {
+  while (outfile >> buffer)
+  {
     cout << buffer << endl;
   }
 
