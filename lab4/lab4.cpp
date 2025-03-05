@@ -1,4 +1,5 @@
 #include <fstream>
+#include <iomanip>
 #include <iostream>
 
 using namespace std;
@@ -273,6 +274,9 @@ int main()
   int max, min;
   double average;
   int gradeDistribution[NUM_GRADES] = {0}; // initialized to zeros
+
+  // Set the precision of the double output to 2 decimal places
+  cout << fixed << setprecision(2);
 
   // Prompt the user to enter the index of the test file
   cout << "Enter the path of the test file to read (e.g. testcase/file_in1.txt): ";
