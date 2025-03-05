@@ -3,7 +3,7 @@ Enter the path of the test file to read (e.g. testcase/file_in1.txt): Grades rea
 
 Max grade: 95
 Min grade: 5
-Average grade: 51.6125
+Average grade: 51.61
 
 Assigned Letter Grades:
 F D C C A D F B F D D F D D B F D D F F C F A F B C D D D C C C D D C D D F F F D A D C A F D D C F C C D D D D D F D F D F F B F F F B A F F C C F D D D C D C 

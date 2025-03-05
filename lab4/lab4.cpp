@@ -35,9 +35,9 @@ void calculateMaxMinAverage(const int scores[], int count, int &max, int &min,
   for (int i = 0; i < count; i++)
   {
     average += scores[i];
-    if (scores[i] > max)
+    if (scores[i] > max) // if find something larger than current max then replace
       max = scores[i];
-    if (scores[i] < min)
+    if (scores[i] < min) // if find something smaller than current min then replace
       min = scores[i];
   }
   average /= count;
@@ -77,6 +77,7 @@ void sortScores(int scores[], int count)
   {
     for (int b = 0; b < count - 1; b++)
     {
+      // Basic bubble sort
       if (scores[b] < scores[b + 1])
         swap(scores[b], scores[b + 1]);
     }
@@ -146,6 +147,7 @@ void createGraph(const char letterGrades[], int count,
   // ** Your TODO: Implement this function. **
   for (int i = 0; i < count; i++)
   {
+    // Counting each grade exist how many times
     switch (letterGrades[i])
     {
     case 'A':
