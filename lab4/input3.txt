@@ -1,2 +1,0 @@
-testcase/file_in3.txt
-testcase/file_out3.txt
