@@ -62,6 +62,16 @@ void calculateMaxMinAverage(const int scores[], int count, int &max, int &min,
 void sortScores(int scores[], int count)
 {
   // ** Your TODO: Implement this function. **
+  // Insertion Sort alternative
+  /*for (int i=1;i<count;i++){
+    int key = scores[i];
+    int j = i-1;
+    while (scores[j] < key && j >= 0){
+      scores[j+1]=scores[j--];
+    }
+    scores[j+1] = key;
+
+  }*/
   for (int a = 0; a < count; a++)
   {
     for (int b = 0; b < count - 1; b++)
