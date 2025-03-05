@@ -1,0 +1,41 @@
+Enter the path of the test file to read (e.g. testcase/file_in1.txt): Grades read from the test file:
+38 39 83 86 83 66 57 80 83 82 25 74 98 69 62 52 68 44 69 89 
+
+Max grade: 98
+Min grade: 25
+Average grade: 67.35
+
+Assigned Letter Grades:
+F F B A B C D B B B F C A C C D C D C A 
+
+Enter the path of the file to write (e.g. testcase/file_out1.txt): Grades sorted in descending order:
+98 89 86 83 83 83 82 80 74 69 69 68 66 62 57 52 44 39 38 25 
+
+Grade Distribution:
+A: ***
+B: *****
+C: ******
+D: ***
+F: ***
+
+Content of the output file:
+F
+F
+B
+A
+B
+C
+D
+B
+B
+B
+F
+C
+A
+C
+C
+D
+C
+D
+C
+A
