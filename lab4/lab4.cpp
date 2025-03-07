@@ -75,7 +75,7 @@ void sortScores(int scores[], int count)
   }*/
   for (int a = 0; a < count; a++)
   {
-    for (int b = 0; b < count - a; b++)
+    for (int b = 0; b < count - a - 1; b++)
     {
       // Basic bubble sort
       if (scores[b] < scores[b + 1])
