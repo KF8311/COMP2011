@@ -24,6 +24,10 @@ void displayInGrouping(long balance)
   int current_power;
   int current_digit;
   const int MAX_DIGIT = log10(balance);
+  if (balance == 0){
+    cout << 0; return;
+  }
+    
   for (current_power = MAX_DIGIT; current_power >= 0; --current_power)
   {
     current_digit = balance / pow(10, current_power);  // divide by the largest so only leftmost digit
