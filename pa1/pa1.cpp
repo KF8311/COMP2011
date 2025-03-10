@@ -55,7 +55,7 @@ ActionStatus handleActionDuel(const char aliceMonsterType[MAX_NUM_MONSTERS],
     {
         alice_power += MONSTER_TYPE_ADVANTAGE;
     }
-    if ((bobMonsterType[bobIndex] == MONSTER_TYPE_FIRE && aliceMonsterType[aliceIndex] == MONSTER_TYPE_ICE) ||
+    else if ((bobMonsterType[bobIndex] == MONSTER_TYPE_FIRE && aliceMonsterType[aliceIndex] == MONSTER_TYPE_ICE) ||
         (bobMonsterType[bobIndex] == MONSTER_TYPE_ICE && aliceMonsterType[aliceIndex] == MONSTER_TYPE_WIND) ||
         (bobMonsterType[bobIndex] == MONSTER_TYPE_WIND && aliceMonsterType[aliceIndex] == MONSTER_TYPE_FIRE))
     {
