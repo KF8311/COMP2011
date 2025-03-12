@@ -3,8 +3,13 @@
 using namespace std;
 
 const int MAX_ADDRESS_LENGTH = 20;
-
-
+/*
+Get-Content testcase/input1.txt | ./lab5 > myOutput1.txt
+Get-Content testcase/input2.txt | ./lab5 > myOutput2.txt
+Get-Content testcase/input3.txt | ./lab5 > myOutput3.txt
+Get-Content testcase/input4.txt | ./lab5 > myOutput4.txt
+Get-Content testcase/input5.txt | ./lab5 > myOutput5.txt
+*/
 
 // This function checks if all characters in the string are valid (0-9 and dot).
 //
@@ -15,12 +20,16 @@ const int MAX_ADDRESS_LENGTH = 20;
 //  - true if all characters starting from the string index are valid (0-9 and dot), false otherwise.
 //
 // TODO 1
-bool validCharacters(const char address[], int index) {
+bool validCharacters(const char address[], int index)
+{
     // ** Your TODO: Implement this function. **
-
+    if (address[index] == '\0')
+        return true;
+    if ((address[index] >= '0' && address[index] <= '9') || (address[index] == '.'))
+        return validCharacters(address, index + 1);
+    else
+        return false;
 }
-
-
 
 // Function to check whether all numbers of the address are valid.
 //
@@ -40,9 +49,34 @@ bool validCharacters(const char address[], int index) {
 // - true if all numbers in the string are valid (0-255), false otherwise.
 //
 // TODO 2
-bool validNumber(const char address[], int index, int result) {
+int CharToInt(char letter)
+{
+    return letter - '0';
+}
+bool validNumber(const char address[], int index, int result)
+{
     // ** Your TODO: Implement this function. **
 
+    if (!(address[index] >= '0' && address[index] <= '9'))
+    {
+        result /= 10;
+        // cout << result << " ";
+        // Messages for debugging to check value only
+        if (result < 0 || result > 255)
+            return false;
+        else if (address[index] == '\0')
+            return true;
+        else
+        {
+            result = 0;
+            return validNumber(address, index + 1, result);
+        }
+    }
+    else
+    {
+        result += CharToInt(address[index]);
+        return validNumber(address, index + 1, 10 * result);
+    }
 }
 
 // Function to check whether the dot usage of the address is valid.
@@ -62,12 +96,24 @@ bool validNumber(const char address[], int index, int result) {
 // - true if the dot usage in the string is valid, false otherwise.
 //
 // TODO 3
-bool validDotUsage(const char address[], int index, int dotCount){
+bool validDotUsage(const char address[], int index, int dotCount)
+{
     // ** Your TODO: Implement this function. **
-
+    if (address[index] == '\0')
+    {
+        if ((dotCount == 3))
+            return true;
+        return false;
+    }
+    else if (address[index] == '.')
+    {
+        if ((index == 0) || (address[index + 1] == '\0') || ((address[index - 1] == '.' || address[index + 1] == '.')))
+            return false;
+        else
+            dotCount++;
+    }
+    return validDotUsage(address, index + 1, dotCount);
 }
-
-
 
 // Function to check whethre a IPv4 address is valid.
 //
@@ -76,11 +122,10 @@ bool validDotUsage(const char address[], int index, int dotCount){
 //
 // Output:
 // - Returns true if the IPv4 address is valid, otherwise returns false.
-bool isValidIPv4(const char address[]) {
-    return validCharacters(address, 0) && validNumber(address, 0,  0) && validDotUsage(address,0,0);
+bool isValidIPv4(const char address[])
+{
+    return validCharacters(address, 0) && validNumber(address, 0, 0) && validDotUsage(address, 0, 0);
 }
-
-
 
 // Function to check if an address matches the given address.
 //
@@ -100,15 +145,28 @@ bool isValidIPv4(const char address[]) {
 // - Returns true if the two addresses match, otherwise returns false.
 //
 // TODO 4
-bool matchAddress(const char storedAddress[], const char address[], int index = 0) {
+bool matchAddress(const char storedAddress[], const char address[], int index = 0)
+{
     // ** Your TODO: Implement this function. **
-
+    if ((storedAddress[index] != '\0' && address[index] == '\0') || (storedAddress[index] == '\0' && address[index] != '\0'))
+    {
+        return false;
+    }
+    else if (storedAddress[index] == '\0' && address[index] == '\0')
+        return true;
+    else
+    {
+        if (storedAddress[index] != address[index])
+            return false;
+        else
+            return matchAddress(storedAddress, address, index + 1);
+    }
 }
-
 
 // Main function.
 // Note: do not modify this function.
-int main() {
+int main()
+{
     int choice;
     char address1[MAX_ADDRESS_LENGTH];
     char address2[MAX_ADDRESS_LENGTH];
@@ -121,7 +179,8 @@ int main() {
     // For case 2 of the following switch statement
     int index_1, index_2;
 
-    while (true) {
+    while (true)
+    {
         cout << "Enter which function to test (0: exit, 1: isValidCharacters, 2: isValidNumber, 3: isValidDotUsage, 4: matchAddress): ";
         cin >> choice;
         cout << endl;
@@ -129,56 +188,81 @@ int main() {
         if (choice == 0)
             break;
 
-        switch (choice) {
-            case 1:
-                if (validCharacters(address1, 0)) {
-                    cout << "The characters of first address are all valid." << endl;
-                } else {
-                    cout << "The first address contains invalid characters." << endl;
+        switch (choice)
+        {
+        case 1:
+            if (validCharacters(address1, 0))
+            {
+                cout << "The characters of first address are all valid." << endl;
+            }
+            else
+            {
+                cout << "The first address contains invalid characters." << endl;
+            }
+            if (validCharacters(address2, 0))
+            {
+                cout << "The characters of second address are all valid." << endl;
+            }
+            else
+            {
+                cout << "The second address contains invalid characters." << endl;
+            }
+            break;
+        case 2:
+            if (validNumber(address1, 0, 0))
+            {
+                cout << "The numbers of first address are all valid." << endl;
+            }
+            else
+            {
+                cout << "The first address contains invalid numbers." << endl;
+            }
+            if (validNumber(address2, 0, 0))
+            {
+                cout << "The numbers of second address are all valid." << endl;
+            }
+            else
+            {
+                cout << "The second address contains invalid numbers." << endl;
+            }
+            break;
+        case 3:
+            if (validDotUsage(address1, 0, 0))
+            {
+                cout << "The dot usage of first address is valid." << endl;
+            }
+            else
+            {
+                cout << "The dot usage of first address is invalid." << endl;
+            }
+            if (validDotUsage(address2, 0, 0))
+            {
+                cout << "The dot usage of second address is valid." << endl;
+            }
+            else
+            {
+                cout << "The dot usage of second address is invalid." << endl;
+            }
+            break;
+        case 4:
+            if (isValidIPv4(address1) && isValidIPv4(address2))
+            {
+                if (matchAddress(address1, address2))
+                {
+                    cout << "The two addresses match." << endl;
                 }
-                if (validCharacters(address2, 0)) {
-                    cout << "The characters of second address are all valid." << endl;
-                } else {
-                    cout << "The second address contains invalid characters." << endl;
+                else
+                {
+                    cout << "The two addresses do not match." << endl;
                 }
-                break;
-            case 2:
-                if (validNumber(address1, 0, 0)) {
-                    cout << "The numbers of first address are all valid." << endl;
-                } else {
-                    cout << "The first address contains invalid numbers." << endl;
-                }
-                if (validNumber(address2, 0, 0)) {
-                    cout << "The numbers of second address are all valid." << endl;
-                } else {
-                    cout << "The second address contains invalid numbers." << endl;
-                }
-                break;
-            case 3:
-                if (validDotUsage(address1, 0, 0)) {
-                    cout << "The dot usage of first address is valid." << endl;
-                } else {
-                    cout << "The dot usage of first address is invalid." << endl;
-                }
-                if (validDotUsage(address2, 0, 0)) {
-                    cout << "The dot usage of second address is valid." << endl;
-                } else {
-                    cout << "The dot usage of second address is invalid." << endl;
-                }
-                break;
-            case 4:
-                if (isValidIPv4(address1) && isValidIPv4(address2)) {
-                    if (matchAddress(address1, address2)) {
-                        cout << "The two addresses match." << endl;
-                    } else {
-                        cout << "The two addresses do not match." << endl;
-                    }
-                } else {
-                    cout << "There are invalid addresses." << endl;
-                }
-                break;
-            default:
-                cout << "Invalid function selected." << endl;
+            }
+            else
+            {
+                cout << "There are invalid addresses." << endl;
+            }
+            break;
+        default:
+            cout << "Invalid function selected." << endl;
         }
         cout << endl;
     }
