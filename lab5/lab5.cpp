@@ -56,26 +56,26 @@ int CharToInt(char letter)
 bool validNumber(const char address[], int index, int result)
 {
     // ** Your TODO: Implement this function. **
-
-    if (!(address[index] >= '0' && address[index] <= '9'))
+    if (address[index] == '\0')
+        return (result >= 0 && result <= 255);
+    else if ((address[index] >= '0' && address[index] <= '9'))
+    {
+        result += CharToInt(address[index]);
+        return validNumber(address, index + 1, 10 * result);
+    }
+    else
     {
         result /= 10;
+
         // cout << result << " ";
         // Messages for debugging to check value only
         if (result < 0 || result > 255)
             return false;
-        else if (address[index] == '\0')
-            return true;
         else
         {
             result = 0;
             return validNumber(address, index + 1, result);
         }
-    }
-    else
-    {
-        result += CharToInt(address[index]);
-        return validNumber(address, index + 1, 10 * result);
     }
 }
 
@@ -101,9 +101,10 @@ bool validDotUsage(const char address[], int index, int dotCount)
     // ** Your TODO: Implement this function. **
     if (address[index] == '\0')
     {
-        if ((dotCount == 3))
+        if (dotCount == 3)
             return true;
-        return false;
+        else
+            return false;
     }
     else if (address[index] == '.')
     {
