@@ -60,13 +60,12 @@ bool validNumber(const char address[], int index, int result)
         return (result >= 0 && result <= 255);
     else if ((address[index] >= '0' && address[index] <= '9'))
     {
-        result += CharToInt(address[index]);
-        return validNumber(address, index + 1, 10 * result);
+        // ensure next digit is 0-9 and push all digits previous to left
+        result = result * 10 + CharToInt(address[index]);
+        return validNumber(address, index + 1, result);
     }
     else
     {
-        result /= 10;
-
         // cout << result << " ";
         // Messages for debugging to check value only
         if (result < 0 || result > 255)
