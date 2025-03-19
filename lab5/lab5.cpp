@@ -100,14 +100,14 @@ bool validDotUsage(const char address[], int index, int dotCount)
     // ** Your TODO: Implement this function. **
     if (address[index] == '\0')
     {
-        if (dotCount == 3)
+        if ((dotCount == 3) && (address[index - 1] != '.'))
             return true;
         else
             return false;
     }
     else if (address[index] == '.')
     {
-        if ((index == 0) || (address[index + 1] == '\0') || ((address[index - 1] == '.' || address[index + 1] == '.')))
+        if ((index == 0) || (address[index + 1] == '\0') || address[index + 1] == '.')
             return false;
         else
             dotCount++;
