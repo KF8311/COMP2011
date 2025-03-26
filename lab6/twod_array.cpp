@@ -5,6 +5,16 @@
 #include <iostream>
 #include <limits>
 
+/*
+Get-Content testcase/input01.txt | ./main > myOutput1.txt
+Get-Content testcase/input02.txt | ./main > myOutput2.txt
+Get-Content testcase/input03.txt | ./main > myOutput3.txt
+Get-Content testcase/input04.txt | ./main > myOutput4.txt
+Get-Content testcase/input05.txt | ./main > myOutput5.txt
+Get-Content testcase/input06.txt | ./main > myOutput6.txt
+Get-Content testcase/input07.txt | ./main > myOutput7.txt
+*/
+
 /**
  * @brief Read a 2D array from an input.
  *
@@ -15,7 +25,7 @@
  * @param dest_width Reference to a `double` to store the 2D array width.
  */
 void read_2d_array(std::ostream &os, std::istream &is,
-                     double dest[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int &dest_height, int &dest_width)
+                   double dest[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int &dest_height, int &dest_width)
 {
   dest_height = TWOD_ARRAY_INVALID_SIZE;
   do
@@ -94,9 +104,18 @@ void read_2d_array(std::ostream &os, std::istream &is,
  * @param src_width Width of the 2D array to be copied from.
  */
 void copy_2d_array(double dest[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int &dest_height, int &dest_width,
-                     double const src[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int src_height, int src_width)
+                   double const src[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int src_height, int src_width)
 {
   // TODO: Task 1
+  dest_height = src_height;
+  dest_width = src_width;
+  for (int y = 0; y < src_height; y++)
+  {
+    for (int x = 0; x < src_width; x++)
+    {
+      dest[y][x] = src[y][x];
+    }
+  }
 }
 
 /**
@@ -153,6 +172,12 @@ void print_2d_array(double const src[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], 
 int broadcast_size(int left, int right)
 {
   // TODO: Task 2
+  if (left == right)
+    return left;
+  else if (left == 1)
+    return right;
+  else if (right == 1)
+    return left;
   return TWOD_ARRAY_INVALID_SIZE;
 }
 
@@ -181,11 +206,22 @@ int broadcast_size(int left, int right)
  * @return false If the two 2D arrays cannot be broadcasted.
  */
 bool broadcast_2d_size(int &dest_height, int &dest_width,
-                         int src_left_height, int src_left_width,
-                         int src_right_height, int src_right_width)
+                       int src_left_height, int src_left_width,
+                       int src_right_height, int src_right_width)
 {
   // TODO: Task 3
-  return false;
+  if ((broadcast_size(src_left_height, src_right_height) != TWOD_ARRAY_INVALID_SIZE) && (broadcast_size(src_left_width, src_right_width) != TWOD_ARRAY_INVALID_SIZE))
+  {
+    dest_height = broadcast_size(src_left_height, src_right_height);
+    dest_width = broadcast_size(src_left_width, src_right_width);
+    return true;
+  }
+  else
+  {
+    dest_height = TWOD_ARRAY_INVALID_SIZE;
+    dest_width = TWOD_ARRAY_INVALID_SIZE;
+    return false;
+  }
 }
 
 /**
@@ -249,10 +285,62 @@ bool broadcast_2d_size(int &dest_height, int &dest_width,
  * @return false If the two 2D arrays cannot be broadcasted.
  */
 bool op_2d_array(twod_array_ops op,
-                   double dest[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int &dest_height, int &dest_width,
-                   double const src_left[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int src_left_height, int src_left_width,
-                   double const src_right[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int src_right_height, int src_right_width)
+                 double dest[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int &dest_height, int &dest_width,
+                 double const src_left[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int src_left_height, int src_left_width,
+                 double const src_right[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int src_right_height, int src_right_width)
 {
   // TODO: Task 4
-  return false;
+  if (broadcast_2d_size(dest_height, dest_width,
+                         src_left_height, src_left_width,
+                         src_right_height, src_right_width)==false)
+  {
+    return false;
+  }
+  switch (op)
+  {
+  case ADD:
+    for (int y = 0; y < dest_height; y++)
+    {
+      for (int x = 0; x < dest_width; x++)
+      {
+        dest[y][x] = src_left[y % src_left_height][x % src_left_width] + src_right[y % src_right_height][x % src_right_width];
+      }
+    }
+    break;
+  case SUBTRACT:
+    for (int y = 0; y < dest_height; y++)
+    {
+      for (int x = 0; x < dest_width; x++)
+      {
+        dest[y][x] = src_left[y % src_left_height][x % src_left_width] - src_right[y % src_right_height][x % src_right_width];
+      }
+    }
+    break;
+  case MULTIPLY:
+    for (int y = 0; y < dest_height; y++)
+    {
+      for (int x = 0; x < dest_width; x++)
+      {
+        dest[y][x] = src_left[y % src_left_height][x % src_left_width] * src_right[y % src_right_height][x % src_right_width];
+      }
+    }
+    break;
+  case DIVIDE:
+    for (int y = 0; y < dest_height; y++)
+    {
+      for (int x = 0; x < dest_width; x++)
+      {
+        if (src_right[y % src_right_height][x % src_right_width] == 0)
+        {
+          dest[y][x] = 0;
+        }
+        else
+        {
+          dest[y][x] = src_left[y % src_left_height][x % src_left_width] / src_right[y % src_right_height][x % src_right_width];
+        }
+      }
+    }
+    break;
+  }
+  return true;
 }
