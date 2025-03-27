@@ -19,4 +19,7 @@ int main()
          << "  *xppp = "      << *xppp   << "  **xppp = " << **xppp
          << "  ***xppp = "    << ***xppp << endl; 
     return 0;
+    /*
+    
+    */
 }

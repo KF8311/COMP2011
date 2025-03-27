@@ -16,6 +16,11 @@ int main()
          << endl;
     cout << sizeof(pd) << '\t' << sizeof(*pd) << '\t' << sizeof(&pd) 
          << endl;
+         /*
+         32 bit 4, 64 bit 8
+         8,8,8,8
+         1,2,4,8
+         8,8,8,8*/
 
     return 0;
 }

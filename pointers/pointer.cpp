@@ -12,10 +12,10 @@ int main()
     *p1 = *p2;          // now *p1 = *p2 = x1 = x2 = 1020, but p1 != p2
     p1 = p2;            // now p1 and p2 both point to x2
     
-    cout << "x1 = " << x1 << '\t' << "&x1 = " << &x1 << endl;
-    cout << "x2 = " << x2 << '\t' << "&x2 = " << &x2 << endl;
-    cout << "p1 = " << p1 << '\t' << "*p1 = " << *p1 << endl;
-    cout << "p2 = " << p2 << '\t' << "*p2 = " << *p2 << endl;
+    cout << "x1 = " << x1 << '\t' << "&x1 = " << &x1 << endl; //1020, x0...
+    cout << "x2 = " << x2 << '\t' << "&x2 = " << &x2 << endl; //1020, x0... not same
+    cout << "p1 = " << p1 << '\t' << "*p1 = " << *p1 << endl; //1020, x0...
+    cout << "p2 = " << p2 << '\t' << "*p2 = " << *p2 << endl; //1020, x0... same
 
     return 0;
 }
