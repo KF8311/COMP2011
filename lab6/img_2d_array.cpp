@@ -1,19 +1,8 @@
-#include "twod_array.hpp"
-
-#include <cinttypes>
+#include "img_2d_array.h"
 #include <cstddef>
 #include <iostream>
-#include <limits>
 
-/*
-Get-Content testcase/input01.txt | ./main > myOutput1.txt
-Get-Content testcase/input02.txt | ./main > myOutput2.txt
-Get-Content testcase/input03.txt | ./main > myOutput3.txt
-Get-Content testcase/input04.txt | ./main > myOutput4.txt
-Get-Content testcase/input05.txt | ./main > myOutput5.txt
-Get-Content testcase/input06.txt | ./main > myOutput6.txt
-Get-Content testcase/input07.txt | ./main > myOutput7.txt
-*/
+using namespace std;
 
 /**
  * @brief Read a 2D array from an input.
@@ -24,54 +13,54 @@ Get-Content testcase/input07.txt | ./main > myOutput7.txt
  * @param dest_height Reference to a `double` to store the 2D array height.
  * @param dest_width Reference to a `double` to store the 2D array width.
  */
-void read_2d_array(std::ostream &os, std::istream &is,
-                   double dest[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int &dest_height, int &dest_width)
+void read_2d_array(double dest[MAX_2D_ARRAY_CAPACITY][MAX_2D_ARRAY_CAPACITY], int &dest_height, int &dest_width)
 {
-  dest_height = TWOD_ARRAY_INVALID_SIZE;
+  dest_height = INVALID_2D_ARRAY_SIZE;
   do
   {
-    os << "2D array height: ";
-    is >> dest_height;
-    if (TWOD_ARRAY_INVALID_SIZE == dest_height || dest_height > TWOD_ARRAY_CAPACITY)
+    cout << "2D array height: ";
+    cin >> dest_height;
+    if (INVALID_2D_ARRAY_SIZE == dest_height || dest_height > MAX_2D_ARRAY_CAPACITY)
     {
-      is.clear();
-      is.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-      os << "Invalid input!\n";
+      cin.clear();
+      cin.ignore(10000, '\n');
+      cout << "Invalid input!\n";
       continue;
     }
     break;
   } while (true);
 
-  dest_width = TWOD_ARRAY_INVALID_SIZE;
+  dest_width = INVALID_2D_ARRAY_SIZE;
   do
   {
-    os << "2D array width: ";
-    is >> dest_width;
-    if (TWOD_ARRAY_INVALID_SIZE == dest_width || dest_width > TWOD_ARRAY_CAPACITY)
+    cout << "2D array width: ";
+    cin >> dest_width;
+    if (INVALID_2D_ARRAY_SIZE == dest_width || dest_width > MAX_2D_ARRAY_CAPACITY)
     {
-      is.clear();
-      is.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-      os << "Invalid input!\n";
+      cin.clear();
+      cin.ignore(10000, '\n');
+      cout << "Invalid input!\n";
       continue;
     }
     break;
   } while (true);
 
-  int data_size{dest_height * dest_width};
-  bool success{};
+  int data_size = dest_height * dest_width;
+  bool success = 0;
   do
   {
-    os << "2D array data (" << data_size << " numbers expected):\n";
+    cout << "2D array data (" << data_size << " numbers expected):\n";
     success = true;
-    for (int idx{}; idx < data_size; ++idx)
+    for (int idx = 0; idx < data_size; ++idx)
     {
-      std::imaxdiv_t coords{std::imaxdiv(idx, dest_width)};
-      is >> dest[coords.quot][coords.rem];
-      if (!is)
+      int quot = idx / dest_width;
+      int rem = idx % dest_width;
+      cin >> dest[quot][rem];
+      if (!cin)
       {
-        is.clear();
-        is.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-        os << "Invalid input!\n";
+        cin.clear();
+        cin.ignore(10000, '\n');
+        cout << "Invalid input!\n";
         success = false;
         break;
       }
@@ -103,8 +92,8 @@ void read_2d_array(std::ostream &os, std::istream &is,
  * @param src_height Height of the 2D array to be copied from.
  * @param src_width Width of the 2D array to be copied from.
  */
-void copy_2d_array(double dest[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int &dest_height, int &dest_width,
-                   double const src[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int src_height, int src_width)
+void copy_2d_array(double dest[MAX_2D_ARRAY_CAPACITY][MAX_2D_ARRAY_CAPACITY], int &dest_height, int &dest_width,
+                   const double src[MAX_2D_ARRAY_CAPACITY][MAX_2D_ARRAY_CAPACITY], int src_height, int src_width)
 {
   // TODO: Task 1
   dest_height = src_height;
@@ -119,34 +108,34 @@ void copy_2d_array(double dest[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int &d
 }
 
 /**
- * @brief Print a 2D array to `std::cout`.
+ * @brief Print a 2D array to `cout`.
  *
  * @param src 2D array to be printed.
  * @param src_height Height of the 2D array to be printed.
  * @param src_width Width of the 2D array to be printed.
  */
-void print_2d_array(double const src[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int src_height, int src_width)
+void print_2d_array(const double src[MAX_2D_ARRAY_CAPACITY][MAX_2D_ARRAY_CAPACITY], int src_height, int src_width)
 {
   // Do NOT change the code below!
-  if (src_height == TWOD_ARRAY_INVALID_SIZE || src_width == TWOD_ARRAY_INVALID_SIZE)
+  if (src_height == INVALID_2D_ARRAY_SIZE || src_width == INVALID_2D_ARRAY_SIZE)
   {
-    std::cout << "Invalid array!\n";
+    cout << "Invalid array!\n";
     return;
   }
 
-  std::cout << '[';
-  for (int yy{}; yy < src_height; ++yy)
+  cout << '[';
+  for (int yy = 0; yy < src_height; ++yy)
   {
-    std::cout << (yy > 0 ? " [" : "[");
-    for (int xx{}; xx < src_width; ++xx)
+    cout << (yy > 0 ? " [" : "[");
+    for (int xx = 0; xx < src_width; ++xx)
     {
       if (xx > 0)
-        std::cout << ' ';
-      std::cout << src[yy][xx];
+        cout << ' ';
+      cout << src[yy][xx];
     }
-    std::cout << (yy + 1 < src_height ? "]\n" : "]");
+    cout << (yy + 1 < src_height ? "]\n" : "]");
   }
-  std::cout << "]\n";
+  cout << "]\n";
 }
 
 /**
@@ -160,14 +149,14 @@ void print_2d_array(double const src[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], 
  * first check if the two sizes are the same. If so, that is the broadcasted size.
  * Otherwise, check if one of the sizes is 1. If so, the other size is the broadcasted size.
  * (What if both sizes are 1?)
- * Otherwise, these two sizes cannot be broadcasted. Return `TWOD_ARRAY_INVALID_SIZE`.
+ * Otherwise, these two sizes cannot be broadcasted. Return `INVALID_2D_ARRAY_SIZE`.
  * (Another thing to consider: What if one of the sizes is 0? Or both are 0?)
  *
  * @param left Size in a dimension of the left 2D array.
  * @param right Size in the same dimension of the right 2D array.
  * @return int Broadcasted size for the two 2D arrays in that dimension.
  *
- * If they cannot be broadcasted, `TWOD_ARRAY_INVALID_SIZE` is returned.
+ * If they cannot be broadcasted, `INVALID_2D_ARRAY_SIZE` is returned.
  */
 int broadcast_size(int left, int right)
 {
@@ -178,7 +167,7 @@ int broadcast_size(int left, int right)
     return right;
   else if (right == 1)
     return left;
-  return TWOD_ARRAY_INVALID_SIZE;
+  return INVALID_2D_ARRAY_SIZE;
 }
 
 /**
@@ -190,7 +179,7 @@ int broadcast_size(int left, int right)
  *
  * For two 2D array to be broadcastable, all of their dimensions, i.e. height and width, are broadcastable.
  * If the two 2D arrays are broadcastable, write the broadcasted 2D array size to `dest_height` and `dest_width`.
- * Otherwise, write `TWOD_ARRAY_INVALID_SIZE` to both `dest_height` and `dest_width`.
+ * Otherwise, write `INVALID_2D_ARRAY_SIZE` to both `dest_height` and `dest_width`.
  *
  * Remember to also return a `bool` representing if the two 2D arrays are broadcastable.
  *
@@ -210,7 +199,7 @@ bool broadcast_2d_size(int &dest_height, int &dest_width,
                        int src_right_height, int src_right_width)
 {
   // TODO: Task 3
-  if ((broadcast_size(src_left_height, src_right_height) != TWOD_ARRAY_INVALID_SIZE) && (broadcast_size(src_left_width, src_right_width) != TWOD_ARRAY_INVALID_SIZE))
+  if ((broadcast_size(src_left_height, src_right_height) != INVALID_2D_ARRAY_SIZE) && (broadcast_size(src_left_width, src_right_width) != INVALID_2D_ARRAY_SIZE))
   {
     dest_height = broadcast_size(src_left_height, src_right_height);
     dest_width = broadcast_size(src_left_width, src_right_width);
@@ -218,8 +207,8 @@ bool broadcast_2d_size(int &dest_height, int &dest_width,
   }
   else
   {
-    dest_height = TWOD_ARRAY_INVALID_SIZE;
-    dest_width = TWOD_ARRAY_INVALID_SIZE;
+    dest_height = INVALID_2D_ARRAY_SIZE;
+    dest_width = INVALID_2D_ARRAY_SIZE;
     return false;
   }
 }
@@ -240,7 +229,7 @@ bool broadcast_2d_size(int &dest_height, int &dest_width,
  * You do not need to set values of `dest` that are outside the specified height and width.
  *
  * To implement this function, check if the two 2D arrays can be broadcasted.
- * If not, write `TWOD_ARRAY_INVALID_SIZE` to both `dest_height` and `dest_width`,
+ * If not, write `INVALID_2D_ARRAY_SIZE` to both `dest_height` and `dest_width`,
  * and return `false`. You are recommended to use `broadcast_2d_size`.
  *
  * Otherwise, perform the arithmetic operation specified by `op` element-wise,
@@ -284,15 +273,15 @@ bool broadcast_2d_size(int &dest_height, int &dest_width,
  * @return true If the two 2D arrays can be broadcasted and the arithmetic operation succeeded.
  * @return false If the two 2D arrays cannot be broadcasted.
  */
-bool op_2d_array(twod_array_ops op,
-                 double dest[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int &dest_height, int &dest_width,
-                 double const src_left[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int src_left_height, int src_left_width,
-                 double const src_right[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int src_right_height, int src_right_width)
+bool oper_2d_array(ops_2d_array op,
+                   double dest[MAX_2D_ARRAY_CAPACITY][MAX_2D_ARRAY_CAPACITY], int &dest_height, int &dest_width,
+                   const double src_left[MAX_2D_ARRAY_CAPACITY][MAX_2D_ARRAY_CAPACITY], int src_left_height, int src_left_width,
+                   const double src_right[MAX_2D_ARRAY_CAPACITY][MAX_2D_ARRAY_CAPACITY], int src_right_height, int src_right_width)
 {
   // TODO: Task 4
   if (broadcast_2d_size(dest_height, dest_width,
-                         src_left_height, src_left_width,
-                         src_right_height, src_right_width)==false)
+                        src_left_height, src_left_width,
+                        src_right_height, src_right_width) == false)
   {
     return false;
   }

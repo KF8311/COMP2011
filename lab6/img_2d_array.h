@@ -1,24 +1,23 @@
-#ifndef TWOD_ARRAY_HPP
-#define TWOD_ARRAY_HPP
+#ifndef img_2d_array_H
+#define img_2d_array_H
 
 #include <cstddef>
-#include <iostream>
 
 /**
  * @brief 2D array capacity, i.e. max size, in each dimension.
  *
  * @note If this number is too large, we may run out of stack memory.
  */
-int const TWOD_ARRAY_CAPACITY{64};
+const int MAX_2D_ARRAY_CAPACITY = 64;
 /**
  * @brief Number to represent invalid size for a 2D array.
  */
-int const TWOD_ARRAY_INVALID_SIZE{static_cast<int>(-1)};
+const int INVALID_2D_ARRAY_SIZE = -1;
 
 /**
  * @brief 2D array operations.
  */
-enum twod_array_ops
+enum ops_2d_array
 {
   /**
    * @brief Addition (+).
@@ -47,8 +46,7 @@ enum twod_array_ops
  * @param dest_height Reference to a variable to store the 2D array height.
  * @param dest_width Reference to a variable to store the 2D array width.
  */
-void read_2d_array(std::ostream &os, std::istream &is,
-                     double dest[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int &dest_height, int &dest_width);
+void read_2d_array(double dest[MAX_2D_ARRAY_CAPACITY][MAX_2D_ARRAY_CAPACITY], int &dest_height, int &dest_width);
 
 /**
  * @brief Copy a 2D array from another 2D array.
@@ -74,8 +72,8 @@ void read_2d_array(std::ostream &os, std::istream &is,
  * @param src_height Height of the 2D array to be copied from.
  * @param src_width Width of the 2D array to be copied from.
  */
-void copy_2d_array(double dest[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int &dest_height, int &dest_width,
-                     double const src[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int src_height, int src_width);
+void copy_2d_array(double dest[MAX_2D_ARRAY_CAPACITY][MAX_2D_ARRAY_CAPACITY], int &dest_height, int &dest_width,
+                   const double src[MAX_2D_ARRAY_CAPACITY][MAX_2D_ARRAY_CAPACITY], int src_height, int src_width);
 
 /**
  * @brief Print a 2D array to `std::cout`.
@@ -99,7 +97,7 @@ void copy_2d_array(double dest[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int &d
  * @param src_height Height of the 2D array to be printed.
  * @param src_width Width of the 2D array to be printed.
  */
-void print_2d_array(double const src[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int src_height, int src_width);
+void print_2d_array(const double src[MAX_2D_ARRAY_CAPACITY][MAX_2D_ARRAY_CAPACITY], int src_height, int src_width);
 
 /**
  * @brief Broadcast two sizes from two 2D arrays in the same dimension.
@@ -112,14 +110,14 @@ void print_2d_array(double const src[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], 
  * first check if the two sizes are the same. If so, that is the broadcasted size.
  * Otherwise, check if one of the sizes is 1. If so, the other size is the broadcasted size.
  * (What if both sizes are 1?)
- * Otherwise, these two sizes cannot be broadcasted. Return `TWOD_ARRAY_INVALID_SIZE`.
+ * Otherwise, these two sizes cannot be broadcasted. Return `INVALID_2D_ARRAY_SIZE`.
  * (Another thing to consider: What if one of the sizes is 0? Or both are 0?)
  *
  * @param left Size in a dimension of the left 2D array.
  * @param right Size in the same dimension of the right 2D array.
  * @return int Broadcasted size for the two 2D arrays in that dimension.
  *
- * If they cannot be broadcasted, `TWOD_ARRAY_INVALID_SIZE` is returned.
+ * If they cannot be broadcasted, `INVALID_2D_ARRAY_SIZE` is returned.
  */
 int broadcast_size(int left, int right);
 
@@ -132,7 +130,7 @@ int broadcast_size(int left, int right);
  *
  * For two 2D array to be broadcastable, all of their dimensions, i.e. height and width, are broadcastable.
  * If the two 2D arrays are broadcastable, write the broadcasted 2D array size to `dest_height` and `dest_width`.
- * Otherwise, write `TWOD_ARRAY_INVALID_SIZE` to both `dest_height` and `dest_width`.
+ * Otherwise, write `INVALID_2D_ARRAY_SIZE` to both `dest_height` and `dest_width`.
  *
  * Remember to also return a `bool` representing if the two 2D arrays are broadcastable.
  *
@@ -148,8 +146,8 @@ int broadcast_size(int left, int right);
  * @return false If the two 2D arrays cannot be broadcasted.
  */
 bool broadcast_2d_size(int &dest_height, int &dest_width,
-                         int src_left_height, int src_left_width,
-                         int src_right_height, int src_right_width);
+                       int src_left_height, int src_left_width,
+                       int src_right_height, int src_right_width);
 
 /**
  * @brief Perform an arithmetic operation on two 2D arrays element-wise. The two 2D arrays are broadcasted if possible.
@@ -167,7 +165,7 @@ bool broadcast_2d_size(int &dest_height, int &dest_width,
  * You do not need to set values of `dest` that are outside the specified height and width.
  *
  * To implement this function, check if the two 2D arrays can be broadcasted.
- * If not, write `TWOD_ARRAY_INVALID_SIZE` to both `dest_height` and `dest_width`,
+ * If not, write `INVALID_2D_ARRAY_SIZE` to both `dest_height` and `dest_width`,
  * and return `false`. You are recommended to use `broadcast_2d_size`.
  *
  * Otherwise, perform the arithmetic operation specified by `op` element-wise,
@@ -211,9 +209,9 @@ bool broadcast_2d_size(int &dest_height, int &dest_width,
  * @return true If the two 2D arrays can be broadcasted and the arithmetic operation succeeded.
  * @return false If the two 2D arrays cannot be broadcasted.
  */
-bool op_2d_array(twod_array_ops op,
-                   double dest[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int &dest_height, int &dest_width,
-                   double const src_left[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int src_left_height, int src_left_width,
-                   double const src_right[TWOD_ARRAY_CAPACITY][TWOD_ARRAY_CAPACITY], int src_right_height, int src_right_width);
+bool oper_2d_array(ops_2d_array op,
+                   double dest[MAX_2D_ARRAY_CAPACITY][MAX_2D_ARRAY_CAPACITY], int &dest_height, int &dest_width,
+                   const double src_left[MAX_2D_ARRAY_CAPACITY][MAX_2D_ARRAY_CAPACITY], int src_left_height, int src_left_width,
+                   const double src_right[MAX_2D_ARRAY_CAPACITY][MAX_2D_ARRAY_CAPACITY], int src_right_height, int src_right_width);
 
-#endif // TWOD_ARRAY_HPP
+#endif // img_2d_array_H
