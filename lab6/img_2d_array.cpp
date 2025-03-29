@@ -3,7 +3,16 @@
 #include <iostream>
 
 using namespace std;
-
+/*
+Get-Content testcase/input01.txt | ./main > myOutput1.txt
+Get-Content testcase/input02.txt | ./main > myOutput2.txt
+Get-Content testcase/input03.txt | ./main > myOutput3.txt
+Get-Content testcase/input04.txt | ./main > myOutput4.txt
+Get-Content testcase/input05.txt | ./main > myOutput5.txt
+Get-Content testcase/input06.txt | ./main > myOutput6.txt
+Get-Content testcase/input07.txt | ./main > myOutput7.txt
+Get-Content testcase/input08.txt | ./main > myOutput8.txt
+*/
 /**
  * @brief Read a 2D array from an input.
  *
