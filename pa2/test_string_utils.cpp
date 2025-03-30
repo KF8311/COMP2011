@@ -5,9 +5,9 @@
 
 #include "string_utils.cpp"
 
+using std::abs;
 using std::cin;
 using std::cout;
-using std::abs;
 using std::endl;
 
 bool close_to(const double x, const double y)
@@ -165,10 +165,32 @@ int main()
   // index_of
   test_index_of("PA2 is very interesting", "very", 7);
   test_index_of("COMP 2011", ".", -1);
+  test_index_of("aaaaaappap", "app", 5);
+  test_index_of("This is the pattern 1 and pattern 2", "pattern", 12);
+  test_index_of("hello world", "world", 6);
+  test_index_of("abcabcabc", "abc", 0);
+  test_index_of("abcdef", "gh", -1);
+  test_index_of("abababab", "abab", 0);
+  test_index_of("xyxyxyxyxy", "xy", 0);
+  test_index_of("mississippi", "iss", 1);
+  test_index_of("123456789", "456", 3);
+  test_index_of("racecar", "car", 4);
 
   // last_index_of
   test_last_index_of("PA2 is very very interesting", "very", 12);
   test_last_index_of("Arrrrrrrrrrrrrrrrrrrrr!!!!!!!!!!", "You can't find the index haha", -1);
+  test_last_index_of("app app app apppppppp", "app", 12);
+  test_last_index_of("Arrrrrrrrrrrrrrrrrrrrr!!!!!!!!!!", "r", 21);
+  test_last_index_of("jojojojojojojjoojojojo", "jojo", 18);
+  test_last_index_of("This is the pattern 1 and pattern 2", "pattern", 26);
+  test_last_index_of("hello world", "world", 6);
+  test_last_index_of("abcabcabc", "abc", 6);
+  test_last_index_of("abcdef", "gh", -1);
+  test_last_index_of("abababab", "abab", 4);
+  test_last_index_of("xyxyxyxyxy", "xy", 8);
+  test_last_index_of("mississippi", "iss", 4);
+  test_last_index_of("123456789", "456", 3);
+  test_last_index_of("racecar", "car", 4);
 
   // // is_digit (provided)
   // for (int i = 0; i < 10; i++)
@@ -185,10 +207,32 @@ int main()
   // is_number
   test_is_number("3.14", true);
   test_is_number(".3", false);
+  // test_is_number("042", false);
+  // test_is_number("42.000", true);
+  // test_is_number("42.0", true);
+  // test_is_number("42.", false);
+  // test_is_number("42", true);
+  // test_is_number("0", true);
 
   // parse_number
+  // test_parse_number("3", 3);
   test_parse_number("3.14", 3.14);
   test_parse_number("3.0", 3);
+  test_parse_number("1234.5678", 1234.5678);
+  test_parse_number("0", 0);
+  test_parse_number("0.4500", 0.4500);
+  test_parse_number("0.46678", 0.46678);
+  // test_parse_number("", 0.46678);
+  test_parse_number("0.46678", 0.46678);
+  test_parse_number("123.45", 123.45);
+  test_parse_number("0.0", 0.0);
+  test_parse_number("100.01", 100.01);
+  test_parse_number("42", 42.0);
+  test_parse_number("0", 0.0);
+  test_parse_number("0.999", 0.999);
+  test_parse_number("3.14159", 3.14159);
+  test_parse_number("5000.25", 5000.25);
+  test_parse_number("10.0001", 10.0001);
 
   // trim
   test_trim("  PA2 is very interesting  ", "PA2 is very interesting");
