@@ -60,23 +60,27 @@ int main()
   test_evaluate("1 + 2 * 3 ^ 4 - sqrt abs -49 + e", 158.72);
   test_evaluate("42.3 * 4 / 6! + sqrt e * -pi ^ 3 + 2.83", -48.06);
   test_evaluate("10! / 4 * 3 ^ 2 + sqrt 81 - abs -5", 8164804);
-  test_evaluate("3 + 5 * 2 - 8 / 4", 11); // Mixed precedence
-  test_evaluate("10 - 2 ^ 3 + 4 * 2", 10); // Power and multiplication
-  test_evaluate("2 ^ 3 ^ 2", 512); // Right associative power
+  test_evaluate("3 + 5 * 2 - 8 / 4", 11);     // Mixed precedence
+  test_evaluate("10 - 2 ^ 3 + 4 * 2", 10);    // Power and multiplication
+  test_evaluate("2 ^ 3 ^ 2", 512);            // Right associative power
   test_evaluate("5! + 3 * 2 - sqrt 16", 122); // Factorial and square root
-  test_evaluate("10! / 5! + 2 ^ 3", 30248); // Factorial and power
+  test_evaluate("10! / 5! + 2 ^ 3", 30248);   // Factorial and power
 
   // Unary operators with functions
-  test_evaluate("-sqrt abs -49", -7); // Negative square root
-  test_evaluate("-abs -5 + 10", 5); // Absolute value with unary minus
-  test_evaluate("-2 ^ 3", -8); // Negative power
+  test_evaluate("-sqrt abs -49", -7);  // Negative square root
+  test_evaluate("-abs -5 + 10", 5);    // Absolute value with unary minus
+  test_evaluate("-2 ^ 3", -8);         // Negative power
   test_evaluate("sqrt 4 + abs -3", 5); // Square root and absolute value
 
-  test_evaluate("pi * 2", 6.28); // Multiplying pi
-  test_evaluate("e ^ 2", 7.39); // Exponentiation with e
-  test_evaluate("sqrt pi + e", 4.49); // Square root of pi plus e
+  test_evaluate("pi * 2", 6.28);            // Multiplying pi
+  test_evaluate("e ^ 2", 7.39);             // Exponentiation with e
+  test_evaluate("sqrt pi + e", 4.49);       // Square root of pi plus e
   test_evaluate("abs -pi + sqrt 16", 7.14); // Absolute value of pi
-
+  test_evaluate("-3!", -6);
+  test_evaluate("3! + sqrt 16 * abs -5 / 2 ^ 3 - 10", -1.5);
+  test_evaluate("sqrt 36 + abs -42 / 2! ^ 2 - 10 + 4 ^ 2!", 22.5);
+  test_evaluate("-2 ^ 4! + abs -7 * sqrt 49 / 5 - 3! + 5", 16777224.8);
+  test_evaluate("3! * 4 ^ 2 / 8 - abs -5 + sqrt 9 - 10 ^ 2 / 2", -40.0);
   // Edge cases
   test_evaluate("0", 0);
   test_evaluate("-0", 0);

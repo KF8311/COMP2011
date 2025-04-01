@@ -67,15 +67,7 @@ double evaluate(const char raw_expression[])
     {
       substring(expression, 0, index, lhs);
       substring(expression, index + 3, strlen(expression), rhs);
-      if (evaluate(rhs) == 0)
-      {
-        if (evaluate(lhs) == 0){
-          return 0.0 / 0.0; // NaN
-        }
-        return evaluate(lhs) / 0.0;
-      }
-      else
-        return evaluate(lhs) / evaluate(rhs);
+      return evaluate(lhs) / evaluate(rhs);
     }
   }
   if ((index = index_of(expression, " ^ ")) > 0)
@@ -110,7 +102,7 @@ double evaluate(const char raw_expression[])
   if (index_of(expression, "!") != -1)
   {
     index = index_of(expression, "!");
-    //std::cerr << index;
+    // std::cerr << index;
     substring(expression, 0, index, lhs);
     return factorial(evaluate(lhs));
   }

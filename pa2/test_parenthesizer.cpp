@@ -77,5 +77,10 @@ test_parenthesize("1 + 2 * 3 ^ 4 - sqrt abs -49 + e", "(((1 + (2 * (3 ^ 4))) - (
 test_parenthesize("10! / 4 * 3 ^ 2", "(((10!) / 4) * (3 ^ 2))");
 test_parenthesize("6!", "(6!)");
 test_parenthesize("42.3 * 4 / 6! + sqrt e * -pi ^ 3 + 2.83", "((((42.3 * 4) / (6!)) + ((sqrt e) * ((-pi) ^ 3))) + 2.83)");
+test_parenthesize("3! + sqrt 16 * abs -5 / 2 ^ 3 - 10", "(((3!) + (((sqrt 16) * (abs (-5))) / (2 ^ 3))) - 10)");
+test_parenthesize("sqrt 36 + abs -42 / 2! ^ 2 - 10 + 4 ^ 2!", "((((sqrt 36) + ((abs (-42)) / ((2!) ^ 2))) - 10) + (4 ^ (2!)))");
+test_parenthesize("3! * 4 ^ 2 / 8 - abs -5 + sqrt 9 - 10 ^ 2 / 5", "((((((3!) * (4 ^ 2)) / 8) - (abs (-5))) + (sqrt 9)) - ((10 ^ 2) / 5))");
+test_parenthesize("-2 ^ 4! + abs -7 * sqrt 49 / 5 - 3! + 5", "(((((-2) ^ (4!)) + (((abs (-7)) * (sqrt 49)) / 5)) - (3!)) + 5)");
+
   // You should add more test cases.
 }
