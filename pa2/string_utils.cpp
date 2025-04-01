@@ -5,7 +5,7 @@
 #include "math_utils.cpp"
 
 /*
-You MUST use recursion to complete TASK 2. You are NOT allowed to use any for or while loop.
+You MUST use recursion to complete TASK 2. You are NOT allowed to use any loop.
 */
 
 /**
@@ -14,8 +14,10 @@ You MUST use recursion to complete TASK 2. You are NOT allowed to use any for or
  */
 bool are_equal_index(const char a[], const char b[], int index)
 {
-  if (a[index] == '\0' || b[index] == '\0')
+  if (a[index] == '\0' && b[index] == '\0')
     return true;
+  else if (a[index] == '\0' || b[index] == '\0')
+    return false;
   else if (a[index] != b[index])
     return false;
   return are_equal_index(a, b, index + 1);
@@ -37,7 +39,7 @@ int index_of_recursive(const char str[], const char pattern[], int index, int wo
   }
   else if (str[index] == pattern[word_index])
   {
-    if (word_index == strlen(pattern) - 1)
+    if (word_index == static_cast<int>(strlen(pattern) - 1))
     {
       return index - word_index;
     }
@@ -222,7 +224,7 @@ double parse_number(const char str[])
 }
 int find_first_non_space(const char str[], int index)
 {
-  if (index == strlen(str))
+  if (index == static_cast<int>((strlen(str))))
     return -1;
   else if (str[index] != ' ')
     return index;
@@ -232,37 +234,40 @@ int find_last_non_space(const char str[], int index)
 {
   if (index == -1)
     return -1;
-  else if (str[index] != ' ')
+  else if (str[index] != ' '&&str[index] != '\0')
     return index;
   return find_last_non_space(str, index - 1);
 }
-void trim_recursive(const char str[], char destination[], const int start, const int end, int index)
-{ 
-  if (start + index == end)
+void strcpy_recursive(const char str[], char destination[], int start, int end,int index)
+{
+  if (start > end)
   {
-    destination[index] = str[start + index];
     return;
   }
   else
   {
-    destination[index] = str[start + index];
-    trim_recursive(str, destination, start, end, index + 1);
+    destination[index] = str[start];
+    strcpy_recursive( str, destination,start+1, end, index+1);
   }
 }
 /**
  * Remove all leading and trailing whitespaces from the string 'str', and store
  * the result in 'destination'.
  */
-void clear_string(char destination[], int index){
-  if (destination[index]=='\0'){
+void clear_string(char destination[], int index)
+{
+  if (destination[index] == '\0')
+  {
     return;
   }
-  else{
-    destination[index]='\0';
-    clear_string(destination, index+1);
+  else
+  {
+    destination[index] = '\0';
+    clear_string(destination, index + 1);
   }
 }
 void trim(const char str[], char destination[])
+
 {
   // TODO Task 2.6 BEGIN
   clear_string(destination, 0);
@@ -274,8 +279,9 @@ void trim(const char str[], char destination[])
   }
   else
   {
-    trim_recursive(str, destination, first_non_space, last_non_space, 0);
+    strcpy_recursive(str, destination, first_non_space, last_non_space,0);
   }
+  destination[last_non_space-first_non_space+1]='\0';
   return;
   // TODO Task 2.6 END
 }

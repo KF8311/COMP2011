@@ -179,7 +179,8 @@ int main()
   // last_index_of
   test_last_index_of("PA2 is very very interesting", "very", 12);
   test_last_index_of("Arrrrrrrrrrrrrrrrrrrrr!!!!!!!!!!", "You can't find the index haha", -1);
-  test_last_index_of("app app app apppppppp", "app", 12);
+  test_last_index_of("app app app apppppppp", "ap", 12);
+  test_last_index_of("abccccc", "abc", 0);
   test_last_index_of("Arrrrrrrrrrrrrrrrrrrrr!!!!!!!!!!", "r", 21);
   test_last_index_of("jojojojojojojjoojojojo", "jojo", 18);
   test_last_index_of("This is the pattern 1 and pattern 2", "pattern", 26);
