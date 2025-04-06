@@ -28,7 +28,7 @@ void parenthesize(const char raw_expression[], char destination[])
 
   // int operator_index;
   // std::cerr << "Invalid expression: '" << raw_expression << "'" << std::endl;
-  //std::cerr << "Invalid expression: '" << expression << "'" << std::endl;
+  // std::cerr << "Invalid expression: '" << expression << "'" << std::endl;
 
   if (last_index_of(expression, "+") != -1 || (last_index_of(expression, "- ") != -1))
   {
@@ -181,7 +181,7 @@ void parenthesize(const char raw_expression[], char destination[])
     char parenthesized_after[MAX_LEN];
     int operator_index;
     char op[MAX_LEN];
-    if (index_of(expression, "sqrt") == -1 && (index_of(expression, "abs") == -1)&& (index_of(expression, "-") == -1))
+    if (index_of(expression, "sqrt") == -1 && (index_of(expression, "abs") == -1) && (index_of(expression, "-") == -1))
       return;
     else if (index_of(expression, "sqrt") == 0)
     {
@@ -207,7 +207,8 @@ void parenthesize(const char raw_expression[], char destination[])
     strcpy(destination, "(");
     strcat(destination, parenthesized_before);
     strcat(destination, op);
-    if (strlen(op) != 1){
+    if (strlen(op) != 1)
+    {
       strcat(destination, " ");
     }
     strcat(destination, parenthesized_after);
@@ -251,7 +252,7 @@ void parenthesize(const char raw_expression[], char destination[])
   // is invalid OR there is a bug in your code.
   // This is only for debugging purposes, and we won't test the behavior
   // of your code for invalid expressions.
-  //std::cerr << "Invalid expression: '" << expression << "'" << std::endl;
+  // std::cerr << "Invalid expression: '" << expression << "'" << std::endl;
 }
 
 #endif // PARENTHESIZER_CPP
