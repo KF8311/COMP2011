@@ -208,6 +208,8 @@ int main()
   // is_number
   test_is_number("3.14", true);
   test_is_number(".3", false);
+  test_is_number("4..3", false);
+  test_is_number("4.3.1.114514", false);
   // test_is_number("042", false);
   // test_is_number("42.000", true);
   // test_is_number("42.0", true);
