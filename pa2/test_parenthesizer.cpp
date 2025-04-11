@@ -82,6 +82,7 @@ test_parenthesize("sqrt 36 + abs -42 / 2! ^ 2 - 10 + 4 ^ 2!", "((((sqrt 36) + ((
 test_parenthesize("3! * 4 ^ 2 / 8 - abs -5 + sqrt 9 - 10 ^ 2 / 5", "((((((3!) * (4 ^ 2)) / 8) - (abs (-5))) + (sqrt 9)) - ((10 ^ 2) / 5))");
 test_parenthesize("-2 ^ 4! + abs -7 * sqrt 49 / 5 - 3! + 5", "(((((-2) ^ (4!)) + (((abs (-7)) * (sqrt 49)) / 5)) - (3!)) + 5)");
 test_parenthesize("1 !", "(1!)");
+test_parenthesize("3!!", "NaN");
 
   // You should add more test cases.
 }
