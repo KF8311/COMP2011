@@ -81,6 +81,7 @@ int main()
   test_evaluate("sqrt 36 + abs -42 / 2! ^ 2 - 10 + 4 ^ 2!", 22.5);
   test_evaluate("-2 ^ 4! + abs -7 * sqrt 49 / 5 - 3! + 5", 16777224.8);
   test_evaluate("3! * 4 ^ 2 / 8 - abs -5 + sqrt 9 - 10 ^ 2 / 2", -40.0);
+  test_evaluate("sqrt abs -3! ^ 2", 6);
   // Edge cases
   test_evaluate("0", 0);
   test_evaluate("-0", 0);
