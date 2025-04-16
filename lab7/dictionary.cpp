@@ -34,7 +34,6 @@ using namespace std;
 void dictionary_entry_init(dictionary_entry &instance, const char *word, const char *definition)
 {
   // TODO: Task 1
-  dictionary_entry *instance = new dictionary_entry;
   // init next
   instance.next = nullptr;
   // copy the word from input
@@ -115,7 +114,6 @@ bool dictionary_delete_entry(dictionary_entry *&dictionary, const char *word)
   {
     if (strcmp(current_entry->word, word) == 0)
     {
-      current_entry->next = current_entry->next->next;
       if (current_entry == dictionary)
       {
         // special case where it is the first one
@@ -123,6 +121,7 @@ bool dictionary_delete_entry(dictionary_entry *&dictionary, const char *word)
       }
       else
       {
+        // normal cases
         previous_entry->next = current_entry->next;
       }
       delete current_entry;
@@ -159,6 +158,9 @@ bool dictionary_delete_entry(dictionary_entry *&dictionary, const char *word)
 void dictionary_add_entry(dictionary_entry *&dictionary, dictionary_entry *entry)
 {
   // TODO: Task 3
+  dictionary_delete_entry(dictionary, entry->word); // delete the original first anyway
+  entry->next = dictionary;
+  dictionary = entry;
 }
 
 /**
@@ -178,6 +180,14 @@ void dictionary_add_entry(dictionary_entry *&dictionary, dictionary_entry *entry
 void dictionary_clear(dictionary_entry *&dictionary)
 {
   // TODO: Task 4
+  while (dictionary != nullptr)
+  {
+    dictionary_entry *current_entry = dictionary;
+    dictionary = dictionary->next;
+    delete current_entry;
+    current_entry = nullptr;
+  }
+  return;
 }
 
 /**
@@ -196,8 +206,16 @@ void dictionary_clear(dictionary_entry *&dictionary)
  */
 void dictionary_print(const dictionary_entry *dictionary)
 {
-  cout << "Printing dictionary\n";
   // TODO: Task 5
+  int count = 0;
+  cout << "Printing dictionary\n";
+  while (dictionary != nullptr)
+  {
+    cout << dictionary->word << ": " << dictionary->definition << endl;
+    count++;
+    dictionary = dictionary->next;
+  }
+  cout << "Number of words: " << count << endl;
 }
 
 /**
@@ -221,8 +239,20 @@ void dictionary_print(const dictionary_entry *dictionary)
  */
 void dictionary_query(const dictionary_entry *dictionary, const char *query)
 {
-  cout << "Querying dictionary with word: " << query << '\n';
   // TODO: Task 6
+  int count = 0;
+  cout << "Querying dictionary with word: " << query << '\n';
+  while (dictionary != nullptr)
+  {
+    if (strstr(dictionary->word, query) != nullptr)
+    {
+      cout << dictionary->word << ": " << dictionary->definition << endl;
+      count++;
+    }
+    dictionary = dictionary->next;
+  }
+  cout << "Number of words: " << count << endl;
+  return;
 }
 
 /**
