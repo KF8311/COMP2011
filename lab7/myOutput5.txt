@@ -1,0 +1,645 @@
+Welcome to dictionary editor!
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary cleared
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Obsequious: (adjective) Obedient or attentive to an excessive or servile degree.
+Number of words: 1
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Obsequious: (adjective) Obedient or attentive to an excessive or servile degree.
+Number of words: 1
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Obsequious: (adjective) Obedient or attentive to an excessive or servile degree.
+Number of words: 1
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Panglossian: (adjective) Characterized by extreme optimism, especially in the face of adversity.
+Obsequious: (adjective) Obedient or attentive to an excessive or servile degree.
+Number of words: 2
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Obsequious: (adjective) Obedient or attentive to an excessive or servile degree.
+Panglossian: (adjective) Characterized by extreme optimism, especially in the face of adversity.
+Number of words: 2
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Quagmire: (noun) A soft boggy area of land that gives way underfoot; a complex or hazardous situation.
+Obsequious: (adjective) Obedient or attentive to an excessive or servile degree.
+Panglossian: (adjective) Characterized by extreme optimism, especially in the face of adversity.
+Number of words: 3
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Raconteur: (noun) A person who tells anecdotes in a skillful and amusing way.
+Quagmire: (noun) A soft boggy area of land that gives way underfoot; a complex or hazardous situation.
+Obsequious: (adjective) Obedient or attentive to an excessive or servile degree.
+Panglossian: (adjective) Characterized by extreme optimism, especially in the face of adversity.
+Number of words: 4
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Panglossian: (adjective) Characterized by extreme optimism, especially in the face of adversity.
+Raconteur: (noun) A person who tells anecdotes in a skillful and amusing way.
+Quagmire: (noun) A soft boggy area of land that gives way underfoot; a complex or hazardous situation.
+Obsequious: (adjective) Obedient or attentive to an excessive or servile degree.
+Number of words: 4
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Word deleted
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Raconteur: (noun) A person who tells anecdotes in a skillful and amusing way.
+Quagmire: (noun) A soft boggy area of land that gives way underfoot; a complex or hazardous situation.
+Obsequious: (adjective) Obedient or attentive to an excessive or servile degree.
+Number of words: 3
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Word not found
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Raconteur: (noun) A person who tells anecdotes in a skillful and amusing way.
+Quagmire: (noun) A soft boggy area of land that gives way underfoot; a complex or hazardous situation.
+Obsequious: (adjective) Obedient or attentive to an excessive or servile degree.
+Number of words: 3
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Panglossian: (adjective) Characterized by extreme optimism, especially in the face of adversity.
+Raconteur: (noun) A person who tells anecdotes in a skillful and amusing way.
+Quagmire: (noun) A soft boggy area of land that gives way underfoot; a complex or hazardous situation.
+Obsequious: (adjective) Obedient or attentive to an excessive or servile degree.
+Number of words: 4
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Word deleted
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Raconteur: (noun) A person who tells anecdotes in a skillful and amusing way.
+Quagmire: (noun) A soft boggy area of land that gives way underfoot; a complex or hazardous situation.
+Obsequious: (adjective) Obedient or attentive to an excessive or servile degree.
+Number of words: 3
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Word not found
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Raconteur: (noun) A person who tells anecdotes in a skillful and amusing way.
+Quagmire: (noun) A soft boggy area of land that gives way underfoot; a complex or hazardous situation.
+Obsequious: (adjective) Obedient or attentive to an excessive or servile degree.
+Number of words: 3
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Sycophant: (noun) A person who acts obsequiously toward someone important in order to gain advantage.
+Raconteur: (noun) A person who tells anecdotes in a skillful and amusing way.
+Quagmire: (noun) A soft boggy area of land that gives way underfoot; a complex or hazardous situation.
+Obsequious: (adjective) Obedient or attentive to an excessive or servile degree.
+Number of words: 4
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Trepidation: (noun) A feeling of fear or agitation about something that may happen.
+Sycophant: (noun) A person who acts obsequiously toward someone important in order to gain advantage.
+Raconteur: (noun) A person who tells anecdotes in a skillful and amusing way.
+Quagmire: (noun) A soft boggy area of land that gives way underfoot; a complex or hazardous situation.
+Obsequious: (adjective) Obedient or attentive to an excessive or servile degree.
+Number of words: 5
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Ubiquitous: (adjective) Present, appearing, or found everywhere.
+Trepidation: (noun) A feeling of fear or agitation about something that may happen.
+Sycophant: (noun) A person who acts obsequiously toward someone important in order to gain advantage.
+Raconteur: (noun) A person who tells anecdotes in a skillful and amusing way.
+Quagmire: (noun) A soft boggy area of land that gives way underfoot; a complex or hazardous situation.
+Obsequious: (adjective) Obedient or attentive to an excessive or servile degree.
+Number of words: 6
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary cleared
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Verisimilitude: (noun) The appearance of being true or real.
+Number of words: 1
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary cleared
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Invalid input!
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Whimsical: (adjective) Playfully quaint or fanciful, especially in an appealing and amusing way.
+Number of words: 1
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Ubiquitous: (adjective) Present, appearing, or found everywhere.
+Whimsical: (adjective) Playfully quaint or fanciful, especially in an appealing and amusing way.
+Number of words: 2
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Xylophone: (noun) A musical instrument consisting of a series of wooden bars struck with mallets.
+Ubiquitous: (adjective) Present, appearing, or found everywhere.
+Whimsical: (adjective) Playfully quaint or fanciful, especially in an appealing and amusing way.
+Number of words: 3
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Query: Querying dictionary with word: l
+Xylophone: (noun) A musical instrument consisting of a series of wooden bars struck with mallets.
+Whimsical: (adjective) Playfully quaint or fanciful, especially in an appealing and amusing way.
+Number of words found: 2
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Xylophone: (noun) A musical instrument consisting of a series of wooden bars struck with mallets.
+Ubiquitous: (adjective) Present, appearing, or found everywhere.
+Whimsical: (adjective) Playfully quaint or fanciful, especially in an appealing and amusing way.
+Number of words: 3
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Query: Querying dictionary with word: X
+Xylophone: (noun) A musical instrument consisting of a series of wooden bars struck with mallets.
+Number of words found: 1
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Xylophone: (noun) A musical instrument consisting of a series of wooden bars struck with mallets.
+Ubiquitous: (adjective) Present, appearing, or found everywhere.
+Whimsical: (adjective) Playfully quaint or fanciful, especially in an appealing and amusing way.
+Number of words: 3
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary cleared
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Quitting!

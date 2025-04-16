@@ -1,0 +1,434 @@
+Welcome to dictionary editor!
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary cleared
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Ephemeral: (adjective) Lasting for a very short time.
+Number of words: 1
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Farrago: (noun) A confused mixture; a hodgepodge.
+Ephemeral: (adjective) Lasting for a very short time.
+Number of words: 2
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Garrulous: (adjective) Excessively talkative, especially on trivial matters.
+Farrago: (noun) A confused mixture; a hodgepodge.
+Ephemeral: (adjective) Lasting for a very short time.
+Number of words: 3
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Heterodox: (adjective) Not conforming with accepted or orthodox standards or beliefs.
+Garrulous: (adjective) Excessively talkative, especially on trivial matters.
+Farrago: (noun) A confused mixture; a hodgepodge.
+Ephemeral: (adjective) Lasting for a very short time.
+Number of words: 4
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Inimical: (adjective) Tending to obstruct or harm; unfriendly.
+Heterodox: (adjective) Not conforming with accepted or orthodox standards or beliefs.
+Garrulous: (adjective) Excessively talkative, especially on trivial matters.
+Farrago: (noun) A confused mixture; a hodgepodge.
+Ephemeral: (adjective) Lasting for a very short time.
+Number of words: 5
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Word deleted
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Heterodox: (adjective) Not conforming with accepted or orthodox standards or beliefs.
+Garrulous: (adjective) Excessively talkative, especially on trivial matters.
+Farrago: (noun) A confused mixture; a hodgepodge.
+Ephemeral: (adjective) Lasting for a very short time.
+Number of words: 4
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary cleared
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Word not found
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Word not found
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Juxtaposition: (noun) The fact of two things being seen or placed close together for contrasting effect.
+Number of words: 1
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Kaleidoscope: (noun) A constantly changing pattern or sequence of elements.
+Juxtaposition: (noun) The fact of two things being seen or placed close together for contrasting effect.
+Number of words: 2
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Lugubrious: (adjective) Looking or sounding sad and dismal.
+Kaleidoscope: (noun) A constantly changing pattern or sequence of elements.
+Juxtaposition: (noun) The fact of two things being seen or placed close together for contrasting effect.
+Number of words: 3
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Miasma: (noun) A highly unpleasant or unhealthy smell or vapor.
+Lugubrious: (adjective) Looking or sounding sad and dismal.
+Kaleidoscope: (noun) A constantly changing pattern or sequence of elements.
+Juxtaposition: (noun) The fact of two things being seen or placed close together for contrasting effect.
+Number of words: 4
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Nefarious: (adjective) Wicked or criminal.
+Miasma: (noun) A highly unpleasant or unhealthy smell or vapor.
+Lugubrious: (adjective) Looking or sounding sad and dismal.
+Kaleidoscope: (noun) A constantly changing pattern or sequence of elements.
+Juxtaposition: (noun) The fact of two things being seen or placed close together for contrasting effect.
+Number of words: 5
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary cleared
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary cleared
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary cleared
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Quitting!

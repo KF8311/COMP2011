@@ -37,9 +37,11 @@ void dictionary_entry_init(dictionary_entry &instance, const char *word, const c
   // init next
   instance.next = nullptr;
   // copy the word from input
-  strcpy(instance.word, word);
-  // copy the definition from input
-  strcpy(instance.definition, definition);
+  strncpy(instance.word, word, MAXIMUM_WORD_LENGTH-1);
+  // instance.word[MAXIMUM_WORD_LENGTH] = '\0';
+  //  copy the definition from input
+  strncpy(instance.definition, definition, MAXIMUM_DEFINITION_LENGTH-1);
+  // instance.definition[MAXIMUM_DEFINITION_LENGTH] = '\0';
   return;
 }
 
@@ -180,6 +182,7 @@ void dictionary_add_entry(dictionary_entry *&dictionary, dictionary_entry *entry
 void dictionary_clear(dictionary_entry *&dictionary)
 {
   // TODO: Task 4
+
   while (dictionary != nullptr)
   {
     dictionary_entry *current_entry = dictionary;
@@ -251,7 +254,7 @@ void dictionary_query(const dictionary_entry *dictionary, const char *query)
     }
     dictionary = dictionary->next;
   }
-  cout << "Number of words: " << count << endl;
+  cout << "Number of words found: " << count << endl;
   return;
 }
 

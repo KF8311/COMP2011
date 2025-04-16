@@ -1,0 +1,71 @@
+Welcome to dictionary editor!
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: `next`: okay
+`word`: word
+`definition`: definition
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: `next`: okay
+`word`: a very long long long long long long long long long long long w
+`definition`: a very long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long lon
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: `next`: okay
+`word`: word
+`definition`: 
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: `next`: okay
+`word`: 
+`definition`: definition
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: `next`: okay
+`word`: 
+`definition`: 
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Quitting!
