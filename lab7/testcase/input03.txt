@@ -1,0 +1,67 @@
+5
+2
+Hello
+5
+3
+Tmesis
+(noun) The separation of parts of a compound word by an intervening word or words.
+5
+2
+Tmeses
+5
+2
+Temsis
+5
+3
+Umbrageous
+(adjective) Providing shade; overshadowing.
+5
+3
+Vorfreude
+(noun) The joyful, intense anticipation that comes from imagining future pleasures.
+5
+3
+Welter
+(verb) To move in a turbulent fashion; to be in confusion or turmoil.
+5
+3
+Xenophobia
+(noun) Dislike of or prejudice against people from other countries.
+5
+2
+Welter
+5
+2
+Vorfreude
+5
+3
+Yonderly
+(adjective) Mentally or emotionally distant; absent-minded.
+5
+3
+Zephyr
+(noun) A gentle, mild breeze.
+5
+3
+Agog
+(adjective) Very eager or excited to hear or see something.
+5
+3
+Borborygmic
+(adjective) Pertaining to the rumbling of the stomach.
+5
+3
+Cacophonic
+(adjective) Having a harsh or discordant sound.
+5
+2
+Borborygmic
+5
+2
+Cacophonic
+5
+3
+Dendrophilous
+(adjective) Loving trees; living in or among trees.
+5
+0
