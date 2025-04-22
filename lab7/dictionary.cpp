@@ -38,10 +38,10 @@ void dictionary_entry_init(dictionary_entry &instance, const char *word, const c
   instance.next = nullptr;
   // copy the word from input
   strncpy(instance.word, word, MAXIMUM_WORD_LENGTH - 1);
-  // instance.word[MAXIMUM_WORD_LENGTH] = '\0';
+  instance.word[MAXIMUM_WORD_LENGTH - 1] = '\0';
   //  copy the definition from input
   strncpy(instance.definition, definition, MAXIMUM_DEFINITION_LENGTH - 1);
-  // instance.definition[MAXIMUM_DEFINITION_LENGTH] = '\0';
+  instance.definition[MAXIMUM_DEFINITION_LENGTH - 1] = '\0';
   return;
 }
 
@@ -133,6 +133,7 @@ bool dictionary_delete_entry(dictionary_entry *&dictionary, const char *word)
     previous_entry = current_entry;
     current_entry = current_entry->next;
   }
+
   return false;
 }
 
@@ -286,7 +287,8 @@ void dictionary_query(const dictionary_entry *dictionary, const char *query)
  */
 void dictionary_sort(dictionary_entry *&dictionary)
 {
-  if (dictionary == nullptr){
+  if (dictionary == nullptr || dictionary->next == nullptr)
+  {
     return;
   }
   dictionary_entry *ret;
@@ -309,9 +311,10 @@ void dictionary_sort(dictionary_entry *&dictionary)
       dictionary_entry *new_entry = new dictionary_entry;
       dictionary_entry_init(*new_entry, largest_entry->word, largest_entry->definition);
       dictionary_add_entry(ret, new_entry);
-      dictionary_delete_entry(dictionary, largest_entry->word);     
+      dictionary_delete_entry(dictionary, largest_entry->word);
     }
   }
+  dictionary_clear(dictionary);
   dictionary = ret;
   // END: Task 7 (optional)
 }
