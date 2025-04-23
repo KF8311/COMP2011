@@ -296,12 +296,12 @@ bool add_note(Notes &notes, const char title[], const char content[])
 bool remove_note(Notes &notes, const char title[])
 {
   // TODO: Task 4
-  unsigned int i = 0;
-  while (i < notes.note_array_count)
+  int i = 0;
+  while (i < static_cast<int>(notes.note_array_count))
   {
     if (strcmp(notes.note_array[i].title, title) == 0)
     {
-      for (unsigned int j = i; j < notes.note_array_count-1; j++)
+      for (size_t j = i; j < (notes.note_array_count - 1); j++)
       {
         set_note_title(notes.note_array[j], notes.note_array[j + 1].title);
         set_note_content(notes.note_array[j], notes.note_array[j + 1].content);
