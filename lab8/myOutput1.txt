@@ -1,0 +1,25 @@
+Welcome to note-taking system!
+Initializing...
+Read notes from (empty to skip, '-' for stdin): Skipped reading notes
+==========================================
+0. Quit
+1. List notes
+2. Print a note
+3. Add a note
+4. Remove a note
+5. Rename a note
+6. Edit a note
+7. Append to a note
+8. Search notes
+Option: There are 0 note(s)
+==========================================
+0. Quit
+1. List notes
+2. Print a note
+3. Add a note
+4. Remove a note
+5. Rename a note
+6. Edit a note
+7. Append to a note
+8. Search notes
+Option: Title: Content: 

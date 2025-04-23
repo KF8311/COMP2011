@@ -5,6 +5,14 @@
 #include <iostream>
 
 using namespace std;
+/*
+g++ -o main -std=c++11 -g -Wall -Wextra -Wpedantic -fsanitize=address,leak,undefined main.cpp note_io.cpp note.cpp
+cat ./testcase/input01.txt | ./main > myOutput1.txt
+cat ./testcase/input02.txt | ./main > myOutput2.txt
+cat ./testcase/input03.txt | ./main > myOutput3.txt
+cat ./testcase/input04.txt | ./main > myOutput4.txt
+cat ./testcase/input05.txt | ./main > myOutput5.txt
+*/
 
 /**
  * @brief Initialize an *uninitialized* `Note` object.
@@ -30,6 +38,8 @@ using namespace std;
 void init_note(Note &note)
 {
   // TODO: Task 1.1
+  note.title = nullptr;
+  note.content = nullptr;
 }
 
 /**
@@ -77,6 +87,16 @@ void init_note(Note &note, const char title[], const char content[])
 void set_note_title(Note &note, const char title[])
 {
   // TODO: Task 2.1
+
+  char *set_title = new char[strlen(title)];
+  strcpy(set_title, title);
+  if (note.title)
+    delete[] note.title;
+  // note.title = nullptr;
+
+  note.title = set_title;
+  // delete[] title;
+  // title = nullptr;
 }
 
 /**
@@ -97,6 +117,16 @@ void set_note_title(Note &note, const char title[])
 void set_note_content(Note &note, const char content[])
 {
   // TODO: Task 2.2
+
+  char *set_content = new char[strlen(content) + 1];
+  strcpy(set_content, content);
+  if (note.content)
+    delete[] note.content;
+  // note.content = nullptr;
+
+  note.content = set_content;
+  // delete[] content;
+  // content = nullptr;
 }
 
 /**
@@ -113,6 +143,10 @@ void set_note_content(Note &note, const char content[])
 void cleanup_note(Note &note)
 {
   // TODO: Task 3
+  delete[] note.title;
+  delete[] note.content;
+  note.title = nullptr;
+  note.content = nullptr;
 }
 
 /**
@@ -179,15 +213,18 @@ bool add_note(Notes &notes, const char title[], const char content[])
     return false;
   }
 
-  for (unsigned int index = 0; index < notes.note_array_count; ++index)
+  for (unsigned int index = 0; index < static_cast<unsigned int>(notes.note_array_count); ++index)
   {
     if (strcmp(title, notes.note_array[index].title) == 0)
     {
       return false;
     }
   }
-
-  init_note(notes.note_array[notes.note_array_count++], title, content);
+  notes.note_array_count++;
+  set_note_title(notes.note_array[notes.note_array_count - 1], title);
+  set_note_content(notes.note_array[notes.note_array_count - 1], content);
+  init_note(notes.note_array[notes.note_array_count], title, content);
+  notes.note_array_count++;
   return true;
 }
 
@@ -243,6 +280,23 @@ bool add_note(Notes &notes, const char title[], const char content[])
 bool remove_note(Notes &notes, const char title[])
 {
   // TODO: Task 4
+  int i = 0;
+  while (i < static_cast<int>(notes.note_array_count))
+  {
+    if (strcmp(notes.note_array[i].title, title) == 0)
+    {
+      for (int j = i; j < static_cast<int>(notes.note_array_count); j++)
+      {
+        cleanup_note(notes.note_array[j]);
+        set_note_title(notes.note_array[j], notes.note_array[j + 1].title);
+        set_note_content(notes.note_array[j], notes.note_array[j + 1].content);
+      }
+      cleanup_note(notes.note_array[notes.note_array_count - 1]);
+      --notes.note_array_count;
+      return true;
+    }
+    i++;
+  }
   return false;
 }
 
@@ -276,7 +330,22 @@ bool remove_note(Notes &notes, const char title[])
 bool rename_note(Notes &notes, const char title[], const char new_title[])
 {
   // TODO: Task 5
-  return false;
+  int index = -1;
+  for (int i = 0; i < static_cast<int>(notes.note_array_count); i++)
+  {
+    if (strcmp(notes.note_array[i].title, new_title) == 0)
+    {
+      return false;
+    }
+    if (strcmp(notes.note_array[i].title, title) == 0)
+    {
+      index = i;
+    }
+  }
+  if (index == -1)
+    return false;
+  set_note_title(notes.note_array[index], new_title);
+  return true;
 }
 
 /**
@@ -300,7 +369,19 @@ bool rename_note(Notes &notes, const char title[], const char new_title[])
 bool edit_note(Notes &notes, const char title[], const char new_content[])
 {
   // TODO: Task 6
-  return false;
+  int index = -1;
+  for (int i = 0; i < static_cast<int>(notes.note_array_count); i++)
+  {
+    if (strcmp(notes.note_array[i].title, title) == 0)
+    {
+      index = i;
+    }
+  }
+  if (index == -1)
+    return false;
+
+  set_note_content(notes.note_array[index], new_content);
+  return true;
 }
 
 /**
@@ -326,7 +407,27 @@ bool edit_note(Notes &notes, const char title[], const char new_content[])
 bool append_note_content(Notes &notes, const char title[], const char content_to_append[])
 {
   // TODO: Task 7
-  return false;
+
+  int index = -1;
+  for (int i = 0; i < static_cast<int>(notes.note_array_count); i++)
+  {
+    if (strcmp(notes.note_array[i].title, title) == 0)
+    {
+      index = i;
+      break;
+    }
+  }
+  if (index == -1)
+    return false;
+
+  char *new_content = new char[strlen(content_to_append) + strlen(notes.note_array[index].content) + 1];
+  strcpy(new_content, notes.note_array[index].content);
+  // delete[] notes.note_array[index].content;
+  strcat(new_content, content_to_append);
+  // delete[] content_to_append;
+  set_note_content(notes.note_array[index], new_content);
+  delete[] new_content;
+  return true;
 }
 
 /**
