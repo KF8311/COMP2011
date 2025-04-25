@@ -1,0 +1,76 @@
+--- test23 ---
+add_topping_to_order(i, "Topping1", toppingTypes, pending)-> true
+add_topping_to_order(i, "Topping1", toppingTypes, pending)-> true
+===================================
+===       Pending Orders        ===
+===================================
+  *********************************
+  Order Number: 1
+  Drink Name:   recipe3
+  Calories:     95kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk3
+              (Stock: 3)
+    * Toppings:
+      - Topping1 (Stock: 1)
+  *********************************
+
+  *********************************
+  Order Number: 2
+  Drink Name:   recipe3
+  Calories:     95kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk3
+              (Stock: 3)
+    * Toppings:
+      - Topping1 (Stock: 1)
+  *********************************
+===================================
+===    End of Pending Orders    ===
+===================================
+
+get_order_ready(i, pending, ready, milkReplacements)-> 1
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+###################################
+###      Completed Orders       ###
+###################################
+--- Orders ending with digit 1 ---
+  *********************************
+  Order Number: 1
+  Drink Name:   recipe3
+  Calories:     95kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk3
+    * Toppings:
+      - Topping1
+  *********************************
+--- End of orders ending with 1 ---
+
+--- Orders ending with digit 2 ---
+  *********************************
+  Order Number: 2
+  Drink Name:   recipe3
+  Calories:     85kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk3
+    * Toppings:
+      - None
+  *********************************
+--- End of orders ending with 2 ---
+
+###################################
+### End of Completed Orders     ###
+###################################
+

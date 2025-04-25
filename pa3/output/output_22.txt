@@ -1,0 +1,605 @@
+--- test22 ---
+build_replacement_list(milkTypes, milkReplacements)-> true
+get_order_ready(i, pending, ready, milkReplacements)-> 1
+get_order_ready(i, pending, ready, milkReplacements)-> 1
+get_order_ready(i, pending, ready, milkReplacements)-> 1
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 2
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+get_order_ready(i, pending, ready, milkReplacements)-> 0
+###################################
+###      Completed Orders       ###
+###################################
+--- Orders ending with digit 0 ---
+  *********************************
+  Order Number: 10
+  Drink Name:   recipe3
+  Calories:     16kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk7
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 20
+  Drink Name:   recipe3
+  Calories:     65kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk6
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 30
+  Drink Name:   recipe3
+  Calories:     73kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk8
+    * Toppings:
+      - None
+  *********************************
+--- End of orders ending with 0 ---
+
+--- Orders ending with digit 1 ---
+  *********************************
+  Order Number: 1
+  Drink Name:   recipe3
+  Calories:     85kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk3
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 11
+  Drink Name:   recipe3
+  Calories:     37kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk4
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 21
+  Drink Name:   recipe3
+  Calories:     65kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk6
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 31
+  Drink Name:   recipe3
+  Calories:     73kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk8
+    * Toppings:
+      - None
+  *********************************
+--- End of orders ending with 1 ---
+
+--- Orders ending with digit 2 ---
+  *********************************
+  Order Number: 2
+  Drink Name:   recipe3
+  Calories:     85kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk3
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 12
+  Drink Name:   recipe3
+  Calories:     37kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk4
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 22
+  Drink Name:   recipe3
+  Calories:     65kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk6
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 32
+  Drink Name:   recipe3
+  Calories:     74kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk5
+    * Toppings:
+      - None
+  *********************************
+--- End of orders ending with 2 ---
+
+--- Orders ending with digit 3 ---
+  *********************************
+  Order Number: 3
+  Drink Name:   recipe3
+  Calories:     85kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk3
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 13
+  Drink Name:   recipe3
+  Calories:     37kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk4
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 23
+  Drink Name:   recipe3
+  Calories:     65kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk6
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 33
+  Drink Name:   recipe3
+  Calories:     74kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk5
+    * Toppings:
+      - None
+  *********************************
+--- End of orders ending with 3 ---
+
+--- Orders ending with digit 4 ---
+  *********************************
+  Order Number: 4
+  Drink Name:   recipe3
+  Calories:     16kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk7
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 14
+  Drink Name:   recipe3
+  Calories:     37kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk4
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 24
+  Drink Name:   recipe3
+  Calories:     73kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk8
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 34
+  Drink Name:   recipe3
+  Calories:     74kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk5
+    * Toppings:
+      - None
+  *********************************
+--- End of orders ending with 4 ---
+
+--- Orders ending with digit 5 ---
+  *********************************
+  Order Number: 5
+  Drink Name:   recipe3
+  Calories:     16kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk7
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 15
+  Drink Name:   recipe3
+  Calories:     40kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk2
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 25
+  Drink Name:   recipe3
+  Calories:     73kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk8
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 35
+  Drink Name:   recipe3
+  Calories:     74kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk5
+    * Toppings:
+      - None
+  *********************************
+--- End of orders ending with 5 ---
+
+--- Orders ending with digit 6 ---
+  *********************************
+  Order Number: 6
+  Drink Name:   recipe3
+  Calories:     16kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk7
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 16
+  Drink Name:   recipe3
+  Calories:     40kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk2
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 26
+  Drink Name:   recipe3
+  Calories:     73kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk8
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 36
+  Drink Name:   recipe3
+  Calories:     74kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk5
+    * Toppings:
+      - None
+  *********************************
+--- End of orders ending with 6 ---
+
+--- Orders ending with digit 7 ---
+  *********************************
+  Order Number: 7
+  Drink Name:   recipe3
+  Calories:     16kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk7
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 17
+  Drink Name:   recipe3
+  Calories:     60kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk1
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 27
+  Drink Name:   recipe3
+  Calories:     73kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk8
+    * Toppings:
+      - None
+  *********************************
+--- End of orders ending with 7 ---
+
+--- Orders ending with digit 8 ---
+  *********************************
+  Order Number: 8
+  Drink Name:   recipe3
+  Calories:     16kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk7
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 18
+  Drink Name:   recipe3
+  Calories:     65kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk6
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 28
+  Drink Name:   recipe3
+  Calories:     73kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk8
+    * Toppings:
+      - None
+  *********************************
+--- End of orders ending with 8 ---
+
+--- Orders ending with digit 9 ---
+  *********************************
+  Order Number: 9
+  Drink Name:   recipe3
+  Calories:     16kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk7
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 19
+  Drink Name:   recipe3
+  Calories:     65kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk6
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 29
+  Drink Name:   recipe3
+  Calories:     73kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk8
+    * Toppings:
+      - None
+  *********************************
+--- End of orders ending with 9 ---
+
+###################################
+### End of Completed Orders     ###
+###################################
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~    Milk Replacements        ~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Start -> Milk7 (Cal: 16, Stock: 0) -> Milk4 (Cal: 37, Stock: 0) -> Milk2 (Cal: 40, Stock: 0) -> Milk1 (Cal: 60, Stock: 0) -> Milk6 (Cal: 65, Stock: 0) -> Milk8 (Cal: 73, Stock: 0) -> Milk5 (Cal: 74, Stock: 0) -> Milk3 (Cal: 85, Stock: 0) -- Loop
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~ End of Milk Replacements    ~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

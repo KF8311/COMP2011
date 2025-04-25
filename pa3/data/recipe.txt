@@ -1,0 +1,14 @@
+12
+BlackTeaLatte 1 30 BlackTea WholeMilk 2 RedBean BlueBean
+GreenTeaLatte 2 28 GreenTea SkimMilk 1 BlueBean
+MatchaLatte 3 35 Matcha SoyMilk 0
+OolongMilkTea 4 25 OolongTea AlmondMilk 1 TapiocaPearls
+WhiteTeaLatte 5 20 WhiteTea CoconutMilk 2 GrassJelly AloeVera
+HerbalTeaBlend 6 15 HerbalTea OatMilk 1 Pudding
+ChaiTeaLatte 7 45 ChaiTea RiceMilk 1 CheeseFoam
+EarlGreyMilkTea 8 50 EarlGrey CashewMilk 0
+JasmineMilkTea 9 15 JasmineTea HempMilk 1 CoconutJelly
+RooibosTeaBlend 10 0 RooibosTea MacadamiaMilk 2 MangoPoppingBoba StrawberryPoppingBoba
+ChamomileTeaLatte 11 0 ChamomileTea PeaMilk 1 LycheePoppingBoba
+PeppermintTeaLatte 12 0 PeppermintTea FlaxMilk 1 PassionFruitPoppingBoba
+

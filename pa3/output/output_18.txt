@@ -1,0 +1,10 @@
+--- test18 ---
+build_replacement_list(milkTypes, milkReplacements)-> true
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~    Milk Replacements        ~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Start -> Milk1 (Cal: 50, Stock: 9) -- Loop
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~ End of Milk Replacements    ~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+

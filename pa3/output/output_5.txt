@@ -1,0 +1,64 @@
+--- test5 ---
+===================================
+===       Drink Recipes         ===
+===================================
+  ---------------------------------
+  Drink ID:     2
+  Drink Name:   BlackTeaLatte
+  Price:        $30
+  Tea:          BlackTea (Caffeine: 40mg)
+  Milk:         WholeMilk (Calories: 150kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     3
+  Drink Name:   GreenTeaLatte
+  Price:        $28
+  Tea:          GreenTea (Caffeine: 30mg)
+  Milk:         SkimMilk (Calories: 90kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     5
+  Drink Name:   CoconutMilkTea
+  Price:        $39
+  Tea:          BlackTea (Caffeine: 40mg)
+  Milk:         CoconutMilk (Calories: 70kcal)
+  Toppings:
+    - None
+  ---------------------------------
+===================================
+===    End of Drink Recipes     ===
+===================================
+
+remove_recipe("CoconutMilkTea", recipes, numRecipes)-> true
+===================================
+===       Drink Recipes         ===
+===================================
+  ---------------------------------
+  Drink ID:     2
+  Drink Name:   BlackTeaLatte
+  Price:        $30
+  Tea:          BlackTea (Caffeine: 40mg)
+  Milk:         WholeMilk (Calories: 150kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     3
+  Drink Name:   GreenTeaLatte
+  Price:        $28
+  Tea:          GreenTea (Caffeine: 30mg)
+  Milk:         SkimMilk (Calories: 90kcal)
+  Toppings:
+    - None
+  ---------------------------------
+===================================
+===    End of Drink Recipes     ===
+===================================
+

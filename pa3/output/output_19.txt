@@ -1,0 +1,98 @@
+--- test19 ---
+build_replacement_list(milkTypes, milkReplacements)-> true
+===================================
+===    Ingredients Database     ===
+===================================
+  --- Tea Types ---
+    - Tea1                      (Caffeine: 10mg)
+    - Tea2                      (Caffeine: 20mg)
+    - Tea3                      (Caffeine: 30mg)
+
+  --- Milk Types ---
+    - Milk1                     (Calories: 60kcal, Stock: 1)
+    - Milk2                     (Calories: 40kcal, Stock: 2)
+    - Milk3                     (Calories: 85kcal, Stock: 3)
+    - Milk4                     (Calories: 37kcal, Stock: 4)
+    - Milk5                     (Calories: 74kcal, Stock: 5)
+    - Milk6                     (Calories: 65kcal, Stock: 6)
+    - Milk7                     (Calories: 16kcal, Stock: 7)
+    - Milk8                     (Calories: 73kcal, Stock: 8)
+
+  --- Topping Types ---
+    - Topping1                  (Calories: 10kcal, Stock: 1)
+    - Topping2                  (Calories: 20kcal, Stock: 2)
+    - Topping3                  (Calories: 30kcal, Stock: 3)
+===================================
+=== End of Ingredients Database ===
+===================================
+
+create_order(pending, 1, "recipe1", recipes, numRecipes, Standard)-> true
+===================================
+===       Pending Orders        ===
+===================================
+  *********************************
+  Order Number: 1
+  Drink Name:   recipe1
+  Calories:     60kcal
+  Caffeine:     10mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea1
+    * Milk:   Milk1
+              (Stock: 1)
+    * Toppings:
+      - None
+  *********************************
+===================================
+===    End of Pending Orders    ===
+===================================
+
+get_order_ready(1, pending, ready, milkReplacements)-> 1
+###################################
+###      Completed Orders       ###
+###################################
+--- Orders ending with digit 1 ---
+  *********************************
+  Order Number: 1
+  Drink Name:   recipe1
+  Calories:     60kcal
+  Caffeine:     10mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea1
+    * Milk:   Milk1
+    * Toppings:
+      - None
+  *********************************
+--- End of orders ending with 1 ---
+
+###################################
+### End of Completed Orders     ###
+###################################
+
+===================================
+===    Ingredients Database     ===
+===================================
+  --- Tea Types ---
+    - Tea1                      (Caffeine: 10mg)
+    - Tea2                      (Caffeine: 20mg)
+    - Tea3                      (Caffeine: 30mg)
+
+  --- Milk Types ---
+    - Milk1                     (Calories: 60kcal, Stock: 0)
+    - Milk2                     (Calories: 40kcal, Stock: 2)
+    - Milk3                     (Calories: 85kcal, Stock: 3)
+    - Milk4                     (Calories: 37kcal, Stock: 4)
+    - Milk5                     (Calories: 74kcal, Stock: 5)
+    - Milk6                     (Calories: 65kcal, Stock: 6)
+    - Milk7                     (Calories: 16kcal, Stock: 7)
+    - Milk8                     (Calories: 73kcal, Stock: 8)
+
+  --- Topping Types ---
+    - Topping1                  (Calories: 10kcal, Stock: 1)
+    - Topping2                  (Calories: 20kcal, Stock: 2)
+    - Topping3                  (Calories: 30kcal, Stock: 3)
+===================================
+=== End of Ingredients Database ===
+===================================
+

@@ -1,0 +1,255 @@
+--- test26 ---
+build_replacement_list(milkTypes, milkReplacements)-> true
+create_order(pending, 1, "recipe1", recipes, numRecipes, Standard)-> true
+create_order(pending, 2, "recipe2", recipes, numRecipes, Standard)-> true
+create_order(pending, 3, "recipe3", recipes, numRecipes, Standard)-> true
+create_order(pending, 4, "recipe4", recipes, numRecipes, Standard)-> true
+create_order(pending, 11, "recipe5", recipes, numRecipes, Standard)-> true
+create_order(pending, 12, "recipe6", recipes, numRecipes, Standard)-> true
+create_order(pending, 13, "recipe7", recipes, numRecipes, Standard)-> true
+create_order(pending, 14, "recipe8", recipes, numRecipes, Standard)-> true
+===================================
+===       Pending Orders        ===
+===================================
+  *********************************
+  Order Number: 1
+  Drink Name:   recipe1
+  Calories:     60kcal
+  Caffeine:     10mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea1
+    * Milk:   Milk1
+              (Stock: 1)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 2
+  Drink Name:   recipe2
+  Calories:     40kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea2
+    * Milk:   Milk2
+              (Stock: 2)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 3
+  Drink Name:   recipe3
+  Calories:     85kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk3
+              (Stock: 3)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 4
+  Drink Name:   recipe4
+  Calories:     37kcal
+  Caffeine:     10mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea1
+    * Milk:   Milk4
+              (Stock: 4)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 11
+  Drink Name:   recipe5
+  Calories:     74kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea2
+    * Milk:   Milk5
+              (Stock: 5)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 12
+  Drink Name:   recipe6
+  Calories:     65kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk6
+              (Stock: 6)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 13
+  Drink Name:   recipe7
+  Calories:     16kcal
+  Caffeine:     10mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea1
+    * Milk:   Milk7
+              (Stock: 7)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 14
+  Drink Name:   recipe8
+  Calories:     73kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea2
+    * Milk:   Milk8
+              (Stock: 8)
+    * Toppings:
+      - None
+  *********************************
+===================================
+===    End of Pending Orders    ===
+===================================
+
+get_order_ready(1, pending, ready, milkReplacements)-> 1
+get_order_ready(3, pending, ready, milkReplacements)-> 1
+get_order_ready(4, pending, ready, milkReplacements)-> 1
+get_order_ready(2, pending, ready, milkReplacements)-> 1
+get_order_ready(11, pending, ready, milkReplacements)-> 1
+get_order_ready(12, pending, ready, milkReplacements)-> 1
+get_order_ready(13, pending, ready, milkReplacements)-> 1
+get_order_ready(14,pending ,ready ,milkReplacements)-> 1
+###################################
+###      Completed Orders       ###
+###################################
+--- Orders ending with digit 1 ---
+  *********************************
+  Order Number: 1
+  Drink Name:   recipe1
+  Calories:     60kcal
+  Caffeine:     10mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea1
+    * Milk:   Milk1
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 11
+  Drink Name:   recipe5
+  Calories:     74kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea2
+    * Milk:   Milk5
+    * Toppings:
+      - None
+  *********************************
+--- End of orders ending with 1 ---
+
+--- Orders ending with digit 2 ---
+  *********************************
+  Order Number: 2
+  Drink Name:   recipe2
+  Calories:     40kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea2
+    * Milk:   Milk2
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 12
+  Drink Name:   recipe6
+  Calories:     65kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk6
+    * Toppings:
+      - None
+  *********************************
+--- End of orders ending with 2 ---
+
+--- Orders ending with digit 3 ---
+  *********************************
+  Order Number: 3
+  Drink Name:   recipe3
+  Calories:     85kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea3
+    * Milk:   Milk3
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 13
+  Drink Name:   recipe7
+  Calories:     16kcal
+  Caffeine:     10mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea1
+    * Milk:   Milk7
+    * Toppings:
+      - None
+  *********************************
+--- End of orders ending with 3 ---
+
+--- Orders ending with digit 4 ---
+  *********************************
+  Order Number: 4
+  Drink Name:   recipe4
+  Calories:     37kcal
+  Caffeine:     10mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea1
+    * Milk:   Milk4
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 14
+  Drink Name:   recipe8
+  Calories:     73kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    Tea2
+    * Milk:   Milk8
+    * Toppings:
+      - None
+  *********************************
+--- End of orders ending with 4 ---
+
+###################################
+### End of Completed Orders     ###
+###################################
+

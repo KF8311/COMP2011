@@ -1,0 +1,15 @@
+3 8 3
+Tea1 10
+Tea2 20
+Tea3 30
+Milk1 60 1
+Milk2 40 2
+Milk3 85 3
+Milk4 37 4
+Milk5 74 5
+Milk6 65 6
+Milk7 16 7
+Milk8 73 8
+Topping1 10 1
+Topping2 20 2
+Topping3 30 3

@@ -1,0 +1,27 @@
+--- test1 ---
+===================================
+===       Drink Recipes         ===
+===================================
+  (No recipes available)
+===================================
+===    End of Drink Recipes     ===
+===================================
+
+create_recipe("CheesyGrapes", 1, 36, "GrapeTea", "WholeMilk", teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe("CheesyGrapes", 1, 36, "GrapeTea", "WholeMilk", teaTypes, milkTypes, recipes, numRecipes)-> false
+===================================
+===       Drink Recipes         ===
+===================================
+  ---------------------------------
+  Drink ID:     1
+  Drink Name:   CheesyGrapes
+  Price:        $36
+  Tea:          GrapeTea (Caffeine: 20mg)
+  Milk:         WholeMilk (Calories: 150kcal)
+  Toppings:
+    - None
+  ---------------------------------
+===================================
+===    End of Drink Recipes     ===
+===================================
+

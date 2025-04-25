@@ -1,0 +1,22 @@
+--- test8 ---
+create_order(pending, 2, "GreenTeaLatte", recipes, numRecipes, Standard)-> true
+===================================
+===       Pending Orders        ===
+===================================
+  *********************************
+  Order Number: 2
+  Drink Name:   GreenTeaLatte
+  Calories:     90kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    GreenTea
+    * Milk:   SkimMilk
+              (Stock: 5)
+    * Toppings:
+      - None
+  *********************************
+===================================
+===    End of Pending Orders    ===
+===================================
+

@@ -1,0 +1,49 @@
+--- test16 ---
+create_order(pending, 2, "GreenTeaLatte", recipes, numRecipes, Standard)-> true
+add_topping_to_order(2, "RedBean", toppingTypes, pending)-> true
+add_topping_to_order(2, "CheeseFoam", toppingTypes, pending)-> true
+add_topping_to_order(2, "MangoPoppingBoba", toppingTypes, pending)-> true
+===================================
+===       Pending Orders        ===
+===================================
+  *********************************
+  Order Number: 2
+  Drink Name:   GreenTeaLatte
+  Calories:     440kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    GreenTea
+    * Milk:   SkimMilk
+              (Stock: 5)
+    * Toppings:
+      - CheeseFoam (Stock: 9)
+      - MangoPoppingBoba (Stock: 13)
+      - RedBean (Stock: 6)
+  *********************************
+===================================
+===    End of Pending Orders    ===
+===================================
+
+remove_topping_from_order(2, "MangoPoppingBoba", pending)-> true
+===================================
+===       Pending Orders        ===
+===================================
+  *********************************
+  Order Number: 2
+  Drink Name:   GreenTeaLatte
+  Calories:     380kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    GreenTea
+    * Milk:   SkimMilk
+              (Stock: 5)
+    * Toppings:
+      - CheeseFoam (Stock: 9)
+      - RedBean (Stock: 6)
+  *********************************
+===================================
+===    End of Pending Orders    ===
+===================================
+

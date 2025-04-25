@@ -1,0 +1,10 @@
+3 3 3
+BlackTea 40
+GrapeTea 20
+GreenTea 30
+CoconutMilk 70 8
+SkimMilk 90 5
+WholeMilk 150 15
+CheeseFoam 110 9
+MangoPoppingBoba 60 13
+RedBean 180 6

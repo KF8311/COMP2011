@@ -1,0 +1,10 @@
+8
+recipe1 1 30 Tea1 Milk1 0
+recipe2 2 45 Tea2 Milk2 0
+recipe3 3 60 Tea3 Milk3 0
+recipe4 4 50 Tea1 Milk4 0
+recipe5 5 40 Tea2 Milk5 0
+recipe6 6 35 Tea3 Milk6 0
+recipe7 7 55 Tea1 Milk7 0
+recipe8 8 25 Tea2 Milk8 0
+recipe9 9 34 Tea3 Milk1 0

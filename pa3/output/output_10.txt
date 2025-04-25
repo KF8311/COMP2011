@@ -1,0 +1,67 @@
+--- test10 ---
+create_order(pending, 2, "GreenTeaLatte", recipes, numRecipes, Standard)-> true
+create_order(pending, 3, "BlackTeaLatte", recipes, numRecipes, None)-> true
+create_order(pending, 5, "CoconutMilkTea", recipes, numRecipes, Half)-> true
+create_order(pending, 4, "CoconutMilkTea", recipes, numRecipes, Standard)-> true
+===================================
+===       Pending Orders        ===
+===================================
+  *********************************
+  Order Number: 2
+  Drink Name:   GreenTeaLatte
+  Calories:     90kcal
+  Caffeine:     30mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    GreenTea
+    * Milk:   SkimMilk
+              (Stock: 5)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 3
+  Drink Name:   BlackTeaLatte
+  Calories:     150kcal
+  Caffeine:     40mg
+  Sugar Level:  None
+  Ingredients:
+    * Tea:    BlackTea
+    * Milk:   WholeMilk
+              (Stock: 15)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 4
+  Drink Name:   CoconutMilkTea
+  Calories:     70kcal
+  Caffeine:     40mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    BlackTea
+    * Milk:   CoconutMilk
+              (Stock: 8)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 5
+  Drink Name:   CoconutMilkTea
+  Calories:     70kcal
+  Caffeine:     40mg
+  Sugar Level:  Half
+  Ingredients:
+    * Tea:    BlackTea
+    * Milk:   CoconutMilk
+              (Stock: 8)
+    * Toppings:
+      - None
+  *********************************
+===================================
+===    End of Pending Orders    ===
+===================================
+

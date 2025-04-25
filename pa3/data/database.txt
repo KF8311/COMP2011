@@ -1,0 +1,38 @@
+12 12 13
+BlackTea 40
+ChaiTea 45
+ChamomileTea 0
+EarlGrey 50
+GreenTea 30
+HerbalTea 0
+JasmineTea 15
+Matcha 35
+OolongTea 25
+PeppermintTea 0
+RooibosTea 0
+WhiteTea 20
+AlmondMilk 60 12
+CashewMilk 55 11
+CoconutMilk 70 8
+FlaxMilk 95 0
+HempMilk 65 13
+MacadamiaMilk 75 7
+OatMilk 100 0
+PeaMilk 85 0
+RiceMilk 50 9
+SkimMilk 90 0
+SoyMilk 80 0
+WholeMilk 150 0
+AloeVera 30 8
+BlueBean 50 6
+CheeseFoam 110 9
+CoconutJelly 70 11
+GrassJelly 50 10
+GreenBean 250 10
+LycheePoppingBoba 55 7
+MangoPoppingBoba 60 13
+PassionFruitPoppingBoba 75 6
+Pudding 90 12
+RedBean 180 0
+StrawberryPoppingBoba 65 14
+TapiocaPearls 120 15

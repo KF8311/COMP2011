@@ -1,0 +1,4871 @@
+--- test 29 ---
+build_replacement_list(milkTypes, milkReplacements)-> true
+===================================
+===    Ingredients Database     ===
+===================================
+  --- Tea Types ---
+    - BlackTea                  (Caffeine: 40mg)
+    - ChaiTea                   (Caffeine: 45mg)
+    - ChamomileTea              (Caffeine: 0mg)
+    - EarlGrey                  (Caffeine: 50mg)
+    - GreenTea                  (Caffeine: 30mg)
+    - HerbalTea                 (Caffeine: 0mg)
+    - JasmineTea                (Caffeine: 15mg)
+    - Matcha                    (Caffeine: 35mg)
+    - OolongTea                 (Caffeine: 25mg)
+    - PeppermintTea             (Caffeine: 0mg)
+    - RooibosTea                (Caffeine: 0mg)
+    - WhiteTea                  (Caffeine: 20mg)
+
+  --- Milk Types ---
+    - AlmondMilk                (Calories: 60kcal, Stock: 12)
+    - CashewMilk                (Calories: 55kcal, Stock: 11)
+    - CoconutMilk               (Calories: 70kcal, Stock: 8)
+    - FlaxMilk                  (Calories: 95kcal, Stock: 0)
+    - HempMilk                  (Calories: 65kcal, Stock: 13)
+    - MacadamiaMilk             (Calories: 75kcal, Stock: 7)
+    - OatMilk                   (Calories: 100kcal, Stock: 24)
+    - PeaMilk                   (Calories: 85kcal, Stock: 14)
+    - RiceMilk                  (Calories: 50kcal, Stock: 9)
+    - SkimMilk                  (Calories: 90kcal, Stock: 25)
+    - SoyMilk                   (Calories: 80kcal, Stock: 13)
+    - WholeMilk                 (Calories: 150kcal, Stock: 41)
+
+  --- Topping Types ---
+    - AloeVera                  (Calories: 30kcal, Stock: 8)
+    - BlueBean                  (Calories: 50kcal, Stock: 6)
+    - CheeseFoam                (Calories: 110kcal, Stock: 9)
+    - CoconutJelly              (Calories: 70kcal, Stock: 11)
+    - GrassJelly                (Calories: 50kcal, Stock: 10)
+    - GreenBean                 (Calories: 250kcal, Stock: 10)
+    - LycheePoppingBoba         (Calories: 55kcal, Stock: 7)
+    - MangoPoppingBoba          (Calories: 60kcal, Stock: 13)
+    - PassionFruitPoppingBoba   (Calories: 75kcal, Stock: 6)
+    - Pudding                   (Calories: 90kcal, Stock: 12)
+    - RedBean                   (Calories: 180kcal, Stock: 28)
+    - StrawberryPoppingBoba     (Calories: 65kcal, Stock: 14)
+    - TapiocaPearls             (Calories: 120kcal, Stock: 15)
+===================================
+=== End of Ingredients Database ===
+===================================
+
+===================================
+===       Drink Recipes         ===
+===================================
+  (No recipes available)
+===================================
+===    End of Drink Recipes     ===
+===================================
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~    Milk Replacements        ~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  Start -> RiceMilk (Cal: 50, Stock: 9) -> CashewMilk (Cal: 55, Stock: 11) -> AlmondMilk (Cal: 60, Stock: 12) -> HempMilk (Cal: 65, Stock: 13) -> CoconutMilk (Cal: 70, Stock: 8) -> MacadamiaMilk (Cal: 75, Stock: 7) -> SoyMilk (Cal: 80, Stock: 13) -> PeaMilk (Cal: 85, Stock: 14) -> SkimMilk (Cal: 90, Stock: 25) -> FlaxMilk (Cal: 95, Stock: 0) -> OatMilk (Cal: 100, Stock: 24) -> WholeMilk (Cal: 150, Stock: 41) -- Loop
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~ End of Milk Replacements    ~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+create_recipe(recipeNameList[i], i, 10 + (i % 20), teaNameList[teaIndex], milkNameList[milkIndex], teaTypes, milkTypes, recipes, numRecipes)-> true
+===================================
+===       Drink Recipes         ===
+===================================
+  ---------------------------------
+  Drink ID:     0
+  Drink Name:   recipe1
+  Price:        $10
+  Tea:          HerbalTea (Caffeine: 0mg)
+  Milk:         MacadamiaMilk (Calories: 75kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     1
+  Drink Name:   recipe2
+  Price:        $11
+  Tea:          OolongTea (Caffeine: 25mg)
+  Milk:         AlmondMilk (Calories: 60kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     2
+  Drink Name:   recipe3
+  Price:        $12
+  Tea:          WhiteTea (Caffeine: 20mg)
+  Milk:         PeaMilk (Calories: 85kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     3
+  Drink Name:   recipe4
+  Price:        $13
+  Tea:          ChamomileTea (Caffeine: 0mg)
+  Milk:         CoconutMilk (Calories: 70kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     4
+  Drink Name:   recipe5
+  Price:        $14
+  Tea:          HerbalTea (Caffeine: 0mg)
+  Milk:         SkimMilk (Calories: 90kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     5
+  Drink Name:   recipe6
+  Price:        $15
+  Tea:          OolongTea (Caffeine: 25mg)
+  Milk:         HempMilk (Calories: 65kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     6
+  Drink Name:   recipe7
+  Price:        $16
+  Tea:          WhiteTea (Caffeine: 20mg)
+  Milk:         WholeMilk (Calories: 150kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     7
+  Drink Name:   recipe8
+  Price:        $17
+  Tea:          ChamomileTea (Caffeine: 0mg)
+  Milk:         OatMilk (Calories: 100kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     8
+  Drink Name:   recipe9
+  Price:        $18
+  Tea:          HerbalTea (Caffeine: 0mg)
+  Milk:         CashewMilk (Calories: 55kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     9
+  Drink Name:   recipe10
+  Price:        $19
+  Tea:          OolongTea (Caffeine: 25mg)
+  Milk:         RiceMilk (Calories: 50kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     10
+  Drink Name:   recipe11
+  Price:        $20
+  Tea:          WhiteTea (Caffeine: 20mg)
+  Milk:         FlaxMilk (Calories: 95kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     11
+  Drink Name:   recipe12
+  Price:        $21
+  Tea:          ChamomileTea (Caffeine: 0mg)
+  Milk:         SoyMilk (Calories: 80kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     12
+  Drink Name:   recipe13
+  Price:        $22
+  Tea:          HerbalTea (Caffeine: 0mg)
+  Milk:         MacadamiaMilk (Calories: 75kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     13
+  Drink Name:   recipe14
+  Price:        $23
+  Tea:          OolongTea (Caffeine: 25mg)
+  Milk:         AlmondMilk (Calories: 60kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     14
+  Drink Name:   recipe15
+  Price:        $24
+  Tea:          WhiteTea (Caffeine: 20mg)
+  Milk:         PeaMilk (Calories: 85kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     15
+  Drink Name:   recipe16
+  Price:        $25
+  Tea:          ChamomileTea (Caffeine: 0mg)
+  Milk:         CoconutMilk (Calories: 70kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     16
+  Drink Name:   recipe17
+  Price:        $26
+  Tea:          HerbalTea (Caffeine: 0mg)
+  Milk:         SkimMilk (Calories: 90kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     17
+  Drink Name:   recipe18
+  Price:        $27
+  Tea:          OolongTea (Caffeine: 25mg)
+  Milk:         HempMilk (Calories: 65kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     18
+  Drink Name:   recipe19
+  Price:        $28
+  Tea:          WhiteTea (Caffeine: 20mg)
+  Milk:         WholeMilk (Calories: 150kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     19
+  Drink Name:   recipe20
+  Price:        $29
+  Tea:          ChamomileTea (Caffeine: 0mg)
+  Milk:         OatMilk (Calories: 100kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     20
+  Drink Name:   recipe21
+  Price:        $10
+  Tea:          HerbalTea (Caffeine: 0mg)
+  Milk:         CashewMilk (Calories: 55kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     21
+  Drink Name:   recipe22
+  Price:        $11
+  Tea:          OolongTea (Caffeine: 25mg)
+  Milk:         RiceMilk (Calories: 50kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     22
+  Drink Name:   recipe23
+  Price:        $12
+  Tea:          WhiteTea (Caffeine: 20mg)
+  Milk:         FlaxMilk (Calories: 95kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     23
+  Drink Name:   recipe24
+  Price:        $13
+  Tea:          ChamomileTea (Caffeine: 0mg)
+  Milk:         SoyMilk (Calories: 80kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     24
+  Drink Name:   recipe25
+  Price:        $14
+  Tea:          HerbalTea (Caffeine: 0mg)
+  Milk:         MacadamiaMilk (Calories: 75kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     25
+  Drink Name:   recipe26
+  Price:        $15
+  Tea:          OolongTea (Caffeine: 25mg)
+  Milk:         AlmondMilk (Calories: 60kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     26
+  Drink Name:   recipe27
+  Price:        $16
+  Tea:          WhiteTea (Caffeine: 20mg)
+  Milk:         PeaMilk (Calories: 85kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     27
+  Drink Name:   recipe28
+  Price:        $17
+  Tea:          ChamomileTea (Caffeine: 0mg)
+  Milk:         CoconutMilk (Calories: 70kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     28
+  Drink Name:   recipe29
+  Price:        $18
+  Tea:          HerbalTea (Caffeine: 0mg)
+  Milk:         SkimMilk (Calories: 90kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     29
+  Drink Name:   recipe30
+  Price:        $19
+  Tea:          OolongTea (Caffeine: 25mg)
+  Milk:         HempMilk (Calories: 65kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     30
+  Drink Name:   recipe31
+  Price:        $20
+  Tea:          WhiteTea (Caffeine: 20mg)
+  Milk:         WholeMilk (Calories: 150kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     31
+  Drink Name:   recipe32
+  Price:        $21
+  Tea:          ChamomileTea (Caffeine: 0mg)
+  Milk:         OatMilk (Calories: 100kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     32
+  Drink Name:   recipe33
+  Price:        $22
+  Tea:          HerbalTea (Caffeine: 0mg)
+  Milk:         CashewMilk (Calories: 55kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     33
+  Drink Name:   recipe34
+  Price:        $23
+  Tea:          OolongTea (Caffeine: 25mg)
+  Milk:         RiceMilk (Calories: 50kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     34
+  Drink Name:   recipe35
+  Price:        $24
+  Tea:          WhiteTea (Caffeine: 20mg)
+  Milk:         FlaxMilk (Calories: 95kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     35
+  Drink Name:   recipe36
+  Price:        $25
+  Tea:          ChamomileTea (Caffeine: 0mg)
+  Milk:         SoyMilk (Calories: 80kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     36
+  Drink Name:   recipe37
+  Price:        $26
+  Tea:          HerbalTea (Caffeine: 0mg)
+  Milk:         MacadamiaMilk (Calories: 75kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     37
+  Drink Name:   recipe38
+  Price:        $27
+  Tea:          OolongTea (Caffeine: 25mg)
+  Milk:         AlmondMilk (Calories: 60kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     38
+  Drink Name:   recipe39
+  Price:        $28
+  Tea:          WhiteTea (Caffeine: 20mg)
+  Milk:         PeaMilk (Calories: 85kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     39
+  Drink Name:   recipe40
+  Price:        $29
+  Tea:          ChamomileTea (Caffeine: 0mg)
+  Milk:         CoconutMilk (Calories: 70kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     40
+  Drink Name:   recipe41
+  Price:        $10
+  Tea:          HerbalTea (Caffeine: 0mg)
+  Milk:         SkimMilk (Calories: 90kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     41
+  Drink Name:   recipe42
+  Price:        $11
+  Tea:          OolongTea (Caffeine: 25mg)
+  Milk:         HempMilk (Calories: 65kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     42
+  Drink Name:   recipe43
+  Price:        $12
+  Tea:          WhiteTea (Caffeine: 20mg)
+  Milk:         WholeMilk (Calories: 150kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     43
+  Drink Name:   recipe44
+  Price:        $13
+  Tea:          ChamomileTea (Caffeine: 0mg)
+  Milk:         OatMilk (Calories: 100kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     44
+  Drink Name:   recipe45
+  Price:        $14
+  Tea:          HerbalTea (Caffeine: 0mg)
+  Milk:         CashewMilk (Calories: 55kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     45
+  Drink Name:   recipe46
+  Price:        $15
+  Tea:          OolongTea (Caffeine: 25mg)
+  Milk:         RiceMilk (Calories: 50kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     46
+  Drink Name:   recipe47
+  Price:        $16
+  Tea:          WhiteTea (Caffeine: 20mg)
+  Milk:         FlaxMilk (Calories: 95kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     47
+  Drink Name:   recipe48
+  Price:        $17
+  Tea:          ChamomileTea (Caffeine: 0mg)
+  Milk:         SoyMilk (Calories: 80kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     48
+  Drink Name:   recipe49
+  Price:        $18
+  Tea:          HerbalTea (Caffeine: 0mg)
+  Milk:         MacadamiaMilk (Calories: 75kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     49
+  Drink Name:   recipe50
+  Price:        $19
+  Tea:          OolongTea (Caffeine: 25mg)
+  Milk:         AlmondMilk (Calories: 60kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     50
+  Drink Name:   recipe51
+  Price:        $20
+  Tea:          WhiteTea (Caffeine: 20mg)
+  Milk:         PeaMilk (Calories: 85kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     51
+  Drink Name:   recipe52
+  Price:        $21
+  Tea:          ChamomileTea (Caffeine: 0mg)
+  Milk:         CoconutMilk (Calories: 70kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     52
+  Drink Name:   recipe53
+  Price:        $22
+  Tea:          HerbalTea (Caffeine: 0mg)
+  Milk:         SkimMilk (Calories: 90kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     53
+  Drink Name:   recipe54
+  Price:        $23
+  Tea:          OolongTea (Caffeine: 25mg)
+  Milk:         HempMilk (Calories: 65kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     54
+  Drink Name:   recipe55
+  Price:        $24
+  Tea:          WhiteTea (Caffeine: 20mg)
+  Milk:         WholeMilk (Calories: 150kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     55
+  Drink Name:   recipe56
+  Price:        $25
+  Tea:          ChamomileTea (Caffeine: 0mg)
+  Milk:         OatMilk (Calories: 100kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     56
+  Drink Name:   recipe57
+  Price:        $26
+  Tea:          HerbalTea (Caffeine: 0mg)
+  Milk:         CashewMilk (Calories: 55kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     57
+  Drink Name:   recipe58
+  Price:        $27
+  Tea:          OolongTea (Caffeine: 25mg)
+  Milk:         RiceMilk (Calories: 50kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     58
+  Drink Name:   recipe59
+  Price:        $28
+  Tea:          WhiteTea (Caffeine: 20mg)
+  Milk:         FlaxMilk (Calories: 95kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     59
+  Drink Name:   recipe60
+  Price:        $29
+  Tea:          ChamomileTea (Caffeine: 0mg)
+  Milk:         SoyMilk (Calories: 80kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     60
+  Drink Name:   recipe61
+  Price:        $10
+  Tea:          HerbalTea (Caffeine: 0mg)
+  Milk:         MacadamiaMilk (Calories: 75kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     61
+  Drink Name:   recipe62
+  Price:        $11
+  Tea:          OolongTea (Caffeine: 25mg)
+  Milk:         AlmondMilk (Calories: 60kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     62
+  Drink Name:   recipe63
+  Price:        $12
+  Tea:          WhiteTea (Caffeine: 20mg)
+  Milk:         PeaMilk (Calories: 85kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     63
+  Drink Name:   recipe64
+  Price:        $13
+  Tea:          ChamomileTea (Caffeine: 0mg)
+  Milk:         CoconutMilk (Calories: 70kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     64
+  Drink Name:   recipe65
+  Price:        $14
+  Tea:          HerbalTea (Caffeine: 0mg)
+  Milk:         SkimMilk (Calories: 90kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     65
+  Drink Name:   recipe66
+  Price:        $15
+  Tea:          OolongTea (Caffeine: 25mg)
+  Milk:         HempMilk (Calories: 65kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     66
+  Drink Name:   recipe67
+  Price:        $16
+  Tea:          WhiteTea (Caffeine: 20mg)
+  Milk:         WholeMilk (Calories: 150kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     67
+  Drink Name:   recipe68
+  Price:        $17
+  Tea:          ChamomileTea (Caffeine: 0mg)
+  Milk:         OatMilk (Calories: 100kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     68
+  Drink Name:   recipe69
+  Price:        $18
+  Tea:          HerbalTea (Caffeine: 0mg)
+  Milk:         CashewMilk (Calories: 55kcal)
+  Toppings:
+    - None
+  ---------------------------------
+
+  ---------------------------------
+  Drink ID:     69
+  Drink Name:   recipe70
+  Price:        $19
+  Tea:          OolongTea (Caffeine: 25mg)
+  Milk:         RiceMilk (Calories: 50kcal)
+  Toppings:
+    - None
+  ---------------------------------
+===================================
+===    End of Drink Recipes     ===
+===================================
+
+
+
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+create_order(pending, orderNum, recipeNameList[recipeIndex], recipes, numRecipes, Standard)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+add_topping_to_order(orderNum, toppingNameList[toppingIndex], toppingTypes, pending)-> true
+===================================
+===       Pending Orders        ===
+===================================
+  *********************************
+  Order Number: 1
+  Drink Name:   recipe30
+  Calories:     65kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+              (Stock: 13)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 2
+  Drink Name:   recipe43
+  Calories:     200kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   WholeMilk
+              (Stock: 41)
+    * Toppings:
+      - GrassJelly (Stock: 10)
+  *********************************
+
+  *********************************
+  Order Number: 3
+  Drink Name:   recipe56
+  Calories:     530kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+              (Stock: 24)
+    * Toppings:
+      - GreenBean (Stock: 10)
+      - RedBean (Stock: 28)
+  *********************************
+
+  *********************************
+  Order Number: 4
+  Drink Name:   recipe69
+  Calories:     55kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   CashewMilk
+              (Stock: 11)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 5
+  Drink Name:   recipe12
+  Calories:     140kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+              (Stock: 13)
+    * Toppings:
+      - MangoPoppingBoba (Stock: 13)
+  *********************************
+
+  *********************************
+  Order Number: 6
+  Drink Name:   recipe25
+  Calories:     180kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   MacadamiaMilk
+              (Stock: 7)
+    * Toppings:
+      - AloeVera (Stock: 8)
+      - PassionFruitPoppingBoba (Stock: 6)
+  *********************************
+
+  *********************************
+  Order Number: 7
+  Drink Name:   recipe38
+  Calories:     60kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+              (Stock: 12)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 8
+  Drink Name:   recipe51
+  Calories:     265kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   PeaMilk
+              (Stock: 14)
+    * Toppings:
+      - RedBean (Stock: 28)
+  *********************************
+
+  *********************************
+  Order Number: 9
+  Drink Name:   recipe64
+  Calories:     205kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+              (Stock: 8)
+    * Toppings:
+      - CoconutJelly (Stock: 11)
+      - StrawberryPoppingBoba (Stock: 14)
+  *********************************
+
+  *********************************
+  Order Number: 10
+  Drink Name:   recipe7
+  Calories:     150kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   WholeMilk
+              (Stock: 41)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 11
+  Drink Name:   recipe20
+  Calories:     130kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+              (Stock: 24)
+    * Toppings:
+      - AloeVera (Stock: 8)
+  *********************************
+
+  *********************************
+  Order Number: 12
+  Drink Name:   recipe33
+  Calories:     160kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   CashewMilk
+              (Stock: 11)
+    * Toppings:
+      - BlueBean (Stock: 6)
+      - LycheePoppingBoba (Stock: 7)
+  *********************************
+
+  *********************************
+  Order Number: 13
+  Drink Name:   recipe46
+  Calories:     50kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+              (Stock: 9)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 14
+  Drink Name:   recipe59
+  Calories:     165kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   FlaxMilk
+              (Stock: 0 - Needs Replacement!)
+    * Toppings:
+      - CoconutJelly (Stock: 11)
+  *********************************
+
+  *********************************
+  Order Number: 15
+  Drink Name:   recipe2
+  Calories:     200kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+              (Stock: 12)
+    * Toppings:
+      - GrassJelly (Stock: 10)
+      - Pudding (Stock: 12)
+  *********************************
+
+  *********************************
+  Order Number: 16
+  Drink Name:   recipe15
+  Calories:     85kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   PeaMilk
+              (Stock: 14)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 17
+  Drink Name:   recipe28
+  Calories:     125kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+              (Stock: 8)
+    * Toppings:
+      - LycheePoppingBoba (Stock: 7)
+  *********************************
+
+  *********************************
+  Order Number: 18
+  Drink Name:   recipe41
+  Calories:     270kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   SkimMilk
+              (Stock: 25)
+    * Toppings:
+      - MangoPoppingBoba (Stock: 13)
+      - TapiocaPearls (Stock: 15)
+  *********************************
+
+  *********************************
+  Order Number: 19
+  Drink Name:   recipe54
+  Calories:     65kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+              (Stock: 13)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 20
+  Drink Name:   recipe67
+  Calories:     240kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   WholeMilk
+              (Stock: 41)
+    * Toppings:
+      - Pudding (Stock: 12)
+  *********************************
+
+  *********************************
+  Order Number: 21
+  Drink Name:   recipe10
+  Calories:     340kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+              (Stock: 9)
+    * Toppings:
+      - CheeseFoam (Stock: 9)
+      - RedBean (Stock: 28)
+  *********************************
+
+  *********************************
+  Order Number: 22
+  Drink Name:   recipe23
+  Calories:     95kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   FlaxMilk
+              (Stock: 0 - Needs Replacement!)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 23
+  Drink Name:   recipe36
+  Calories:     200kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+              (Stock: 13)
+    * Toppings:
+      - TapiocaPearls (Stock: 15)
+  *********************************
+
+  *********************************
+  Order Number: 24
+  Drink Name:   recipe49
+  Calories:     355kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   MacadamiaMilk
+              (Stock: 7)
+    * Toppings:
+      - AloeVera (Stock: 8)
+      - GreenBean (Stock: 10)
+  *********************************
+
+  *********************************
+  Order Number: 25
+  Drink Name:   recipe62
+  Calories:     60kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+              (Stock: 12)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 26
+  Drink Name:   recipe5
+  Calories:     200kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   SkimMilk
+              (Stock: 25)
+    * Toppings:
+      - CheeseFoam (Stock: 9)
+  *********************************
+
+  *********************************
+  Order Number: 27
+  Drink Name:   recipe18
+  Calories:     210kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+              (Stock: 13)
+    * Toppings:
+      - CoconutJelly (Stock: 11)
+      - PassionFruitPoppingBoba (Stock: 6)
+  *********************************
+
+  *********************************
+  Order Number: 28
+  Drink Name:   recipe31
+  Calories:     150kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   WholeMilk
+              (Stock: 41)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 29
+  Drink Name:   recipe44
+  Calories:     350kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+              (Stock: 24)
+    * Toppings:
+      - GreenBean (Stock: 10)
+  *********************************
+
+  *********************************
+  Order Number: 30
+  Drink Name:   recipe57
+  Calories:     175kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   CashewMilk
+              (Stock: 11)
+    * Toppings:
+      - LycheePoppingBoba (Stock: 7)
+      - StrawberryPoppingBoba (Stock: 14)
+  *********************************
+
+  *********************************
+  Order Number: 31
+  Drink Name:   recipe70
+  Calories:     50kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+              (Stock: 9)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 32
+  Drink Name:   recipe13
+  Calories:     150kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   MacadamiaMilk
+              (Stock: 7)
+    * Toppings:
+      - PassionFruitPoppingBoba (Stock: 6)
+  *********************************
+
+  *********************************
+  Order Number: 33
+  Drink Name:   recipe26
+  Calories:     200kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+              (Stock: 12)
+    * Toppings:
+      - BlueBean (Stock: 6)
+      - Pudding (Stock: 12)
+  *********************************
+
+  *********************************
+  Order Number: 34
+  Drink Name:   recipe39
+  Calories:     85kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   PeaMilk
+              (Stock: 14)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 35
+  Drink Name:   recipe52
+  Calories:     135kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+              (Stock: 8)
+    * Toppings:
+      - StrawberryPoppingBoba (Stock: 14)
+  *********************************
+
+  *********************************
+  Order Number: 36
+  Drink Name:   recipe65
+  Calories:     260kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   SkimMilk
+              (Stock: 25)
+    * Toppings:
+      - GrassJelly (Stock: 10)
+      - TapiocaPearls (Stock: 15)
+  *********************************
+
+  *********************************
+  Order Number: 37
+  Drink Name:   recipe8
+  Calories:     100kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+              (Stock: 24)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 38
+  Drink Name:   recipe21
+  Calories:     105kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   CashewMilk
+              (Stock: 11)
+    * Toppings:
+      - BlueBean (Stock: 6)
+  *********************************
+
+  *********************************
+  Order Number: 39
+  Drink Name:   recipe34
+  Calories:     220kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+              (Stock: 9)
+    * Toppings:
+      - CheeseFoam (Stock: 9)
+      - MangoPoppingBoba (Stock: 13)
+  *********************************
+
+  *********************************
+  Order Number: 40
+  Drink Name:   recipe47
+  Calories:     95kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   FlaxMilk
+              (Stock: 0 - Needs Replacement!)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 41
+  Drink Name:   recipe60
+  Calories:     130kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+              (Stock: 13)
+    * Toppings:
+      - GrassJelly (Stock: 10)
+  *********************************
+
+  *********************************
+  Order Number: 42
+  Drink Name:   recipe3
+  Calories:     515kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   PeaMilk
+              (Stock: 14)
+    * Toppings:
+      - GreenBean (Stock: 10)
+      - RedBean (Stock: 28)
+  *********************************
+
+  *********************************
+  Order Number: 43
+  Drink Name:   recipe16
+  Calories:     70kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+              (Stock: 8)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 44
+  Drink Name:   recipe29
+  Calories:     150kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   SkimMilk
+              (Stock: 25)
+    * Toppings:
+      - MangoPoppingBoba (Stock: 13)
+  *********************************
+
+  *********************************
+  Order Number: 45
+  Drink Name:   recipe42
+  Calories:     170kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+              (Stock: 13)
+    * Toppings:
+      - AloeVera (Stock: 8)
+      - PassionFruitPoppingBoba (Stock: 6)
+  *********************************
+
+  *********************************
+  Order Number: 46
+  Drink Name:   recipe55
+  Calories:     150kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   WholeMilk
+              (Stock: 41)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 47
+  Drink Name:   recipe68
+  Calories:     280kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+              (Stock: 24)
+    * Toppings:
+      - RedBean (Stock: 28)
+  *********************************
+
+  *********************************
+  Order Number: 48
+  Drink Name:   recipe11
+  Calories:     230kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   FlaxMilk
+              (Stock: 0 - Needs Replacement!)
+    * Toppings:
+      - CoconutJelly (Stock: 11)
+      - StrawberryPoppingBoba (Stock: 14)
+  *********************************
+
+  *********************************
+  Order Number: 49
+  Drink Name:   recipe24
+  Calories:     80kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+              (Stock: 13)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 50
+  Drink Name:   recipe37
+  Calories:     105kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   MacadamiaMilk
+              (Stock: 7)
+    * Toppings:
+      - AloeVera (Stock: 8)
+  *********************************
+
+  *********************************
+  Order Number: 51
+  Drink Name:   recipe50
+  Calories:     165kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+              (Stock: 12)
+    * Toppings:
+      - BlueBean (Stock: 6)
+      - LycheePoppingBoba (Stock: 7)
+  *********************************
+
+  *********************************
+  Order Number: 52
+  Drink Name:   recipe63
+  Calories:     85kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   PeaMilk
+              (Stock: 14)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 53
+  Drink Name:   recipe6
+  Calories:     135kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+              (Stock: 13)
+    * Toppings:
+      - CoconutJelly (Stock: 11)
+  *********************************
+
+  *********************************
+  Order Number: 54
+  Drink Name:   recipe19
+  Calories:     290kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   WholeMilk
+              (Stock: 41)
+    * Toppings:
+      - GrassJelly (Stock: 10)
+      - Pudding (Stock: 12)
+  *********************************
+
+  *********************************
+  Order Number: 55
+  Drink Name:   recipe32
+  Calories:     100kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+              (Stock: 24)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 56
+  Drink Name:   recipe45
+  Calories:     110kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   CashewMilk
+              (Stock: 11)
+    * Toppings:
+      - LycheePoppingBoba (Stock: 7)
+  *********************************
+
+  *********************************
+  Order Number: 57
+  Drink Name:   recipe58
+  Calories:     230kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+              (Stock: 9)
+    * Toppings:
+      - MangoPoppingBoba (Stock: 13)
+      - TapiocaPearls (Stock: 15)
+  *********************************
+
+  *********************************
+  Order Number: 58
+  Drink Name:   recipe1
+  Calories:     75kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   MacadamiaMilk
+              (Stock: 7)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 59
+  Drink Name:   recipe14
+  Calories:     150kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+              (Stock: 12)
+    * Toppings:
+      - Pudding (Stock: 12)
+  *********************************
+
+  *********************************
+  Order Number: 60
+  Drink Name:   recipe27
+  Calories:     375kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   PeaMilk
+              (Stock: 14)
+    * Toppings:
+      - CheeseFoam (Stock: 9)
+      - RedBean (Stock: 28)
+  *********************************
+
+  *********************************
+  Order Number: 61
+  Drink Name:   recipe40
+  Calories:     70kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+              (Stock: 8)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 62
+  Drink Name:   recipe53
+  Calories:     210kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   SkimMilk
+              (Stock: 25)
+    * Toppings:
+      - TapiocaPearls (Stock: 15)
+  *********************************
+
+  *********************************
+  Order Number: 63
+  Drink Name:   recipe66
+  Calories:     345kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+              (Stock: 13)
+    * Toppings:
+      - AloeVera (Stock: 8)
+      - GreenBean (Stock: 10)
+  *********************************
+
+  *********************************
+  Order Number: 64
+  Drink Name:   recipe9
+  Calories:     55kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   CashewMilk
+              (Stock: 11)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 65
+  Drink Name:   recipe22
+  Calories:     160kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+              (Stock: 9)
+    * Toppings:
+      - CheeseFoam (Stock: 9)
+  *********************************
+
+  *********************************
+  Order Number: 66
+  Drink Name:   recipe35
+  Calories:     240kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   FlaxMilk
+              (Stock: 0 - Needs Replacement!)
+    * Toppings:
+      - CoconutJelly (Stock: 11)
+      - PassionFruitPoppingBoba (Stock: 6)
+  *********************************
+
+  *********************************
+  Order Number: 67
+  Drink Name:   recipe48
+  Calories:     80kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+              (Stock: 13)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 68
+  Drink Name:   recipe61
+  Calories:     325kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   MacadamiaMilk
+              (Stock: 7)
+    * Toppings:
+      - GreenBean (Stock: 10)
+  *********************************
+
+  *********************************
+  Order Number: 69
+  Drink Name:   recipe4
+  Calories:     190kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+              (Stock: 8)
+    * Toppings:
+      - LycheePoppingBoba (Stock: 7)
+      - StrawberryPoppingBoba (Stock: 14)
+  *********************************
+
+  *********************************
+  Order Number: 70
+  Drink Name:   recipe17
+  Calories:     90kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   SkimMilk
+              (Stock: 25)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 71
+  Drink Name:   recipe30
+  Calories:     140kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+              (Stock: 13)
+    * Toppings:
+      - PassionFruitPoppingBoba (Stock: 6)
+  *********************************
+
+  *********************************
+  Order Number: 72
+  Drink Name:   recipe43
+  Calories:     290kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   WholeMilk
+              (Stock: 41)
+    * Toppings:
+      - BlueBean (Stock: 6)
+      - Pudding (Stock: 12)
+  *********************************
+
+  *********************************
+  Order Number: 73
+  Drink Name:   recipe56
+  Calories:     100kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+              (Stock: 24)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 74
+  Drink Name:   recipe69
+  Calories:     120kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   CashewMilk
+              (Stock: 11)
+    * Toppings:
+      - StrawberryPoppingBoba (Stock: 14)
+  *********************************
+
+  *********************************
+  Order Number: 75
+  Drink Name:   recipe12
+  Calories:     250kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+              (Stock: 13)
+    * Toppings:
+      - GrassJelly (Stock: 10)
+      - TapiocaPearls (Stock: 15)
+  *********************************
+
+  *********************************
+  Order Number: 76
+  Drink Name:   recipe25
+  Calories:     75kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   MacadamiaMilk
+              (Stock: 7)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 77
+  Drink Name:   recipe38
+  Calories:     110kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+              (Stock: 12)
+    * Toppings:
+      - BlueBean (Stock: 6)
+  *********************************
+
+  *********************************
+  Order Number: 78
+  Drink Name:   recipe51
+  Calories:     255kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   PeaMilk
+              (Stock: 14)
+    * Toppings:
+      - CheeseFoam (Stock: 9)
+      - MangoPoppingBoba (Stock: 13)
+  *********************************
+
+  *********************************
+  Order Number: 79
+  Drink Name:   recipe64
+  Calories:     70kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+              (Stock: 8)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 80
+  Drink Name:   recipe7
+  Calories:     200kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   WholeMilk
+              (Stock: 41)
+    * Toppings:
+      - GrassJelly (Stock: 10)
+  *********************************
+
+  *********************************
+  Order Number: 81
+  Drink Name:   recipe20
+  Calories:     530kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+              (Stock: 24)
+    * Toppings:
+      - GreenBean (Stock: 10)
+      - RedBean (Stock: 28)
+  *********************************
+
+  *********************************
+  Order Number: 82
+  Drink Name:   recipe33
+  Calories:     55kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   CashewMilk
+              (Stock: 11)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 83
+  Drink Name:   recipe46
+  Calories:     110kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+              (Stock: 9)
+    * Toppings:
+      - MangoPoppingBoba (Stock: 13)
+  *********************************
+
+  *********************************
+  Order Number: 84
+  Drink Name:   recipe59
+  Calories:     200kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   FlaxMilk
+              (Stock: 0 - Needs Replacement!)
+    * Toppings:
+      - AloeVera (Stock: 8)
+      - PassionFruitPoppingBoba (Stock: 6)
+  *********************************
+
+  *********************************
+  Order Number: 85
+  Drink Name:   recipe2
+  Calories:     60kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+              (Stock: 12)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 86
+  Drink Name:   recipe15
+  Calories:     265kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   PeaMilk
+              (Stock: 14)
+    * Toppings:
+      - RedBean (Stock: 28)
+  *********************************
+
+  *********************************
+  Order Number: 87
+  Drink Name:   recipe28
+  Calories:     205kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+              (Stock: 8)
+    * Toppings:
+      - CoconutJelly (Stock: 11)
+      - StrawberryPoppingBoba (Stock: 14)
+  *********************************
+
+  *********************************
+  Order Number: 88
+  Drink Name:   recipe41
+  Calories:     90kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   SkimMilk
+              (Stock: 25)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 89
+  Drink Name:   recipe54
+  Calories:     95kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+              (Stock: 13)
+    * Toppings:
+      - AloeVera (Stock: 8)
+  *********************************
+
+  *********************************
+  Order Number: 90
+  Drink Name:   recipe67
+  Calories:     255kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   WholeMilk
+              (Stock: 41)
+    * Toppings:
+      - BlueBean (Stock: 6)
+      - LycheePoppingBoba (Stock: 7)
+  *********************************
+
+  *********************************
+  Order Number: 91
+  Drink Name:   recipe10
+  Calories:     50kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+              (Stock: 9)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 92
+  Drink Name:   recipe23
+  Calories:     165kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   FlaxMilk
+              (Stock: 0 - Needs Replacement!)
+    * Toppings:
+      - CoconutJelly (Stock: 11)
+  *********************************
+
+  *********************************
+  Order Number: 93
+  Drink Name:   recipe36
+  Calories:     220kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+              (Stock: 13)
+    * Toppings:
+      - GrassJelly (Stock: 10)
+      - Pudding (Stock: 12)
+  *********************************
+
+  *********************************
+  Order Number: 94
+  Drink Name:   recipe49
+  Calories:     75kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   MacadamiaMilk
+              (Stock: 7)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 95
+  Drink Name:   recipe62
+  Calories:     115kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+              (Stock: 12)
+    * Toppings:
+      - LycheePoppingBoba (Stock: 7)
+  *********************************
+
+  *********************************
+  Order Number: 96
+  Drink Name:   recipe5
+  Calories:     270kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   SkimMilk
+              (Stock: 25)
+    * Toppings:
+      - MangoPoppingBoba (Stock: 13)
+      - TapiocaPearls (Stock: 15)
+  *********************************
+
+  *********************************
+  Order Number: 97
+  Drink Name:   recipe18
+  Calories:     65kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+              (Stock: 13)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 98
+  Drink Name:   recipe31
+  Calories:     240kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   WholeMilk
+              (Stock: 41)
+    * Toppings:
+      - Pudding (Stock: 12)
+  *********************************
+
+  *********************************
+  Order Number: 99
+  Drink Name:   recipe44
+  Calories:     390kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+              (Stock: 24)
+    * Toppings:
+      - CheeseFoam (Stock: 9)
+      - RedBean (Stock: 28)
+  *********************************
+
+  *********************************
+  Order Number: 100
+  Drink Name:   recipe57
+  Calories:     55kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   CashewMilk
+              (Stock: 11)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 101
+  Drink Name:   recipe70
+  Calories:     170kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+              (Stock: 9)
+    * Toppings:
+      - TapiocaPearls (Stock: 15)
+  *********************************
+
+  *********************************
+  Order Number: 102
+  Drink Name:   recipe13
+  Calories:     355kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   MacadamiaMilk
+              (Stock: 7)
+    * Toppings:
+      - AloeVera (Stock: 8)
+      - GreenBean (Stock: 10)
+  *********************************
+
+  *********************************
+  Order Number: 103
+  Drink Name:   recipe26
+  Calories:     60kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+              (Stock: 12)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 104
+  Drink Name:   recipe39
+  Calories:     195kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   PeaMilk
+              (Stock: 14)
+    * Toppings:
+      - CheeseFoam (Stock: 9)
+  *********************************
+
+  *********************************
+  Order Number: 105
+  Drink Name:   recipe52
+  Calories:     215kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+              (Stock: 8)
+    * Toppings:
+      - CoconutJelly (Stock: 11)
+      - PassionFruitPoppingBoba (Stock: 6)
+  *********************************
+
+  *********************************
+  Order Number: 106
+  Drink Name:   recipe65
+  Calories:     90kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   SkimMilk
+              (Stock: 25)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 107
+  Drink Name:   recipe8
+  Calories:     350kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+              (Stock: 24)
+    * Toppings:
+      - GreenBean (Stock: 10)
+  *********************************
+
+  *********************************
+  Order Number: 108
+  Drink Name:   recipe21
+  Calories:     175kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   CashewMilk
+              (Stock: 11)
+    * Toppings:
+      - LycheePoppingBoba (Stock: 7)
+      - StrawberryPoppingBoba (Stock: 14)
+  *********************************
+
+  *********************************
+  Order Number: 109
+  Drink Name:   recipe34
+  Calories:     50kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+              (Stock: 9)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 110
+  Drink Name:   recipe47
+  Calories:     170kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   FlaxMilk
+              (Stock: 0 - Needs Replacement!)
+    * Toppings:
+      - PassionFruitPoppingBoba (Stock: 6)
+  *********************************
+
+  *********************************
+  Order Number: 111
+  Drink Name:   recipe60
+  Calories:     220kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+              (Stock: 13)
+    * Toppings:
+      - BlueBean (Stock: 6)
+      - Pudding (Stock: 12)
+  *********************************
+
+  *********************************
+  Order Number: 112
+  Drink Name:   recipe3
+  Calories:     85kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   PeaMilk
+              (Stock: 14)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 113
+  Drink Name:   recipe16
+  Calories:     135kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+              (Stock: 8)
+    * Toppings:
+      - StrawberryPoppingBoba (Stock: 14)
+  *********************************
+
+  *********************************
+  Order Number: 114
+  Drink Name:   recipe29
+  Calories:     260kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   SkimMilk
+              (Stock: 25)
+    * Toppings:
+      - GrassJelly (Stock: 10)
+      - TapiocaPearls (Stock: 15)
+  *********************************
+
+  *********************************
+  Order Number: 115
+  Drink Name:   recipe42
+  Calories:     65kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+              (Stock: 13)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 116
+  Drink Name:   recipe55
+  Calories:     200kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   WholeMilk
+              (Stock: 41)
+    * Toppings:
+      - BlueBean (Stock: 6)
+  *********************************
+
+  *********************************
+  Order Number: 117
+  Drink Name:   recipe68
+  Calories:     270kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+              (Stock: 24)
+    * Toppings:
+      - CheeseFoam (Stock: 9)
+      - MangoPoppingBoba (Stock: 13)
+  *********************************
+
+  *********************************
+  Order Number: 118
+  Drink Name:   recipe11
+  Calories:     95kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   FlaxMilk
+              (Stock: 0 - Needs Replacement!)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 119
+  Drink Name:   recipe24
+  Calories:     130kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+              (Stock: 13)
+    * Toppings:
+      - GrassJelly (Stock: 10)
+  *********************************
+
+  *********************************
+  Order Number: 120
+  Drink Name:   recipe37
+  Calories:     505kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   MacadamiaMilk
+              (Stock: 7)
+    * Toppings:
+      - GreenBean (Stock: 10)
+      - RedBean (Stock: 28)
+  *********************************
+
+  *********************************
+  Order Number: 121
+  Drink Name:   recipe50
+  Calories:     60kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+              (Stock: 12)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 122
+  Drink Name:   recipe63
+  Calories:     145kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   PeaMilk
+              (Stock: 14)
+    * Toppings:
+      - MangoPoppingBoba (Stock: 13)
+  *********************************
+
+  *********************************
+  Order Number: 123
+  Drink Name:   recipe6
+  Calories:     170kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+              (Stock: 13)
+    * Toppings:
+      - AloeVera (Stock: 8)
+      - PassionFruitPoppingBoba (Stock: 6)
+  *********************************
+
+  *********************************
+  Order Number: 124
+  Drink Name:   recipe19
+  Calories:     150kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   WholeMilk
+              (Stock: 41)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 125
+  Drink Name:   recipe32
+  Calories:     280kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+              (Stock: 24)
+    * Toppings:
+      - RedBean (Stock: 28)
+  *********************************
+
+  *********************************
+  Order Number: 126
+  Drink Name:   recipe45
+  Calories:     190kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   CashewMilk
+              (Stock: 11)
+    * Toppings:
+      - CoconutJelly (Stock: 11)
+      - StrawberryPoppingBoba (Stock: 14)
+  *********************************
+
+  *********************************
+  Order Number: 127
+  Drink Name:   recipe58
+  Calories:     50kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+              (Stock: 9)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 128
+  Drink Name:   recipe1
+  Calories:     105kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   MacadamiaMilk
+              (Stock: 7)
+    * Toppings:
+      - AloeVera (Stock: 8)
+  *********************************
+
+  *********************************
+  Order Number: 129
+  Drink Name:   recipe14
+  Calories:     165kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+              (Stock: 12)
+    * Toppings:
+      - BlueBean (Stock: 6)
+      - LycheePoppingBoba (Stock: 7)
+  *********************************
+
+  *********************************
+  Order Number: 130
+  Drink Name:   recipe27
+  Calories:     85kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   PeaMilk
+              (Stock: 14)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 131
+  Drink Name:   recipe40
+  Calories:     140kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+              (Stock: 8)
+    * Toppings:
+      - CoconutJelly (Stock: 11)
+  *********************************
+
+  *********************************
+  Order Number: 132
+  Drink Name:   recipe53
+  Calories:     230kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   SkimMilk
+              (Stock: 25)
+    * Toppings:
+      - GrassJelly (Stock: 10)
+      - Pudding (Stock: 12)
+  *********************************
+
+  *********************************
+  Order Number: 133
+  Drink Name:   recipe66
+  Calories:     65kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+              (Stock: 13)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 134
+  Drink Name:   recipe9
+  Calories:     110kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   CashewMilk
+              (Stock: 11)
+    * Toppings:
+      - LycheePoppingBoba (Stock: 7)
+  *********************************
+
+  *********************************
+  Order Number: 135
+  Drink Name:   recipe22
+  Calories:     230kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+              (Stock: 9)
+    * Toppings:
+      - MangoPoppingBoba (Stock: 13)
+      - TapiocaPearls (Stock: 15)
+  *********************************
+
+  *********************************
+  Order Number: 136
+  Drink Name:   recipe35
+  Calories:     95kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   FlaxMilk
+              (Stock: 0 - Needs Replacement!)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 137
+  Drink Name:   recipe48
+  Calories:     170kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+              (Stock: 13)
+    * Toppings:
+      - Pudding (Stock: 12)
+  *********************************
+
+  *********************************
+  Order Number: 138
+  Drink Name:   recipe61
+  Calories:     365kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   MacadamiaMilk
+              (Stock: 7)
+    * Toppings:
+      - CheeseFoam (Stock: 9)
+      - RedBean (Stock: 28)
+  *********************************
+
+  *********************************
+  Order Number: 139
+  Drink Name:   recipe4
+  Calories:     70kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+              (Stock: 8)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 140
+  Drink Name:   recipe17
+  Calories:     210kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   SkimMilk
+              (Stock: 25)
+    * Toppings:
+      - TapiocaPearls (Stock: 15)
+  *********************************
+
+  *********************************
+  Order Number: 141
+  Drink Name:   recipe30
+  Calories:     345kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+              (Stock: 13)
+    * Toppings:
+      - AloeVera (Stock: 8)
+      - GreenBean (Stock: 10)
+  *********************************
+
+  *********************************
+  Order Number: 142
+  Drink Name:   recipe43
+  Calories:     150kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   WholeMilk
+              (Stock: 41)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 143
+  Drink Name:   recipe56
+  Calories:     210kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+              (Stock: 24)
+    * Toppings:
+      - CheeseFoam (Stock: 9)
+  *********************************
+
+  *********************************
+  Order Number: 144
+  Drink Name:   recipe69
+  Calories:     200kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   CashewMilk
+              (Stock: 11)
+    * Toppings:
+      - CoconutJelly (Stock: 11)
+      - PassionFruitPoppingBoba (Stock: 6)
+  *********************************
+
+  *********************************
+  Order Number: 145
+  Drink Name:   recipe12
+  Calories:     80kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+              (Stock: 13)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 146
+  Drink Name:   recipe25
+  Calories:     325kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   MacadamiaMilk
+              (Stock: 7)
+    * Toppings:
+      - GreenBean (Stock: 10)
+  *********************************
+
+  *********************************
+  Order Number: 147
+  Drink Name:   recipe38
+  Calories:     180kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+              (Stock: 12)
+    * Toppings:
+      - LycheePoppingBoba (Stock: 7)
+      - StrawberryPoppingBoba (Stock: 14)
+  *********************************
+
+  *********************************
+  Order Number: 148
+  Drink Name:   recipe51
+  Calories:     85kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   PeaMilk
+              (Stock: 14)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 149
+  Drink Name:   recipe64
+  Calories:     145kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+              (Stock: 8)
+    * Toppings:
+      - PassionFruitPoppingBoba (Stock: 6)
+  *********************************
+
+  *********************************
+  Order Number: 150
+  Drink Name:   recipe7
+  Calories:     290kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   WholeMilk
+              (Stock: 41)
+    * Toppings:
+      - BlueBean (Stock: 6)
+      - Pudding (Stock: 12)
+  *********************************
+
+  *********************************
+  Order Number: 151
+  Drink Name:   recipe20
+  Calories:     100kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+              (Stock: 24)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 152
+  Drink Name:   recipe33
+  Calories:     120kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   CashewMilk
+              (Stock: 11)
+    * Toppings:
+      - StrawberryPoppingBoba (Stock: 14)
+  *********************************
+
+  *********************************
+  Order Number: 153
+  Drink Name:   recipe46
+  Calories:     220kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+              (Stock: 9)
+    * Toppings:
+      - GrassJelly (Stock: 10)
+      - TapiocaPearls (Stock: 15)
+  *********************************
+
+  *********************************
+  Order Number: 154
+  Drink Name:   recipe59
+  Calories:     95kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   FlaxMilk
+              (Stock: 0 - Needs Replacement!)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 155
+  Drink Name:   recipe2
+  Calories:     110kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+              (Stock: 12)
+    * Toppings:
+      - BlueBean (Stock: 6)
+  *********************************
+
+  *********************************
+  Order Number: 156
+  Drink Name:   recipe15
+  Calories:     255kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   PeaMilk
+              (Stock: 14)
+    * Toppings:
+      - CheeseFoam (Stock: 9)
+      - MangoPoppingBoba (Stock: 13)
+  *********************************
+
+  *********************************
+  Order Number: 157
+  Drink Name:   recipe28
+  Calories:     70kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+              (Stock: 8)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 158
+  Drink Name:   recipe41
+  Calories:     140kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   SkimMilk
+              (Stock: 25)
+    * Toppings:
+      - GrassJelly (Stock: 10)
+  *********************************
+
+  *********************************
+  Order Number: 159
+  Drink Name:   recipe54
+  Calories:     495kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+              (Stock: 13)
+    * Toppings:
+      - GreenBean (Stock: 10)
+      - RedBean (Stock: 28)
+  *********************************
+
+  *********************************
+  Order Number: 160
+  Drink Name:   recipe67
+  Calories:     150kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   WholeMilk
+              (Stock: 41)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 161
+  Drink Name:   recipe10
+  Calories:     110kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+              (Stock: 9)
+    * Toppings:
+      - MangoPoppingBoba (Stock: 13)
+  *********************************
+
+  *********************************
+  Order Number: 162
+  Drink Name:   recipe23
+  Calories:     200kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   FlaxMilk
+              (Stock: 0 - Needs Replacement!)
+    * Toppings:
+      - AloeVera (Stock: 8)
+      - PassionFruitPoppingBoba (Stock: 6)
+  *********************************
+
+  *********************************
+  Order Number: 163
+  Drink Name:   recipe36
+  Calories:     80kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+              (Stock: 13)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 164
+  Drink Name:   recipe49
+  Calories:     255kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   MacadamiaMilk
+              (Stock: 7)
+    * Toppings:
+      - RedBean (Stock: 28)
+  *********************************
+
+  *********************************
+  Order Number: 165
+  Drink Name:   recipe62
+  Calories:     195kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+              (Stock: 12)
+    * Toppings:
+      - CoconutJelly (Stock: 11)
+      - StrawberryPoppingBoba (Stock: 14)
+  *********************************
+
+  *********************************
+  Order Number: 166
+  Drink Name:   recipe5
+  Calories:     90kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    HerbalTea
+    * Milk:   SkimMilk
+              (Stock: 25)
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 167
+  Drink Name:   recipe18
+  Calories:     95kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+              (Stock: 13)
+    * Toppings:
+      - AloeVera (Stock: 8)
+  *********************************
+
+  *********************************
+  Order Number: 168
+  Drink Name:   recipe31
+  Calories:     255kcal
+  Caffeine:     20mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    WhiteTea
+    * Milk:   WholeMilk
+              (Stock: 41)
+    * Toppings:
+      - BlueBean (Stock: 6)
+      - LycheePoppingBoba (Stock: 7)
+  *********************************
+===================================
+===    End of Pending Orders    ===
+===================================
+
+
+
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 2
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 2
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 2
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 2
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 2
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 2
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 2
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 2
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 2
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 1
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 2
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 2
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 2
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 2
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 2
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 2
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 2
+get_order_ready(orderNum, pending, ready, milkReplacements)-> 2
+###################################
+###      Completed Orders       ###
+###################################
+--- Orders ending with digit 1 ---
+  *********************************
+  Order Number: 1
+  Drink Name:   recipe30
+  Calories:     65kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 11
+  Drink Name:   recipe20
+  Calories:     130kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+    * Toppings:
+      - AloeVera
+  *********************************
+
+  *********************************
+  Order Number: 21
+  Drink Name:   recipe10
+  Calories:     340kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+    * Toppings:
+      - CheeseFoam
+      - RedBean
+  *********************************
+
+  *********************************
+  Order Number: 31
+  Drink Name:   recipe70
+  Calories:     50kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 41
+  Drink Name:   recipe60
+  Calories:     130kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+    * Toppings:
+      - GrassJelly
+  *********************************
+
+  *********************************
+  Order Number: 51
+  Drink Name:   recipe50
+  Calories:     165kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+    * Toppings:
+      - BlueBean
+      - LycheePoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 61
+  Drink Name:   recipe40
+  Calories:     70kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 71
+  Drink Name:   recipe30
+  Calories:     140kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+    * Toppings:
+      - PassionFruitPoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 81
+  Drink Name:   recipe20
+  Calories:     530kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+    * Toppings:
+      - GreenBean
+      - RedBean
+  *********************************
+
+  *********************************
+  Order Number: 91
+  Drink Name:   recipe10
+  Calories:     50kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 101
+  Drink Name:   recipe70
+  Calories:     170kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+    * Toppings:
+      - TapiocaPearls
+  *********************************
+
+  *********************************
+  Order Number: 111
+  Drink Name:   recipe60
+  Calories:     220kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+    * Toppings:
+      - BlueBean
+      - Pudding
+  *********************************
+
+  *********************************
+  Order Number: 121
+  Drink Name:   recipe50
+  Calories:     60kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 131
+  Drink Name:   recipe40
+  Calories:     145kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   MacadamiaMilk
+    * Toppings:
+      - CoconutJelly
+  *********************************
+
+  *********************************
+  Order Number: 141
+  Drink Name:   recipe30
+  Calories:     345kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+    * Toppings:
+      - AloeVera
+      - GreenBean
+  *********************************
+
+  *********************************
+  Order Number: 151
+  Drink Name:   recipe20
+  Calories:     100kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 161
+  Drink Name:   recipe10
+  Calories:     115kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   CashewMilk
+    * Toppings:
+      - MangoPoppingBoba
+  *********************************
+--- End of orders ending with 1 ---
+
+--- Orders ending with digit 3 ---
+  *********************************
+  Order Number: 3
+  Drink Name:   recipe56
+  Calories:     530kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+    * Toppings:
+      - GreenBean
+      - RedBean
+  *********************************
+
+  *********************************
+  Order Number: 13
+  Drink Name:   recipe46
+  Calories:     50kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 23
+  Drink Name:   recipe36
+  Calories:     200kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+    * Toppings:
+      - TapiocaPearls
+  *********************************
+
+  *********************************
+  Order Number: 33
+  Drink Name:   recipe26
+  Calories:     200kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+    * Toppings:
+      - BlueBean
+      - Pudding
+  *********************************
+
+  *********************************
+  Order Number: 43
+  Drink Name:   recipe16
+  Calories:     70kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 53
+  Drink Name:   recipe6
+  Calories:     135kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+    * Toppings:
+      - CoconutJelly
+  *********************************
+
+  *********************************
+  Order Number: 63
+  Drink Name:   recipe66
+  Calories:     345kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+    * Toppings:
+      - AloeVera
+      - GreenBean
+  *********************************
+
+  *********************************
+  Order Number: 73
+  Drink Name:   recipe56
+  Calories:     100kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 83
+  Drink Name:   recipe46
+  Calories:     110kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+    * Toppings:
+      - MangoPoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 93
+  Drink Name:   recipe36
+  Calories:     220kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+    * Toppings:
+      - GrassJelly
+      - Pudding
+  *********************************
+
+  *********************************
+  Order Number: 103
+  Drink Name:   recipe26
+  Calories:     60kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 113
+  Drink Name:   recipe16
+  Calories:     140kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   MacadamiaMilk
+    * Toppings:
+      - StrawberryPoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 123
+  Drink Name:   recipe6
+  Calories:     170kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+    * Toppings:
+      - AloeVera
+      - PassionFruitPoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 133
+  Drink Name:   recipe66
+  Calories:     65kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 143
+  Drink Name:   recipe56
+  Calories:     210kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+    * Toppings:
+      - CheeseFoam
+  *********************************
+
+  *********************************
+  Order Number: 153
+  Drink Name:   recipe46
+  Calories:     225kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   CashewMilk
+    * Toppings:
+      - GrassJelly
+      - TapiocaPearls
+  *********************************
+
+  *********************************
+  Order Number: 163
+  Drink Name:   recipe36
+  Calories:     85kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   PeaMilk
+    * Toppings:
+      - None
+  *********************************
+--- End of orders ending with 3 ---
+
+--- Orders ending with digit 5 ---
+  *********************************
+  Order Number: 5
+  Drink Name:   recipe12
+  Calories:     140kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+    * Toppings:
+      - MangoPoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 15
+  Drink Name:   recipe2
+  Calories:     200kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+    * Toppings:
+      - GrassJelly
+      - Pudding
+  *********************************
+
+  *********************************
+  Order Number: 25
+  Drink Name:   recipe62
+  Calories:     60kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 35
+  Drink Name:   recipe52
+  Calories:     135kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+    * Toppings:
+      - StrawberryPoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 45
+  Drink Name:   recipe42
+  Calories:     170kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+    * Toppings:
+      - AloeVera
+      - PassionFruitPoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 55
+  Drink Name:   recipe32
+  Calories:     100kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 65
+  Drink Name:   recipe22
+  Calories:     160kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+    * Toppings:
+      - CheeseFoam
+  *********************************
+
+  *********************************
+  Order Number: 75
+  Drink Name:   recipe12
+  Calories:     250kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+    * Toppings:
+      - GrassJelly
+      - TapiocaPearls
+  *********************************
+
+  *********************************
+  Order Number: 85
+  Drink Name:   recipe2
+  Calories:     60kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 95
+  Drink Name:   recipe62
+  Calories:     115kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+    * Toppings:
+      - LycheePoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 105
+  Drink Name:   recipe52
+  Calories:     220kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   MacadamiaMilk
+    * Toppings:
+      - CoconutJelly
+      - PassionFruitPoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 115
+  Drink Name:   recipe42
+  Calories:     65kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 125
+  Drink Name:   recipe32
+  Calories:     280kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+    * Toppings:
+      - RedBean
+  *********************************
+
+  *********************************
+  Order Number: 135
+  Drink Name:   recipe22
+  Calories:     235kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   CashewMilk
+    * Toppings:
+      - MangoPoppingBoba
+      - TapiocaPearls
+  *********************************
+
+  *********************************
+  Order Number: 145
+  Drink Name:   recipe12
+  Calories:     80kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 155
+  Drink Name:   recipe2
+  Calories:     125kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   MacadamiaMilk
+    * Toppings:
+      - BlueBean
+  *********************************
+
+  *********************************
+  Order Number: 165
+  Drink Name:   recipe62
+  Calories:     220kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   PeaMilk
+    * Toppings:
+      - CoconutJelly
+      - StrawberryPoppingBoba
+  *********************************
+--- End of orders ending with 5 ---
+
+--- Orders ending with digit 7 ---
+  *********************************
+  Order Number: 7
+  Drink Name:   recipe38
+  Calories:     60kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 17
+  Drink Name:   recipe28
+  Calories:     125kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+    * Toppings:
+      - LycheePoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 27
+  Drink Name:   recipe18
+  Calories:     210kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+    * Toppings:
+      - CoconutJelly
+      - PassionFruitPoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 37
+  Drink Name:   recipe8
+  Calories:     100kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 47
+  Drink Name:   recipe68
+  Calories:     280kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+    * Toppings:
+      - RedBean
+  *********************************
+
+  *********************************
+  Order Number: 57
+  Drink Name:   recipe58
+  Calories:     230kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+    * Toppings:
+      - MangoPoppingBoba
+      - TapiocaPearls
+  *********************************
+
+  *********************************
+  Order Number: 67
+  Drink Name:   recipe48
+  Calories:     80kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 77
+  Drink Name:   recipe38
+  Calories:     110kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+    * Toppings:
+      - BlueBean
+  *********************************
+
+  *********************************
+  Order Number: 87
+  Drink Name:   recipe28
+  Calories:     205kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+    * Toppings:
+      - CoconutJelly
+      - StrawberryPoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 97
+  Drink Name:   recipe18
+  Calories:     65kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 107
+  Drink Name:   recipe8
+  Calories:     350kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+    * Toppings:
+      - GreenBean
+  *********************************
+
+  *********************************
+  Order Number: 117
+  Drink Name:   recipe68
+  Calories:     270kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+    * Toppings:
+      - CheeseFoam
+      - MangoPoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 127
+  Drink Name:   recipe58
+  Calories:     55kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   CashewMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 137
+  Drink Name:   recipe48
+  Calories:     170kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+    * Toppings:
+      - Pudding
+  *********************************
+
+  *********************************
+  Order Number: 147
+  Drink Name:   recipe38
+  Calories:     195kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   MacadamiaMilk
+    * Toppings:
+      - LycheePoppingBoba
+      - StrawberryPoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 157
+  Drink Name:   recipe28
+  Calories:     80kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 167
+  Drink Name:   recipe18
+  Calories:     115kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   PeaMilk
+    * Toppings:
+      - AloeVera
+  *********************************
+--- End of orders ending with 7 ---
+
+--- Orders ending with digit 9 ---
+  *********************************
+  Order Number: 9
+  Drink Name:   recipe64
+  Calories:     205kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+    * Toppings:
+      - CoconutJelly
+      - StrawberryPoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 19
+  Drink Name:   recipe54
+  Calories:     65kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 29
+  Drink Name:   recipe44
+  Calories:     350kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+    * Toppings:
+      - GreenBean
+  *********************************
+
+  *********************************
+  Order Number: 39
+  Drink Name:   recipe34
+  Calories:     220kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   RiceMilk
+    * Toppings:
+      - CheeseFoam
+      - MangoPoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 49
+  Drink Name:   recipe24
+  Calories:     80kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 59
+  Drink Name:   recipe14
+  Calories:     150kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+    * Toppings:
+      - Pudding
+  *********************************
+
+  *********************************
+  Order Number: 69
+  Drink Name:   recipe4
+  Calories:     190kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+    * Toppings:
+      - LycheePoppingBoba
+      - StrawberryPoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 79
+  Drink Name:   recipe64
+  Calories:     70kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   CoconutMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 89
+  Drink Name:   recipe54
+  Calories:     95kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   HempMilk
+    * Toppings:
+      - AloeVera
+  *********************************
+
+  *********************************
+  Order Number: 99
+  Drink Name:   recipe44
+  Calories:     390kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   OatMilk
+    * Toppings:
+      - CheeseFoam
+      - RedBean
+  *********************************
+
+  *********************************
+  Order Number: 109
+  Drink Name:   recipe34
+  Calories:     55kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   CashewMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 119
+  Drink Name:   recipe24
+  Calories:     130kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   SoyMilk
+    * Toppings:
+      - GrassJelly
+  *********************************
+
+  *********************************
+  Order Number: 129
+  Drink Name:   recipe14
+  Calories:     165kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   AlmondMilk
+    * Toppings:
+      - BlueBean
+      - LycheePoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 139
+  Drink Name:   recipe4
+  Calories:     75kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   MacadamiaMilk
+    * Toppings:
+      - None
+  *********************************
+
+  *********************************
+  Order Number: 149
+  Drink Name:   recipe64
+  Calories:     150kcal
+  Caffeine:     0mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    ChamomileTea
+    * Milk:   MacadamiaMilk
+    * Toppings:
+      - PassionFruitPoppingBoba
+  *********************************
+
+  *********************************
+  Order Number: 159
+  Drink Name:   recipe54
+  Calories:     510kcal
+  Caffeine:     25mg
+  Sugar Level:  Standard
+  Ingredients:
+    * Tea:    OolongTea
+    * Milk:   SoyMilk
+    * Toppings:
+      - GreenBean
+      - RedBean
+  *********************************
+--- End of orders ending with 9 ---
+
+###################################
+### End of Completed Orders     ###
+###################################
+
+
+
+===================================
+===    Ingredients Database     ===
+===================================
+  --- Tea Types ---
+    - BlackTea                  (Caffeine: 40mg)
+    - ChaiTea                   (Caffeine: 45mg)
+    - ChamomileTea              (Caffeine: 0mg)
+    - EarlGrey                  (Caffeine: 50mg)
+    - GreenTea                  (Caffeine: 30mg)
+    - HerbalTea                 (Caffeine: 0mg)
+    - JasmineTea                (Caffeine: 15mg)
+    - Matcha                    (Caffeine: 35mg)
+    - OolongTea                 (Caffeine: 25mg)
+    - PeppermintTea             (Caffeine: 0mg)
+    - RooibosTea                (Caffeine: 0mg)
+    - WhiteTea                  (Caffeine: 20mg)
+
+  --- Milk Types ---
+    - AlmondMilk                (Calories: 60kcal, Stock: 0)
+    - CashewMilk                (Calories: 55kcal, Stock: 6)
+    - CoconutMilk               (Calories: 70kcal, Stock: 0)
+    - FlaxMilk                  (Calories: 95kcal, Stock: 0)
+    - HempMilk                  (Calories: 65kcal, Stock: 0)
+    - MacadamiaMilk             (Calories: 75kcal, Stock: 0)
+    - OatMilk                   (Calories: 100kcal, Stock: 10)
+    - PeaMilk                   (Calories: 85kcal, Stock: 11)
+    - RiceMilk                  (Calories: 50kcal, Stock: 0)
+    - SkimMilk                  (Calories: 90kcal, Stock: 25)
+    - SoyMilk                   (Calories: 80kcal, Stock: 0)
+    - WholeMilk                 (Calories: 150kcal, Stock: 41)
+
+  --- Topping Types ---
+    - AloeVera                  (Calories: 30kcal, Stock: 1)
+    - BlueBean                  (Calories: 50kcal, Stock: 0)
+    - CheeseFoam                (Calories: 110kcal, Stock: 3)
+    - CoconutJelly              (Calories: 70kcal, Stock: 4)
+    - GrassJelly                (Calories: 50kcal, Stock: 4)
+    - GreenBean                 (Calories: 250kcal, Stock: 3)
+    - LycheePoppingBoba         (Calories: 55kcal, Stock: 1)
+    - MangoPoppingBoba          (Calories: 60kcal, Stock: 6)
+    - PassionFruitPoppingBoba   (Calories: 75kcal, Stock: 0)
+    - Pudding                   (Calories: 90kcal, Stock: 6)
+    - RedBean                   (Calories: 180kcal, Stock: 21)
+    - StrawberryPoppingBoba     (Calories: 65kcal, Stock: 7)
+    - TapiocaPearls             (Calories: 120kcal, Stock: 9)
+===================================
+=== End of Ingredients Database ===
+===================================
+
