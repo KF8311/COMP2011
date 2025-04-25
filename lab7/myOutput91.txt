@@ -1,0 +1,555 @@
+Welcome to dictionary editor!
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary sorted
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary cleared
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary sorted
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary cleared
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Yoke: (noun) A wooden crosspiece that is fastened over the necks of two animals.
+Number of words: 1
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Ziggurat: (noun) A rectangular stepped tower, sometimes surmounted by a temple.
+Yoke: (noun) A wooden crosspiece that is fastened over the necks of two animals.
+Number of words: 2
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Anachronism: (noun) A thing belonging to a period other than that in which it exists.
+Ziggurat: (noun) A rectangular stepped tower, sometimes surmounted by a temple.
+Yoke: (noun) A wooden crosspiece that is fastened over the necks of two animals.
+Number of words: 3
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Bumfuzzle: (verb) To confuse or fluster.
+Anachronism: (noun) A thing belonging to a period other than that in which it exists.
+Ziggurat: (noun) A rectangular stepped tower, sometimes surmounted by a temple.
+Yoke: (noun) A wooden crosspiece that is fastened over the necks of two animals.
+Number of words: 4
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Cruciverbalist: (noun) A person who creates or enjoys crossword puzzles.
+Bumfuzzle: (verb) To confuse or fluster.
+Anachronism: (noun) A thing belonging to a period other than that in which it exists.
+Ziggurat: (noun) A rectangular stepped tower, sometimes surmounted by a temple.
+Yoke: (noun) A wooden crosspiece that is fastened over the necks of two animals.
+Number of words: 5
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary sorted
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Anachronism: (noun) A thing belonging to a period other than that in which it exists.
+Bumfuzzle: (verb) To confuse or fluster.
+Cruciverbalist: (noun) A person who creates or enjoys crossword puzzles.
+Yoke: (noun) A wooden crosspiece that is fastened over the necks of two animals.
+Ziggurat: (noun) A rectangular stepped tower, sometimes surmounted by a temple.
+Number of words: 5
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary sorted
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Anachronism: (noun) A thing belonging to a period other than that in which it exists.
+Bumfuzzle: (verb) To confuse or fluster.
+Cruciverbalist: (noun) A person who creates or enjoys crossword puzzles.
+Yoke: (noun) A wooden crosspiece that is fastened over the necks of two animals.
+Ziggurat: (noun) A rectangular stepped tower, sometimes surmounted by a temple.
+Number of words: 5
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Doppelgänger: (noun) An apparition or double of a living person.
+Anachronism: (noun) A thing belonging to a period other than that in which it exists.
+Bumfuzzle: (verb) To confuse or fluster.
+Cruciverbalist: (noun) A person who creates or enjoys crossword puzzles.
+Yoke: (noun) A wooden crosspiece that is fastened over the necks of two animals.
+Ziggurat: (noun) A rectangular stepped tower, sometimes surmounted by a temple.
+Number of words: 6
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Ebullient: (adjective) Cheerful and full of energy.
+Doppelgänger: (noun) An apparition or double of a living person.
+Anachronism: (noun) A thing belonging to a period other than that in which it exists.
+Bumfuzzle: (verb) To confuse or fluster.
+Cruciverbalist: (noun) A person who creates or enjoys crossword puzzles.
+Yoke: (noun) A wooden crosspiece that is fastened over the necks of two animals.
+Ziggurat: (noun) A rectangular stepped tower, sometimes surmounted by a temple.
+Number of words: 7
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary sorted
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Anachronism: (noun) A thing belonging to a period other than that in which it exists.
+Bumfuzzle: (verb) To confuse or fluster.
+Cruciverbalist: (noun) A person who creates or enjoys crossword puzzles.
+Doppelgänger: (noun) An apparition or double of a living person.
+Ebullient: (adjective) Cheerful and full of energy.
+Yoke: (noun) A wooden crosspiece that is fastened over the necks of two animals.
+Ziggurat: (noun) A rectangular stepped tower, sometimes surmounted by a temple.
+Number of words: 7
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Felicity: (noun) Intense happiness; the ability to find appropriate expression for one's thoughts.
+Anachronism: (noun) A thing belonging to a period other than that in which it exists.
+Bumfuzzle: (verb) To confuse or fluster.
+Cruciverbalist: (noun) A person who creates or enjoys crossword puzzles.
+Doppelgänger: (noun) An apparition or double of a living person.
+Ebullient: (adjective) Cheerful and full of energy.
+Yoke: (noun) A wooden crosspiece that is fastened over the necks of two animals.
+Ziggurat: (noun) A rectangular stepped tower, sometimes surmounted by a temple.
+Number of words: 8
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Gloaming: (noun) The time of day immediately following sunset; twilight.
+Felicity: (noun) Intense happiness; the ability to find appropriate expression for one's thoughts.
+Anachronism: (noun) A thing belonging to a period other than that in which it exists.
+Bumfuzzle: (verb) To confuse or fluster.
+Cruciverbalist: (noun) A person who creates or enjoys crossword puzzles.
+Doppelgänger: (noun) An apparition or double of a living person.
+Ebullient: (adjective) Cheerful and full of energy.
+Yoke: (noun) A wooden crosspiece that is fastened over the necks of two animals.
+Ziggurat: (noun) A rectangular stepped tower, sometimes surmounted by a temple.
+Number of words: 9
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Hapless: (adjective) Unfortunate or unlucky.
+Gloaming: (noun) The time of day immediately following sunset; twilight.
+Felicity: (noun) Intense happiness; the ability to find appropriate expression for one's thoughts.
+Anachronism: (noun) A thing belonging to a period other than that in which it exists.
+Bumfuzzle: (verb) To confuse or fluster.
+Cruciverbalist: (noun) A person who creates or enjoys crossword puzzles.
+Doppelgänger: (noun) An apparition or double of a living person.
+Ebullient: (adjective) Cheerful and full of energy.
+Yoke: (noun) A wooden crosspiece that is fastened over the necks of two animals.
+Ziggurat: (noun) A rectangular stepped tower, sometimes surmounted by a temple.
+Number of words: 10
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary sorted
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Anachronism: (noun) A thing belonging to a period other than that in which it exists.
+Bumfuzzle: (verb) To confuse or fluster.
+Cruciverbalist: (noun) A person who creates or enjoys crossword puzzles.
+Doppelgänger: (noun) An apparition or double of a living person.
+Ebullient: (adjective) Cheerful and full of energy.
+Felicity: (noun) Intense happiness; the ability to find appropriate expression for one's thoughts.
+Gloaming: (noun) The time of day immediately following sunset; twilight.
+Hapless: (adjective) Unfortunate or unlucky.
+Yoke: (noun) A wooden crosspiece that is fastened over the necks of two animals.
+Ziggurat: (noun) A rectangular stepped tower, sometimes surmounted by a temple.
+Number of words: 10
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary sorted
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Anachronism: (noun) A thing belonging to a period other than that in which it exists.
+Bumfuzzle: (verb) To confuse or fluster.
+Cruciverbalist: (noun) A person who creates or enjoys crossword puzzles.
+Doppelgänger: (noun) An apparition or double of a living person.
+Ebullient: (adjective) Cheerful and full of energy.
+Felicity: (noun) Intense happiness; the ability to find appropriate expression for one's thoughts.
+Gloaming: (noun) The time of day immediately following sunset; twilight.
+Hapless: (adjective) Unfortunate or unlucky.
+Yoke: (noun) A wooden crosspiece that is fastened over the necks of two animals.
+Ziggurat: (noun) A rectangular stepped tower, sometimes surmounted by a temple.
+Number of words: 10
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary cleared
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Dictionary sorted
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Quitting!

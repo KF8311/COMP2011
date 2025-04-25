@@ -1,0 +1,287 @@
+Welcome to dictionary editor!
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Number of words: 0
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Abderian: (adjective) Relating to or characterized by excessive laughter.
+Number of words: 1
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Borborygmus: (noun) The rumbling sound produced by the movement of gas in the intestines.
+Abderian: (adjective) Relating to or characterized by excessive laughter.
+Number of words: 2
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Cacophony: (noun) A harsh, discordant mixture of sounds.
+Borborygmus: (noun) The rumbling sound produced by the movement of gas in the intestines.
+Abderian: (adjective) Relating to or characterized by excessive laughter.
+Number of words: 3
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Defenestration: (noun) The act of throwing someone or something out of a window.
+Cacophony: (noun) A harsh, discordant mixture of sounds.
+Borborygmus: (noun) The rumbling sound produced by the movement of gas in the intestines.
+Abderian: (adjective) Relating to or characterized by excessive laughter.
+Number of words: 4
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Ethereal: (adjective) Extremely delicate and light in a way that seems too perfect for this world.
+Defenestration: (noun) The act of throwing someone or something out of a window.
+Cacophony: (noun) A harsh, discordant mixture of sounds.
+Borborygmus: (noun) The rumbling sound produced by the movement of gas in the intestines.
+Abderian: (adjective) Relating to or characterized by excessive laughter.
+Number of words: 5
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Floccinaucinihilipilification: (noun) The action or habit of estimating something as worthless.
+Ethereal: (adjective) Extremely delicate and light in a way that seems too perfect for this world.
+Defenestration: (noun) The act of throwing someone or something out of a window.
+Cacophony: (noun) A harsh, discordant mixture of sounds.
+Borborygmus: (noun) The rumbling sound produced by the movement of gas in the intestines.
+Abderian: (adjective) Relating to or characterized by excessive laughter.
+Number of words: 6
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Gobbledygook: (noun) Language that is meaningless or hard to understand; jargon.
+Floccinaucinihilipilification: (noun) The action or habit of estimating something as worthless.
+Ethereal: (adjective) Extremely delicate and light in a way that seems too perfect for this world.
+Defenestration: (noun) The act of throwing someone or something out of a window.
+Cacophony: (noun) A harsh, discordant mixture of sounds.
+Borborygmus: (noun) The rumbling sound produced by the movement of gas in the intestines.
+Abderian: (adjective) Relating to or characterized by excessive laughter.
+Number of words: 7
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Hapax Legomenon: (noun) A word or phrase that occurs only once within a context, such as a single text or the works of an author.
+Gobbledygook: (noun) Language that is meaningless or hard to understand; jargon.
+Floccinaucinihilipilification: (noun) The action or habit of estimating something as worthless.
+Ethereal: (adjective) Extremely delicate and light in a way that seems too perfect for this world.
+Defenestration: (noun) The act of throwing someone or something out of a window.
+Cacophony: (noun) A harsh, discordant mixture of sounds.
+Borborygmus: (noun) The rumbling sound produced by the movement of gas in the intestines.
+Abderian: (adjective) Relating to or characterized by excessive laughter.
+Number of words: 8
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Inchoate: (adjective) Just begun and not fully formed or developed; rudimentary.
+Hapax Legomenon: (noun) A word or phrase that occurs only once within a context, such as a single text or the works of an author.
+Gobbledygook: (noun) Language that is meaningless or hard to understand; jargon.
+Floccinaucinihilipilification: (noun) The action or habit of estimating something as worthless.
+Ethereal: (adjective) Extremely delicate and light in a way that seems too perfect for this world.
+Defenestration: (noun) The act of throwing someone or something out of a window.
+Cacophony: (noun) A harsh, discordant mixture of sounds.
+Borborygmus: (noun) The rumbling sound produced by the movement of gas in the intestines.
+Abderian: (adjective) Relating to or characterized by excessive laughter.
+Number of words: 9
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Word: Definition: Word added
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Printing dictionary
+Jentacular: (adjective) Pertaining to breakfast.
+Inchoate: (adjective) Just begun and not fully formed or developed; rudimentary.
+Hapax Legomenon: (noun) A word or phrase that occurs only once within a context, such as a single text or the works of an author.
+Gobbledygook: (noun) Language that is meaningless or hard to understand; jargon.
+Floccinaucinihilipilification: (noun) The action or habit of estimating something as worthless.
+Ethereal: (adjective) Extremely delicate and light in a way that seems too perfect for this world.
+Defenestration: (noun) The act of throwing someone or something out of a window.
+Cacophony: (noun) A harsh, discordant mixture of sounds.
+Borborygmus: (noun) The rumbling sound produced by the movement of gas in the intestines.
+Abderian: (adjective) Relating to or characterized by excessive laughter.
+Number of words: 10
+==========================================
+0. Quit
+1. Copy a new dictionary entry (but does not edit the dictionary)
+2. Delete a dictionary entry
+3. Add a dictionary entry
+4. Clear the dictionary
+5. Print the dictionary
+6. Query the dictionary by partial word match (ignores definition)
+7. Sort the dictionary
+Option: Quitting!

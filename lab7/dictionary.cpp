@@ -37,9 +37,11 @@ void dictionary_entry_init(dictionary_entry &instance, const char *word, const c
   // init next
   instance.next = nullptr;
   // copy the word from input
-  strcpy(instance.word, word);
-  // copy the definition from input
-  strcpy(instance.definition, definition);
+  strncpy(instance.word, word, MAXIMUM_WORD_LENGTH - 1);
+  instance.word[MAXIMUM_WORD_LENGTH - 1] = '\0';
+  //  copy the definition from input
+  strncpy(instance.definition, definition, MAXIMUM_DEFINITION_LENGTH - 1);
+  instance.definition[MAXIMUM_DEFINITION_LENGTH - 1] = '\0';
   return;
 }
 
@@ -131,6 +133,7 @@ bool dictionary_delete_entry(dictionary_entry *&dictionary, const char *word)
     previous_entry = current_entry;
     current_entry = current_entry->next;
   }
+
   return false;
 }
 
@@ -180,6 +183,7 @@ void dictionary_add_entry(dictionary_entry *&dictionary, dictionary_entry *entry
 void dictionary_clear(dictionary_entry *&dictionary)
 {
   // TODO: Task 4
+
   while (dictionary != nullptr)
   {
     dictionary_entry *current_entry = dictionary;
@@ -251,7 +255,7 @@ void dictionary_query(const dictionary_entry *dictionary, const char *query)
     }
     dictionary = dictionary->next;
   }
-  cout << "Number of words: " << count << endl;
+  cout << "Number of words found: " << count << endl;
   return;
 }
 
@@ -283,8 +287,34 @@ void dictionary_query(const dictionary_entry *dictionary, const char *query)
  */
 void dictionary_sort(dictionary_entry *&dictionary)
 {
+  if (dictionary == nullptr || dictionary->next == nullptr)
+  {
+    return;
+  }
   dictionary_entry *ret;
   // TODO: Task 7 (optional)
-  // END: Task 7 (optional)
+  ret = nullptr;
+  while (dictionary != nullptr)
+  {
+    dictionary_entry *largest_entry = dictionary;
+    dictionary_entry *current_entry = dictionary->next;
+    while (current_entry != nullptr)
+    {
+      if (strcmp(current_entry->word, largest_entry->word) > 0)
+      {
+        largest_entry = current_entry;
+      }
+      current_entry = current_entry->next;
+    }
+    if (largest_entry != nullptr)
+    {
+      dictionary_entry *new_entry = new dictionary_entry;
+      dictionary_entry_init(*new_entry, largest_entry->word, largest_entry->definition);
+      dictionary_add_entry(ret, new_entry);
+      dictionary_delete_entry(dictionary, largest_entry->word);
+    }
+  }
+  dictionary_clear(dictionary);
   dictionary = ret;
+  // END: Task 7 (optional)
 }
