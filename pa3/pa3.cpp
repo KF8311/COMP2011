@@ -704,29 +704,43 @@ bool create_recipe(const char name[], const int id, const int price, const char 
         // numRecipes++;
         // int old_numRecipes = numRecipes - 1;
         Drink **new_recipes = new Drink *[numRecipes + 1];
-        int insert;
-        for (insert = 0; insert < numRecipes; insert++)
+        int insert = 0;
+        for (; insert < numRecipes; insert++)
         {
+            // find which index to insert
             if (newDrink->id < recipes[insert]->id)
             {
                 break;
             }
-            else
+        }
+        if (insert == numRecipes)
+        {
+            // special case: add in last
+            for (int i = 0; i < numRecipes; i++)
             {
-                insert++;
+                new_recipes[i] = recipes[i];
             }
+            new_recipes[numRecipes] = newDrink;
+            delete[] recipes;
+            numRecipes++;
+            return true;
         }
-        for (int i = 0; i < insert; i++)
+        else
         {
-            new_recipes[i] = recipes[i];
+            // add in middle
+            for (int i = 0; i < insert; i++)
+            {
+                new_recipes[i] = recipes[i];
+            }
+            new_recipes[insert] = newDrink;
+            for (int i = insert; i < numRecipes; i++)
+            {
+                new_recipes[i + 1] = recipes[i];
+            }
+            delete[] recipes;
+            numRecipes++;
+            return true;
         }
-        new_recipes[insert] = newDrink;
-        for (int i = insert; i < numRecipes; i++)
-        {
-            new_recipes[i + 1] = recipes[i];
-        }
-        numRecipes++;
-        return true;
     }
     // return false; // you many remove this line if you want
 }
@@ -756,12 +770,12 @@ bool remove_recipe(const char drink[], Drink **&recipes, int &numRecipes)
             {
                 new_recipes[j] = recipes[j];
             }
-            //delete recipes[i];
+            // delete recipes[i];
             for (int j = i; j < numRecipes - 1; j++)
             {
                 new_recipes[j] = recipes[j + 1];
             }
-            // delete recipes;
+            delete[] recipes;
             recipes = new_recipes;
             numRecipes--;
             return true;
@@ -861,7 +875,6 @@ bool create_order(Order *&pending, const int number, const char drink[], Drink *
         previous->next = newOrder;
         newOrder->next = current;
     }
-
     return true; // you many remove this line if you want
 }
 
@@ -885,6 +898,91 @@ bool create_order(Order *&pending, const int number, const char drink[], Drink *
 bool add_topping_to_order(const int number, const char topping[], ToppingType *toppingTypes, Order *pending)
 {
     // TODO
+    if (pending == nullptr)
+    {
+        // the pending list is empty
+        return false;
+    }
+
+    ToppingType *new_topping = toppingTypes;
+    for (; new_topping != nullptr; new_topping = new_topping->next)
+    {
+        if (strcmp(new_topping->name, topping) == 0)
+        {
+            break;
+        }
+    }
+    if (new_topping == nullptr)
+    {
+        // the specified topping doesn't exist in the toppingTypes list
+        return false;
+    }
+    Order *order_add_topping = pending;
+    for (; order_add_topping != nullptr; order_add_topping = order_add_topping->next)
+    {
+        if (order_add_topping->number == number)
+        {
+            break;
+        }
+    }
+    if (order_add_topping == nullptr)
+    {
+        // no order with the specified number exists
+        return false;
+    }
+    ToppingListNode *previous = nullptr;
+    ToppingListNode *current = order_add_topping->drink->toppings;
+    if (order_add_topping->drink->toppings == nullptr)
+    {
+        // Adding to a drink with no existing toppings
+        order_add_topping->drink->toppings = new ToppingListNode;
+        order_add_topping->drink->toppings->topping = new_topping;
+        order_add_topping->drink->toppings->next = nullptr;
+        order_add_topping->calories += new_topping->calories;
+        return true;
+    }
+    while (current != nullptr)
+    {
+        if (strcmp(current->topping->name, topping) == 0)
+        {
+            // the order already has this topping
+            return false;
+        }
+        else if (strcmp(current->topping->name, topping) > 0)
+        {
+            // the adding topping is larger than the next, insert it
+            if (current == order_add_topping->drink->toppings)
+            {
+                // Adding as the first topping (alphabetically)
+                ToppingListNode *add_topping = new ToppingListNode;
+                add_topping->topping = new_topping;
+                add_topping->next = current;
+                order_add_topping->drink->toppings = add_topping;
+                order_add_topping->calories += new_topping->calories;
+                return true;
+            }
+            else
+            {
+                ToppingListNode *add_topping = new ToppingListNode;
+                add_topping->topping = new_topping;
+                previous->next = add_topping;
+                add_topping->next = current;
+                order_add_topping->calories += new_topping->calories;
+                return true;
+            }
+        }
+        previous = current;
+        current = current->next;
+    }
+    if (current == nullptr && previous != nullptr)
+    {
+        ToppingListNode *add_topping = new ToppingListNode;
+        add_topping->topping = new_topping;
+        add_topping->next = nullptr;
+        previous->next = add_topping;
+        return true;
+    }
+
     return false; // you many remove this line if you want
 }
 
@@ -905,6 +1003,50 @@ bool add_topping_to_order(const int number, const char topping[], ToppingType *t
 bool remove_topping_from_order(const int number, const char topping[], Order *pending)
 {
     // TODO
+    Order *target_order = pending;
+    while (target_order != nullptr)
+    {
+        if (target_order->number == number)
+        {
+            break;
+        }
+        target_order = target_order->next;
+    }
+    if (target_order == nullptr)
+    {
+        // no order with the specified number exists in the pending list
+        return false;
+    }
+    ToppingListNode *previous = nullptr;
+    ToppingListNode *current = target_order->drink->toppings;
+    while (current != nullptr)
+    {
+        if (strcmp(current->topping->name, topping) == 0)
+        {
+            // find the one to delete
+            target_order->calories -= current->topping->calories;
+
+            if (current == target_order->drink->toppings)
+            {
+                target_order->drink->toppings = target_order->drink->toppings->next;
+            }
+            else
+            {
+                previous->next = current->next;
+            }
+            delete current;
+            return true;
+        }
+        previous = current;
+        current = current->next;
+    }
+    if (current == nullptr)
+    {
+        // the order's drink has no toppings, or
+        // the specified topping doesn't exist in the order's toppings list
+        return false;
+    }
+
     return false; // you many remove this line if you want
 }
 
