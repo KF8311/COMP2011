@@ -129,7 +129,7 @@ void test4()
 
     print_recipe(recipes, numRecipes);
     print_result(create_recipe("CheesyGrapes", 3, 36, "GrapeTea", "WholeMilk", teaTypes, milkTypes, recipes, numRecipes));
-    print_result(create_recipe("CheesyGrapes", 4, 36, "GrapeTea", "CreamyMilk", teaTypes, milkTypes, recipes, numRecipes));
+    print_result(create_recipe("CheesyGrapes", 4, 36, "GrapeTea", "UNKNOWN", teaTypes, milkTypes, recipes, numRecipes));
 
     print_recipe(recipes, numRecipes);
 
