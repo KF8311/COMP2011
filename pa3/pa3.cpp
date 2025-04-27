@@ -661,7 +661,6 @@ void print_replacement_cycle(ReplacementListNode *replacement)
 bool create_recipe(const char name[], const int id, const int price, const char tea[], const char milk[], TeaType *teaTypes, MilkType *milkTypes, Drink **&recipes, int &numRecipes)
 {
     // TODO
-
     MilkType *current_milk = milkTypes;
     TeaType *current_tea = teaTypes;
     for (int i = 0; i < numRecipes; i++)
@@ -685,6 +684,7 @@ bool create_recipe(const char name[], const int id, const int price, const char 
         return false;
     // Pass all invalid cases
     Drink *newDrink = new Drink;
+    Drink **new_recipes = new Drink *[numRecipes+1];
     strcpy(newDrink->name, name);
     newDrink->id = id;
     newDrink->price = price;
@@ -693,8 +693,7 @@ bool create_recipe(const char name[], const int id, const int price, const char 
     newDrink->toppings = nullptr;
     if (numRecipes == 0)
     {
-        numRecipes = 1;
-        Drink **new_recipes = new Drink *[numRecipes];
+        numRecipes = 1;       
         new_recipes[0] = newDrink;
         recipes = new_recipes;
         return true;
@@ -703,7 +702,7 @@ bool create_recipe(const char name[], const int id, const int price, const char 
     {
         // numRecipes++;
         // int old_numRecipes = numRecipes - 1;
-        Drink **new_recipes = new Drink *[numRecipes + 1];
+        //Drink **new_recipes = new Drink *[numRecipes + 1];
         int insert = 0;
         for (; insert < numRecipes; insert++)
         {
@@ -713,7 +712,19 @@ bool create_recipe(const char name[], const int id, const int price, const char 
                 break;
             }
         }
-        if (insert == numRecipes)
+        if (insert == 0)
+        {
+            // special case: add in first
+            new_recipes[0] = newDrink;
+            for (int i = 0; i < numRecipes; i++)
+            {
+                new_recipes[i + 1] = recipes[i];
+            }
+            //numRecipes++;
+            //recipes = new_recipes;
+            //return true;
+        }
+        else if (insert == numRecipes)
         {
             // special case: add in last
             for (int i = 0; i < numRecipes; i++)
@@ -722,8 +733,8 @@ bool create_recipe(const char name[], const int id, const int price, const char 
             }
             new_recipes[numRecipes] = newDrink;
             // delete[] recipes;
-            numRecipes++;
-            recipes = new_recipes;
+            //numRecipes++;
+            //recipes = new_recipes;
             // return true;
         }
         else
@@ -739,12 +750,13 @@ bool create_recipe(const char name[], const int id, const int price, const char 
                 new_recipes[i + 1] = recipes[i];
             }
             // delete[] recipes;
-            numRecipes++;
-            recipes = new_recipes;
+
             // return true;
         }
     }
-    //delete[] recipes;
+    delete[] recipes;
+    numRecipes++;
+    recipes = new_recipes;  
     return true;
     // return false; // you many remove this line if you want
 }
@@ -767,19 +779,18 @@ bool remove_recipe(const char drink[], Drink **&recipes, int &numRecipes)
     {
         if (strcmp(recipes[i]->name, drink) == 0)
         {
-
             int j = 0;
             Drink **new_recipes = new Drink *[numRecipes - 1];
             for (int j = 0; j < i; j++)
             {
                 new_recipes[j] = recipes[j];
             }
-            // delete recipes[i];
+            delete recipes[i];
             for (int j = i; j < numRecipes - 1; j++)
             {
                 new_recipes[j] = recipes[j + 1];
             }
-            // delete[] recipes;
+            delete[] recipes;
             recipes = new_recipes;
             numRecipes--;
             return true;
@@ -850,10 +861,15 @@ bool create_order(Order *&pending, const int number, const char drink[], Drink *
     }
     newDrink->toppings = new_toppings_head;
     int total_calories = newDrink->milk->calories;
-    for (ToppingListNode *top = new_toppings_head; top != nullptr; top = top->next)
+    ToppingListNode *current_topping = newDrink->toppings;
+    while(current_topping != nullptr){
+        total_calories += current_topping->topping->calories;
+        current_topping=current_topping->next;
+    }
+    /*for (ToppingListNode *top = newDrink->toppings; top != nullptr; top = top->next)
     {
         total_calories += top->topping->calories;
-    }
+    }*/
     Order *newOrder = new Order;
     newOrder->number = number;
     newOrder->drink = newDrink;
@@ -984,6 +1000,7 @@ bool add_topping_to_order(const int number, const char topping[], ToppingType *t
         add_topping->topping = new_topping;
         add_topping->next = nullptr;
         previous->next = add_topping;
+        order_add_topping->calories += new_topping->calories;
         return true;
     }
 
@@ -1210,12 +1227,7 @@ MilkType *find_available_in_replacement_circle(MilkType *targetMilk, Replacement
     // No milk with stock > 0 is found after traversing the entire circular list once
     return nullptr;
 }
-enum OrderStatus
-{
-    ORDER_NOT_READY = 0,
-    ORDER_READY_PERFECT = 1,
-    ORDER_READY_MODIFIED = 2
-};
+
 /**
  * Moves an order from the pending list to the ready list, handling ingredient availability
  *
@@ -1236,6 +1248,12 @@ enum OrderStatus
  *         ORDER_READY_PERFECT (1) if the order is processed with all original ingredients
  *         ORDER_READY_MODIFIED (2) if the order is processed with substitutions or omissions
  */
+enum OrderStatus
+{
+    ORDER_NOT_READY = 0,
+    ORDER_READY_PERFECT = 1,
+    ORDER_READY_MODIFIED = 2
+};
 int get_order_ready(const int number, Order *&pending, Order *ready[], ReplacementListNode *replacement)
 {
     // TODO
@@ -1416,11 +1434,13 @@ void delete_database(TeaType *&teaTypes, MilkType *&milkTypes, ToppingType *&top
 void delete_recipe(Drink **&recipes, int numRecipes)
 {
     // TODO
+
     if (recipes == nullptr)
         return;
     for (int i = 0; i < numRecipes; i++)
     {
-        if (recipes[i] == nullptr) continue;
+        if (recipes[i] == nullptr)
+            continue;
         recipes[i]->milk = nullptr;
         recipes[i]->tea = nullptr;
         ToppingListNode *current = recipes[i]->toppings;
@@ -1522,3 +1542,7 @@ void delete_replacement_circle(ReplacementListNode *&replacement)
     replacement = nullptr;
     return; // you many remove this line if you want
 }
+
+/*
+./pa3 > terminal_output.txt 2>&1
+*/
