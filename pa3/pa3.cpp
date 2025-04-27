@@ -721,8 +721,9 @@ bool create_recipe(const char name[], const int id, const int price, const char 
                 new_recipes[i] = recipes[i];
             }
             new_recipes[numRecipes] = newDrink;
-            delete[] recipes;
+            // delete[] recipes;
             numRecipes++;
+            recipes = new_recipes;
             return true;
         }
         else
@@ -737,8 +738,9 @@ bool create_recipe(const char name[], const int id, const int price, const char 
             {
                 new_recipes[i + 1] = recipes[i];
             }
-            delete[] recipes;
+            // delete[] recipes;
             numRecipes++;
+            recipes = new_recipes;
             return true;
         }
     }
@@ -775,7 +777,7 @@ bool remove_recipe(const char drink[], Drink **&recipes, int &numRecipes)
             {
                 new_recipes[j] = recipes[j + 1];
             }
-            delete[] recipes;
+            // delete[] recipes;
             recipes = new_recipes;
             numRecipes--;
             return true;
@@ -1065,7 +1067,93 @@ bool remove_topping_from_order(const int number, const char topping[], Order *pe
 bool build_replacement_list(MilkType *milkTypes, ReplacementListNode *&replacement)
 {
     // TODO
-    return false; // you many remove this line if you want
+    if (milkTypes == nullptr)
+    {
+        // Empty input list (returns false)
+        replacement = nullptr;
+        return false;
+    }
+    if (milkTypes->next == nullptr)
+    {
+        // Single-item input list (creates a self-referential node)
+        replacement = new ReplacementListNode;
+        replacement->milk = milkTypes;
+        replacement->next = replacement;
+        return true;
+    }
+    // Multiple-item lists (performs full sorting)
+    MilkType *current_milk = milkTypes;
+    // MilkType *largest_calories_milk = milkTypes;
+    ReplacementListNode *temp_replacement_head = nullptr;
+    ReplacementListNode *temp_replacement_tail = nullptr;
+
+    while (current_milk != nullptr)
+    {
+        // copy the whole milk list
+        ReplacementListNode *new_node = new ReplacementListNode;
+        new_node->milk = current_milk;
+        new_node->next = nullptr;
+        if (temp_replacement_head == nullptr)
+        {
+            temp_replacement_head = new_node;
+            temp_replacement_tail = new_node;
+        }
+        else
+        {
+            temp_replacement_tail->next = new_node;
+            temp_replacement_tail = new_node;
+        }
+        current_milk = current_milk->next;
+    }
+    ReplacementListNode *replacement_head = nullptr;
+    ReplacementListNode *replacement_tail = nullptr;
+    while (temp_replacement_head != nullptr)
+    {
+        ReplacementListNode *min_calories_replacement = temp_replacement_head;
+        ReplacementListNode *before_min_calories_replacement = nullptr;
+        ReplacementListNode *previous_replacement = temp_replacement_head;
+        ReplacementListNode *current_replacement = temp_replacement_head->next;
+        while (current_replacement != nullptr)
+        {
+            // search for smallest milk
+            if (current_replacement->milk->calories < min_calories_replacement->milk->calories)
+            {
+                before_min_calories_replacement = previous_replacement;
+                min_calories_replacement = current_replacement;
+            }
+            previous_replacement = current_replacement;
+            current_replacement = current_replacement->next;
+        }
+        if (min_calories_replacement == temp_replacement_head)
+        {
+            temp_replacement_head = temp_replacement_head->next;
+        }
+        else
+        {
+            before_min_calories_replacement->next = min_calories_replacement->next;
+        }
+        min_calories_replacement->next = nullptr;
+        if (replacement_head == nullptr)
+        {
+            replacement_head = min_calories_replacement;
+            replacement_tail = min_calories_replacement;
+        }
+        else
+        {
+            replacement_tail->next = min_calories_replacement;
+            replacement_tail = min_calories_replacement;
+        }
+    }
+    if (replacement_head == nullptr)
+    {
+        replacement = nullptr;
+        return false;
+    }
+
+    replacement_tail->next = replacement_head;
+    replacement = replacement_head;
+
+    return true; // you many remove this line if you want
 }
 
 /**
@@ -1084,9 +1172,48 @@ bool build_replacement_list(MilkType *milkTypes, ReplacementListNode *&replaceme
 MilkType *find_available_in_replacement_circle(MilkType *targetMilk, ReplacementListNode *replacement)
 {
     // TODO
-    return nullptr; // you many remove this line if you want
-}
+    if (replacement == nullptr)
+    {
+        // The replacement list is empty (nullptr)
+        return nullptr;
+    }
+    ReplacementListNode *current_replacement_head = nullptr;
+    ReplacementListNode *search_replacement = replacement;
+    do
+    {
+        if (search_replacement->milk == targetMilk)
+        {
+            current_replacement_head = search_replacement;
+            break;
+        }
+        search_replacement = search_replacement->next;
 
+    } while (search_replacement != replacement);
+    if (current_replacement_head == nullptr)
+    {
+        // The targetMilk is not found in the replacement list
+        return nullptr;
+    }
+    ReplacementListNode *current_replacement = current_replacement_head;
+    do
+    {
+        if (current_replacement->milk->stock > 0)
+        {
+            // have stock, return
+            return current_replacement->milk;
+        }
+        current_replacement = current_replacement->next;
+
+    } while (current_replacement != current_replacement_head);
+    // No milk with stock > 0 is found after traversing the entire circular list once
+    return nullptr;
+}
+enum OrderStatus
+{
+    ORDER_NOT_READY = 0,
+    ORDER_READY_PERFECT = 1,
+    ORDER_READY_MODIFIED = 2
+};
 /**
  * Moves an order from the pending list to the ready list, handling ingredient availability
  *
@@ -1110,7 +1237,111 @@ MilkType *find_available_in_replacement_circle(MilkType *targetMilk, Replacement
 int get_order_ready(const int number, Order *&pending, Order *ready[], ReplacementListNode *replacement)
 {
     // TODO
-    return 0; // you many remove this line if you want
+    int status = ORDER_READY_PERFECT;
+    int bucket_num = number % 10;
+    if (pending == nullptr)
+    {
+        // The pending list is empty
+        return ORDER_NOT_READY;
+    }
+    Order *before_order = nullptr;
+    Order *order = pending;
+    for (; order != nullptr; before_order = order, order = order->next)
+    {
+        if (order->number == number)
+        {
+            // Locate the order by its unique ID number
+            break;
+        }
+    }
+    if (order == nullptr)
+    {
+        // The specified order cannot be found
+        return ORDER_NOT_READY;
+    }
+    if (order->drink->milk->stock <= 0)
+    {
+        // no original milk, find replacement milk
+        MilkType *new_milk = find_available_in_replacement_circle(order->drink->milk, replacement);
+        if (new_milk == nullptr)
+        {
+            // Required milk is unavailable and no suitable replacement exists
+            return ORDER_NOT_READY;
+        }
+        order->calories -= order->drink->milk->calories;
+        order->calories += new_milk->calories;
+        order->drink->milk = new_milk;
+        // consume new milk
+        order->drink->milk->stock--;
+        status = ORDER_READY_MODIFIED;
+    }
+    else
+    {
+        // consume original milk
+        order->drink->milk->stock--;
+    }
+    ToppingListNode *current_topping = order->drink->toppings;
+    ToppingListNode *previous_topping = nullptr;
+    while (current_topping != nullptr)
+    {
+        if (current_topping->topping->stock <= 0)
+        {
+            // Remove unavailable toppings from an order's topping list
+            status = ORDER_READY_MODIFIED;
+            order->calories -= current_topping->topping->calories;
+            if (current_topping == order->drink->toppings)
+            {
+
+                order->drink->toppings = order->drink->toppings->next;
+                delete current_topping;
+                current_topping = order->drink->toppings;
+            }
+            else
+            {
+                current_topping = current_topping->next;
+                delete previous_topping->next;
+                previous_topping->next = current_topping->next;          
+            }
+        }
+        else
+        {
+            // consume a topping
+            current_topping->topping->stock--;
+            previous_topping = current_topping;
+            current_topping = current_topping->next;
+        }
+    }
+    // Remove nodes from the pending list
+    if (order == pending)
+    {
+        // special case, order removed is the first one
+        pending = pending->next;
+    }
+    else
+    {
+        // normal case
+        before_order->next = order->next;
+    }
+    // Add nodes to the ready list
+    if (ready[bucket_num] == nullptr)
+    {
+        // special case, order added is the first one
+        ready[bucket_num] = order;
+        order->next = nullptr;
+    }
+    else
+    {
+        // normal case
+        Order *current_order = ready[bucket_num];
+        while (current_order->next != nullptr)
+        {
+            // arrive the last order in ready[]
+            current_order = current_order->next;
+        }
+        current_order->next = order;
+        order->next = nullptr;
+    }
+    return status;
 }
 
 // === Region: Destructors ===
