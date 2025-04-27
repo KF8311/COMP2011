@@ -724,7 +724,7 @@ bool create_recipe(const char name[], const int id, const int price, const char 
             // delete[] recipes;
             numRecipes++;
             recipes = new_recipes;
-            return true;
+            // return true;
         }
         else
         {
@@ -741,9 +741,11 @@ bool create_recipe(const char name[], const int id, const int price, const char 
             // delete[] recipes;
             numRecipes++;
             recipes = new_recipes;
-            return true;
+            // return true;
         }
     }
+    //delete[] recipes;
+    return true;
     // return false; // you many remove this line if you want
 }
 
@@ -1300,7 +1302,7 @@ int get_order_ready(const int number, Order *&pending, Order *ready[], Replaceme
             {
                 current_topping = current_topping->next;
                 delete previous_topping->next;
-                previous_topping->next = current_topping->next;          
+                previous_topping->next = current_topping->next;
             }
         }
         else
@@ -1355,7 +1357,54 @@ int get_order_ready(const int number, Order *&pending, Order *ready[], Replaceme
 void delete_database(TeaType *&teaTypes, MilkType *&milkTypes, ToppingType *&toppingTypes)
 {
     // TODO
-    return; // you many remove this line if you want
+    // delete teaTypes
+    while (teaTypes != nullptr)
+    {
+        TeaType *temp = teaTypes;
+        teaTypes = teaTypes->next;
+        delete temp;
+        temp = nullptr;
+    }
+    // delete milkTypes
+    while (milkTypes != nullptr)
+    {
+        MilkType *temp = milkTypes;
+        milkTypes = milkTypes->next;
+        delete temp;
+        temp = nullptr;
+    }
+    // delete toppingTypes
+    while (toppingTypes != nullptr)
+    {
+        ToppingType *temp = toppingTypes;
+        toppingTypes = toppingTypes->next;
+        delete temp;
+        temp = nullptr;
+    }
+    return; // you many remove this line if you want*/
+
+    /*if (teaTypes == nullptr && milkTypes == nullptr && toppingTypes == nullptr)
+    {
+        return;
+    }
+    else
+    {
+        delete_database(teaTypes->next, milkTypes->next, toppingTypes->next);
+    }
+    if (teaTypes != nullptr)
+    {
+        delete teaTypes;
+    }
+    if (milkTypes != nullptr)
+    {
+        delete milkTypes;
+    }
+    if (toppingTypes != nullptr)
+    {
+        delete toppingTypes;
+    }
+
+    */
 }
 
 /**
@@ -1367,6 +1416,28 @@ void delete_database(TeaType *&teaTypes, MilkType *&milkTypes, ToppingType *&top
 void delete_recipe(Drink **&recipes, int numRecipes)
 {
     // TODO
+    if (recipes == nullptr)
+        return;
+    for (int i = 0; i < numRecipes; i++)
+    {
+        if (recipes[i] == nullptr) continue;
+        recipes[i]->milk = nullptr;
+        recipes[i]->tea = nullptr;
+        ToppingListNode *current = recipes[i]->toppings;
+        while (current != nullptr)
+        {
+            // remove all pointers to topping database
+            ToppingListNode *temp = current;
+            current = current->next;
+            // temp->topping=nullptr;
+            delete temp;
+        }
+        // now recipes[i]->toppings = nullptr
+        // remove drink object itself
+        delete recipes[i];
+    }
+    delete[] recipes;
+    recipes = nullptr;
     return; // you many remove this line if you want
 }
 
@@ -1378,6 +1449,34 @@ void delete_recipe(Drink **&recipes, int numRecipes)
 void delete_pending_orders(Order *&pending)
 {
     // TODO
+    if (pending == nullptr)
+    {
+        return;
+    }
+    // Deallocates the order structure
+    while (pending != nullptr)
+    {
+        Order *current_order = pending;
+        pending = pending->next;
+        // Deallocates the drink structure
+        current_order->drink->milk = nullptr;
+        current_order->drink->tea = nullptr;
+        ToppingListNode *current = current_order->drink->toppings;
+        // Deallocates all topping list nodes in the order's drink
+        while (current != nullptr)
+        {
+            // remove all pointers to topping database
+            ToppingListNode *temp = current;
+            current = current->next;
+            // temp->topping=nullptr;
+            delete temp;
+        }
+        // Deallocates the drink itself
+        delete current_order->drink;
+        delete current_order;
+    }
+
+    pending = nullptr;
     return; // you many remove this line if you want
 }
 
@@ -1389,6 +1488,13 @@ void delete_pending_orders(Order *&pending)
 void delete_ready_orders(Order *ready[])
 {
     // TODO
+    // Iterates through each of the 10 ready order lists
+    for (int i = 0; i <= 9; i++)
+    {
+        delete_pending_orders(ready[i]);
+    }
+    // delete ready;
+    ready = nullptr;
     return; // you many remove this line if you want
 }
 
@@ -1400,5 +1506,19 @@ void delete_ready_orders(Order *ready[])
 void delete_replacement_circle(ReplacementListNode *&replacement)
 {
     // TODO
+    if (replacement == nullptr)
+        return;
+    ReplacementListNode *head_replacement = replacement;
+    ReplacementListNode *current_replacement = replacement->next;
+    while (current_replacement != head_replacement)
+    {
+        // current_replacement->milk = nullptr;
+        ReplacementListNode *temp = current_replacement;
+        current_replacement = current_replacement->next;
+        delete temp;
+        temp = nullptr;
+    }
+    delete head_replacement;
+    replacement = nullptr;
     return; // you many remove this line if you want
 }
