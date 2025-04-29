@@ -1318,9 +1318,9 @@ int get_order_ready(const int number, Order *&pending, Order *ready[], Replaceme
             }
             else
             {
-                current_topping = current_topping->next;
-                delete previous_topping->next;
                 previous_topping->next = current_topping->next;
+                delete current_topping;
+                current_topping = current_topping->next;
             }
         }
         else
