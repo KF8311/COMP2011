@@ -297,6 +297,11 @@ bool remove_note(Notes &notes, const char title[])
 {
   // TODO: Task 4
   unsigned int i = 0;
+  if (notes.note_array_count == 1){
+    cleanup_note(notes.note_array[0]);
+    notes.note_array_count--;
+    return true;
+  }
   while (i < notes.note_array_count)
   {
     if (strcmp(notes.note_array[i].title, title) == 0)
