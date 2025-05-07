@@ -136,3 +136,9 @@ void Classroom::gen_timetable()
         }
     }
 }
+/*
+g++ -Wall -Wextra -std=c++11 -fsanitize=address,leak,undefined course.cpp lab9_classroom.cpp main.cpp -o lab9
+./lab9 < testcases/input1.txt > myOutput1.txt
+./lab9 < testcases/input2.txt > myOutput2.txt
+./lab9 < testcases/input3.txt > myOutput3.txt
+*/
